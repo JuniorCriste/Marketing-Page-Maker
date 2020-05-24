@@ -1,0 +1,29 @@
+< Componentes
+> Menu
+> Vídeo
+> Botões de Ação
+> Módulos
+> Garantia
+> Oferta
+> Horas
+> Formas de pagamento
+> Valor
+> Certificado
+> imagens externas
+> Dúvidas Frequentes
+> Sobre mim
+> rodape
+
+< Funcionamento disso tudo?
+> Pequenos trechos de códigos em diferentes arquivos criarão
+  uma interface semelhante a uma prévia.
+> Salvar um arquivo de projeto com formato próprio memorizando
+  componentes da interface do Marketing Page Maker.
+> Unir com base na interface todo o código em um *htm.
+> Disponibilizar possibilidade de criação de um *htm independente de *css.
+
+< Flex
+> Layout da página tem de trabalhar em telas desktop.
+> Layout auto adaptável a telas mobiles.
+> Usuário não tem poder com manipulação de flexibilidade.
+
