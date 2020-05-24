@@ -1,0 +1,8 @@
+object sMod: TsMod
+  Left = 560
+  Height = 240
+  Top = 287
+  Width = 320
+  Caption = 'Escolha um modelo'
+  LCLVersion = '1.8.2.0'
+end
