@@ -21,6 +21,7 @@
   componentes da interface do Marketing Page Maker.
 > Unir com base na interface todo o código em um *htm.
 > Disponibilizar possibilidade de criação de um *htm independente de *css.
+> Disponibilizar diretórios completos com todo projeto da página.
 
 < Flex
 > Layout da página tem de trabalhar em telas desktop.
