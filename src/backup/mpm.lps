@@ -17,6 +17,7 @@
         <Filename Value="unitsmod.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="sMod"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitsMod"/>
         <IsVisibleTab Value="True"/>
