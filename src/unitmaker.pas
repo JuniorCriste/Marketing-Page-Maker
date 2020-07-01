@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
-  ExtCtrls, Menus, StdCtrls, Buttons, UnitMakerMod;
+  ExtCtrls, Menus, StdCtrls, Buttons, UnitMakerMod, StrUtils;
 
 type
 
@@ -17,9 +17,10 @@ type
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
+    estilo: TMemo;
     ncurso: TEdit;
     valor: TEdit;
-    Edit6: TEdit;
+    video: TEdit;
     garantia: TEdit;
     codfull: TMemo;
     p1: TImage;
@@ -103,37 +104,49 @@ end;
 procedure TMaker.Button3Click(Sender: TObject);
 var
   full: TStringList;
+  embedyt: string;
+  ini, fin: integer;
 begin
+ ini:= 1;
+ fin:= length(video.Text) - 11;
+ embedyt := video.Text;
+ delete(embedyt, ini, fin);
+
  codfull.Clear;
  try
  {  TOPO  }
   codfull.Lines.Add('<html> <meta charset="UTF-8">');
   codfull.Lines.Add('<head>');  
   codfull.Lines.Add('<title>' + ncurso.Text + '</title>');
-
+  codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">');
   codfull.Lines.Add('</head>');
   {  CORPO  }
+  codfull.Lines.Add('<topo>');
   codfull.Lines.Add('<titulo> ' + ncurso.Text + ' </titulo>');
   codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<videoyt> ' + 'video' + ' </videoyt>');   
+  codfull.Lines.Add( '<iframe width="720" height="405" id="videoyt" src="https://www.youtube.com/embed/' + embedyt +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
   codfull.Lines.Add(' <br />');
   codfull.Lines.Add('<valor>Apenas por R$' + valor.Text + '! </valor>');
   codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<botao> ' + linkvenda.Text + ' </botao>');
+  codfull.Lines.Add('<form method="get" action="' + linkvenda.Text + '"> <button type="submit" class="botao"> Adquira já! </button></form>');
   codfull.Lines.Add(' <br />');
   codfull.Lines.Add('<descricao> '+ descricao.Text +' </descricao>'); 
   codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('</topo>');
   codfull.Lines.Add('<modulos> ' + MakerMod.codMods.Text + ' </modulos>'); 
   codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<botao> ' + linkvenda.Text + ' </botao>');    
+  codfull.Lines.Add('<form method="get" action="' + linkvenda.Text + '"> <button type="submit" class="botao"> Adquira já! </button></form>');
   codfull.Lines.Add(' <br />');
   codfull.Lines.Add('<garantia> Garantia de ' + garantia.Text + '! </garantia>');
   codfull.Lines.Add(' <br />');
-  codfull.Lines.Add(' ');
+  codfull.Lines.Add('</body> ');
   codfull.Lines.Add(' ');
 
   {  ESTILO  }
 
+  codfull.Lines.Add('<style>');
+  codfull.Lines.Add(estilo.text);
+  codfull.Lines.Add('</style>');
 
   {  EXPORTAÇÃO  }
  full := TStringList.Create;

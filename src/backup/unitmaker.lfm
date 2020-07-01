@@ -75,7 +75,7 @@ object Maker: TMaker
     Caption = 'Link para vídeo do Youtube (se tiver)'
     ParentColor = False
   end
-  object Edit6: TEdit
+  object video: TEdit
     Left = 455
     Height = 49
     Top = 269
@@ -405,6 +405,44 @@ object Maker: TMaker
     ParentFont = False
     ReadOnly = True
     TabOrder = 12
+    Visible = False
+  end
+  object estilo: TMemo
+    Left = 385
+    Height = 36
+    Top = 105
+    Width = 109
+    Lines.Strings = (
+      'body{'
+      '/*background-color: gray;'
+      'background-repeat: no-repeat;'
+      'background-attachment: fixed;'
+      'background-color: #0d0d0d;'
+      'background-size: 100%; */'
+      '}'
+      ''
+      '#topo{'
+      'width: 70%;'
+      'justify-content: center;'
+      'margin-top: 100px;'
+      'font-family: ''Roboto'', sans-serif;'
+      'line-height: 20px;'
+      'color: white;'
+      '}'
+      ''
+      'titulo{'
+      'font-size: 50px;'
+      'margin-left: 15px;'
+      '}'
+      '@media only screen and (max-width: 1036px){'
+      '    '
+      'body{'
+      'background-size: 300%;'
+      '}'
+      '}'
+    )
+    ReadOnly = True
+    TabOrder = 13
     Visible = False
   end
   object topmenu: TMainMenu
