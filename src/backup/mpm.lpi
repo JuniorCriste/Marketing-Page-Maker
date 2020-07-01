@@ -14,9 +14,6 @@
       </XPManifest>
       <Icon Value="0"/>
     </General>
-    <VersionInfo>
-      <StringTable ProductVersion=""/>
-    </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
     </BuildModes>
@@ -33,7 +30,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="2">
+    <Units Count="3">
       <Unit0>
         <Filename Value="mpm.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -42,9 +39,17 @@
         <Filename Value="unitsmod.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="sMod"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitsMod"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="unitmaker.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Maker"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit2>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
