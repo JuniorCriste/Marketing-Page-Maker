@@ -119,8 +119,19 @@ begin
   codfull.Lines.Add('<head>');  
   codfull.Lines.Add('<title>' + ncurso.Text + '</title>');
   codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">');
+
+
+  {  ESTILO  }
+
+  codfull.Lines.Add('<style>');
+  codfull.Lines.Add(estilo.text);
+  codfull.Lines.Add('</style>');
+
+
+
   codfull.Lines.Add('</head>');
   {  CORPO  }
+  codfull.Lines.Add('<body>');
   codfull.Lines.Add('<topo>');
   codfull.Lines.Add('<titulo> ' + ncurso.Text + ' </titulo>');
   codfull.Lines.Add(' <br />');
@@ -141,12 +152,6 @@ begin
   codfull.Lines.Add(' <br />');
   codfull.Lines.Add('</body> ');
   codfull.Lines.Add(' ');
-
-  {  ESTILO  }
-
-  codfull.Lines.Add('<style>');
-  codfull.Lines.Add(estilo.text);
-  codfull.Lines.Add('</style>');
 
   {  EXPORTAÇÃO  }
  full := TStringList.Create;

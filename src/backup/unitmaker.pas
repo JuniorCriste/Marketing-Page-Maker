@@ -121,6 +121,7 @@ begin
   codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">');
   codfull.Lines.Add('</head>');
   {  CORPO  }
+  codfull.Lines.Add('<body>');
   codfull.Lines.Add('<topo>');
   codfull.Lines.Add('<titulo> ' + ncurso.Text + ' </titulo>');
   codfull.Lines.Add(' <br />');
