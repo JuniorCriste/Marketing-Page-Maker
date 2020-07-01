@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
-  ExtCtrls, Menus, StdCtrls, Buttons;
+  ExtCtrls, Menus, StdCtrls, Buttons, UnitMakerMod;
 
 type
 
@@ -14,12 +14,19 @@ type
 
   TMaker = class(TForm)
     Button1: TButton;
-    Edit1: TEdit;
-    Edit5: TEdit;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    ncurso: TEdit;
+    valor: TEdit;
     Edit6: TEdit;
-    Edit7: TEdit;
-    Edit8: TEdit;
-    Edit9: TEdit;
+    garantia: TEdit;
+    codfull: TMemo;
+    p1: TImage;
+    p2: TImage;
+    p3: TImage;
+    Qmod: TEdit;
+    linkvenda: TEdit;
     Label1: TLabel;
     Label2: TLabel;
     Label5: TLabel;
@@ -27,7 +34,7 @@ type
     Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
-    Memo1: TMemo;
+    descricao: TMemo;
     MenuItem1: TMenuItem;
     MenuItem10: TMenuItem;
     MenuItem11: TMenuItem;
@@ -47,6 +54,9 @@ type
     MenuItem9: TMenuItem;
     topmenu: TMainMenu;
     StatusBar1: TStatusBar;
+    procedure Button1Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure MenuItem16Click(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
   private
@@ -84,6 +94,59 @@ begin
   end;
   }
   end;
+
+procedure TMaker.Button1Click(Sender: TObject);
+begin
+  MakerMod.show;
+end;
+
+procedure TMaker.Button3Click(Sender: TObject);
+var
+  full: TStringList;
+begin
+ codfull.Clear;
+ try
+ {  TOPO  }
+  codfull.Lines.Add('<html> <meta charset="UTF-8">');
+  codfull.Lines.Add('<head>');  
+  codfull.Lines.Add('<title>' + ncurso.Text + '</title>');
+
+  codfull.Lines.Add('</head>');
+  {  CORPO  }
+  codfull.Lines.Add('<titulo> ' + ncurso.Text + ' </titulo>');
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('<videoyt> ' + 'video' + ' </videoyt>');   
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('<valor>Apenas por R$' + valor.Text + '! </valor>');
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('<botao> ' + linkvenda.Text + ' </botao>');
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('<descricao> '+ descricao.Text +' </descricao>'); 
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('<modulos> ' + MakerMod.codMods.Text + ' </modulos>'); 
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('<botao> ' + linkvenda.Text + ' </botao>');    
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('<garantia> Garantia de ' + garantia.Text + '! </garantia>');
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add(' ');
+  codfull.Lines.Add(' ');
+
+  {  ESTILO  }
+
+
+  {  EXPORTAÇÃO  }
+ full := TStringList.Create;
+ full.Add(codfull.Text);
+ full.SaveToFile('previsualizacao.htm');
+ finally
+   full.Free;
+ end;
+end;
+
+procedure TMaker.FormShow(Sender: TObject);
+begin
+end;
 
 
 end.

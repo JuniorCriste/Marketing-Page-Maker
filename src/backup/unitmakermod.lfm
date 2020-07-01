@@ -1,0 +1,86 @@
+object MakerMod: TMakerMod
+  Left = 262
+  Height = 388
+  Top = 153
+  Width = 476
+  BorderStyle = bsSingle
+  Caption = 'Editor de Módulos...'
+  ClientHeight = 388
+  ClientWidth = 476
+  Font.Height = -20
+  Font.Name = 'Sans'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '1.8.2.0'
+  object Label1: TLabel
+    Left = 0
+    Height = 32
+    Top = 8
+    Width = 479
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Editor de Módulos'
+    ParentColor = False
+  end
+  object modname: TEdit
+    Left = 10
+    Height = 48
+    Top = 72
+    Width = 451
+    TabOrder = 0
+    TextHint = 'Nome do Módulo'
+  end
+  object modau: TMemo
+    Left = 10
+    Height = 150
+    Top = 169
+    Width = 449
+    Font.Height = -16
+    Font.Name = 'Sans'
+    Lines.Strings = (
+      'Introdução ao GIMP'
+      'Ferramentas, Filtros e Sombras'
+      'Mais Ferramentas, Filtros e Bordas'
+      'Textos'
+      'Recortando Objetos'
+    )
+    ParentFont = False
+    ScrollBars = ssAutoVertical
+    TabOrder = 1
+  end
+  object txt2: TLabel
+    Left = 14
+    Height = 24
+    Top = 136
+    Width = 181
+    Caption = 'Aulas do Módulo *'
+    ParentColor = False
+  end
+  object cadMod: TButton
+    Left = 10
+    Height = 43
+    Top = 326
+    Width = 449
+    Caption = 'Cadastrar Módulo'
+    OnClick = cadModClick
+    TabOrder = 2
+  end
+  object codMods: TMemo
+    Left = 478
+    Height = 295
+    Top = 57
+    Width = 425
+    ReadOnly = True
+    TabOrder = 3
+    Visible = False
+  end
+  object txt1: TLabel
+    Left = 16
+    Height = 24
+    Top = 40
+    Width = 184
+    Caption = 'Nome do Módulo *'
+    ParentColor = False
+  end
+end

@@ -54,6 +54,7 @@
         <Filename Value="unitmakermod.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MakerMod"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit3>
     </Units>
