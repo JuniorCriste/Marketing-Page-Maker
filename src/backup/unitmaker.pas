@@ -119,35 +119,42 @@ begin
   codfull.Lines.Add('<head>');  
   codfull.Lines.Add('<title>' + ncurso.Text + '</title>');
   codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">');
-  codfull.Lines.Add('</head>');
-  {  CORPO  }
-  codfull.Lines.Add('<body>');
-  codfull.Lines.Add('<topo>');
-  codfull.Lines.Add('<titulo> ' + ncurso.Text + ' </titulo>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add( '<iframe width="720" height="405" id="videoyt" src="https://www.youtube.com/embed/' + embedyt +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<valor>Apenas por R$' + valor.Text + '! </valor>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<form method="get" action="' + linkvenda.Text + '"> <button type="submit" class="botao"> Adquira já! </button></form>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<descricao> '+ descricao.Text +' </descricao>'); 
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('</topo>');
-  codfull.Lines.Add('<modulos> ' + MakerMod.codMods.Text + ' </modulos>'); 
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<form method="get" action="' + linkvenda.Text + '"> <button type="submit" class="botao"> Adquira já! </button></form>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<garantia> Garantia de ' + garantia.Text + '! </garantia>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('</body> ');
-  codfull.Lines.Add(' ');
+
 
   {  ESTILO  }
 
   codfull.Lines.Add('<style>');
   codfull.Lines.Add(estilo.text);
   codfull.Lines.Add('</style>');
+
+
+
+  codfull.Lines.Add('</head>');
+  {  CORPO  }
+  codfull.Lines.Add('<body>');
+  codfull.Lines.Add('<div id="topo">');  {começo do topo}
+  codfull.Lines.Add('<div id="titulo"> ' + ncurso.Text + ' </div>');
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add( '<iframe width="720" height="405" id="videoyt" src="https://www.youtube.com/embed/' + embedyt +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('<form method="get" action="' + linkvenda.Text + '"> <button type="submit" class="euquero"> QUERO COMEÇAR JÁ! </button></form>');
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('<valor>Apenas por R$' + valor.Text + '! </valor>');
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('<descricao> '+ descricao.Text +' </descricao>'); 
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('</div>');           {fim do topo}
+  codfull.Lines.Add('<div id="meio">');  {começo do meio}
+  codfull.Lines.Add('<div id="modulos"> ' + MakerMod.codMods.Text + ' </div>');
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('<form method="get" action="' + linkvenda.Text + '"> <button type="submit" class="euquero"> QUERO COMEÇAR JÁ! </button></form>');
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('<garantia> Garantia de ' + garantia.Text + '! </garantia>');
+  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add('</div>');           {fim do meio}
+  codfull.Lines.Add('</body> ');
+  codfull.Lines.Add(' ');
 
   {  EXPORTAÇÃO  }
  full := TStringList.Create;
