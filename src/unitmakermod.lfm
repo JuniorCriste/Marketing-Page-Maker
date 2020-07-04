@@ -40,15 +40,16 @@ object MakerMod: TMakerMod
     Font.Height = -16
     Font.Name = 'Sans'
     Lines.Strings = (
-      'Introdução ao GIMP'
-      'Ferramentas, Filtros e Sombras'
-      'Mais Ferramentas, Filtros e Bordas'
-      'Textos'
-      'Recortando Objetos'
+      'Aula 00'
+      'Aula 01'
+      'Aula 02'
+      'Aula 03'
+      'Aula ...'
     )
     ParentFont = False
     ScrollBars = ssAutoVertical
     TabOrder = 1
+    WordWrap = False
   end
   object txt2: TLabel
     Left = 14

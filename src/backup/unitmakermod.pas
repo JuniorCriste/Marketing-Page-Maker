@@ -42,14 +42,23 @@ uses unitmaker;
 { TMakerMod }
 
 procedure TMakerMod.cadModClick(Sender: TObject);
-begin
+var
+  linhas, countLinhas: integer;
+begin            
   countMod := countMod + 1;
-  codMods.Lines.Add('<div class="modbox"> <div class="tmodulo">' + modname.Text + '</div>');
-  codMods.Lines.Add('<div class="aulas"> ');
-  codMods.Lines.Add(modau.Text);
+
+  linhas:= modau.lines.Count;
+
+  codMods.Lines.Add('<div class="modbox"> Módulo ' + IntToStr(countMod - 1) + ' <br /> <h3>' + modname.Text + '</h3>');
+  codMods.Lines.Add('<div class="aulas"> <b>');
+  for countLinhas:= 0 to linhas do
+  begin            
+  codMods.Lines.Add('<br />');
+  codMods.Lines.Add(modau.Lines[countLinhas]);
+  end;            
+  codMods.Lines.Add('</b>');
   codMods.Lines.Add('</div>');
   codMods.Lines.Add('</div>');
-  codMods.Lines.Add('  <br /> ');
 
   txt1.Caption:= 'Nome do Módulo ' + IntToStr(countMod);
   txt2.Caption:= 'Aulas do Módulo ' + IntToStr(countMod);
@@ -58,6 +67,14 @@ begin
   begin
     MakerMod.Close;
   end;
+
+  modname.Text:= 'Nome do Módulo';
+  modau.Lines.Clear;
+  modau.Lines.Add('Aula 00');
+  modau.Lines.Add('Aula 01');
+  modau.Lines.Add('Aula 02');
+  modau.Lines.Add('Aula 03');
+  modau.Lines.Add('Aula ...');
 
 end;
 
