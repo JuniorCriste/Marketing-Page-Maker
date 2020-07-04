@@ -166,6 +166,7 @@ object Maker: TMaker
     Caption = 'Visualizar no Navegador'
     Font.Height = -16
     Font.Name = 'Sans'
+    OnClick = Button2Click
     ParentFont = False
     TabOrder = 9
   end
@@ -433,6 +434,8 @@ object Maker: TMaker
       'text-align: center;'
       'font-size: 50px;'
       'color: white;'
+      'text-transform: uppercase;'
+      'font-weight: bold; '
       '}'
       ''
       '#videoyt{'

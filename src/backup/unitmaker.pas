@@ -56,6 +56,7 @@ type
     topmenu: TMainMenu;
     StatusBar1: TStatusBar;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure MenuItem16Click(Sender: TObject);
@@ -70,6 +71,7 @@ var
   Maker: TMaker;
 
 implementation
+uses LCLIntf;
 
 {$R *.lfm}
 
@@ -99,6 +101,11 @@ begin
 procedure TMaker.Button1Click(Sender: TObject);
 begin
   MakerMod.show;
+end;
+
+procedure TMaker.Button2Click(Sender: TObject);
+begin
+  OpenURL('http://www.lazarus.freepascal.org');
 end;
 
 procedure TMaker.Button3Click(Sender: TObject);
@@ -146,7 +153,7 @@ begin
   codfull.Lines.Add('<div id="meio">');  {começo do meio}
   codfull.Lines.Add('<div id="valor">Apenas por R$' + valor.Text + '! </div>');
   codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<div id="descricao"> '+ descricao.Text +' </div>');
+  codfull.Lines.Add('<center> <div id="descricao"> '+ descricao.Text +' </div> </center>');
   codfull.Lines.Add(' <br />');
   codfull.Lines.Add('<div id="modulos"> ' + MakerMod.codMods.Text + ' </div>');
   codfull.Lines.Add(' <br />');
