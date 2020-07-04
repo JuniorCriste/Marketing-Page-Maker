@@ -144,9 +144,9 @@ begin
   codfull.Lines.Add(' <br />');   
   codfull.Lines.Add('</div>');           {fim do topo}    
   codfull.Lines.Add('<div id="meio">');  {começo do meio}
-  codfull.Lines.Add('<valor>Apenas por R$' + valor.Text + '! </valor>');
+  codfull.Lines.Add('<div id="valor">Apenas por R$' + valor.Text + '! </div>');
   codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<descricao> '+ descricao.Text +' </descricao>'); 
+  codfull.Lines.Add('<div id="descricao"> '+ descricao.Text +' </div>');
   codfull.Lines.Add(' <br />');
   codfull.Lines.Add('<div id="modulos"> ' + MakerMod.codMods.Text + ' </div>');
   codfull.Lines.Add(' <br />');

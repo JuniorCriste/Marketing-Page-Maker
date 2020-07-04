@@ -414,7 +414,7 @@ object Maker: TMaker
     Width = 109
     Lines.Strings = (
       'body{'
-      'background-image: url(''https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/fundo.jpg?token=AG7IFIIAYAIOMMKTGK5NTEC677ERA'');'
+      'background-image: url(''https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/fundo.jpg'');'
       'background-repeat: no-repeat;'
       'background-attachment: fixed;'
       'background-color: #0d0d0d;'
@@ -475,6 +475,11 @@ object Maker: TMaker
       '}'
       ''
       '#descricao{'
+      'width: 70%;'
+      'text-align: justify;'
+      '}'
+      ''
+      '#valor{'
       'font-size: 125%;'
       '}'
       ''
