@@ -73,9 +73,79 @@ var
 implementation
 uses LCLIntf;
 
+
+
+
 {$R *.lfm}
 
 { TMaker }
+
+procedure exportar;
+ var
+  full: TStringList;
+  embedyt: string;
+  ini, fin: integer;
+begin
+ ini:= 1;
+ fin:= length(maker.video.Text) - 11;
+ embedyt := maker.video.Text;
+ delete(embedyt, ini, fin);
+
+ maker.codfull.Clear;
+ try
+ {  TOPO  }
+  maker.codfull.Lines.Add('<html> <meta charset="UTF-8">');
+  maker.codfull.Lines.Add('<head>');
+  maker.codfull.Lines.Add('<title>' + maker.ncurso.Text + '</title>');
+   {fontes}
+  maker.codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">');
+  maker.codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Montserrat|Staatliches&display=swap" rel="stylesheet">');
+  maker.codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Work+Sans:200&display=swap" rel="stylesheet">');
+
+  {  ESTILO  }
+
+  maker.codfull.Lines.Add('<style>');
+  maker.codfull.Lines.Add(maker.estilo.text);
+  maker.codfull.Lines.Add('</style>');
+
+
+
+  maker.codfull.Lines.Add('</head>');
+  {  CORPO  }
+  maker.codfull.Lines.Add('<body>');
+  maker.codfull.Lines.Add('<div id="topo">');  {começo do topo}
+  maker.codfull.Lines.Add('<div id="titulo"> ' + maker.ncurso.Text + ' </div>');
+  maker.codfull.Lines.Add(' <br />');
+  maker.codfull.Lines.Add( '<iframe width="720" height="405" id="videoyt" src="https://www.youtube.com/embed/' + embedyt +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+  maker.codfull.Lines.Add(' <br />');
+  maker.codfull.Lines.Add(' <br />');
+  maker.codfull.Lines.Add('<form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero"> QUERO COMEÇAR JÁ! </button></form>');
+  maker.codfull.Lines.Add('</div>');           {fim do topo}
+  maker.codfull.Lines.Add('<div id="meio">');  {começo do meio}
+  maker.codfull.Lines.Add(' <br />');
+  maker.codfull.Lines.Add('<center> <div id="descricao"> '+ maker.descricao.Text +' </div> </center>');
+  maker.codfull.Lines.Add(' <br />');
+  maker.codfull.Lines.Add('<div id="valor">Apenas por R$' + maker.valor.Text + '! </div>');
+  maker.codfull.Lines.Add(' <br />');
+  maker.codfull.Lines.Add('<div id="modulos"> ' + MakerMod.codMods.Text + ' </div>');
+  maker.codfull.Lines.Add(' <br />');
+  maker.codfull.Lines.Add('<form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero"> QUERO COMEÇAR JÁ! </button></form>');
+  maker.codfull.Lines.Add(' <br />');
+  maker.codfull.Lines.Add('<garantia> Garantia de ' + maker.garantia.Text + '! </garantia>');
+  maker.codfull.Lines.Add(' <br />');
+  maker.codfull.Lines.Add('</div>');           {fim do meio}
+  maker.codfull.Lines.Add('</body> ');
+  maker.codfull.Lines.Add(' ');
+
+  {  EXPORTAÇÃO  }
+ full := TStringList.Create;
+ full.Add(maker.codfull.Text);
+ full.SaveToFile('previsualizacao.htm');
+ finally
+   full.Free;
+ end;
+ end;
+
 
 procedure TMaker.MenuItem1Click(Sender: TObject);
 begin
@@ -105,73 +175,13 @@ end;
 
 procedure TMaker.Button2Click(Sender: TObject);
 begin
+  exportar;
   OpenURL('previsualizacao.htm');
 end;
 
 procedure TMaker.Button3Click(Sender: TObject);
-var
-  full: TStringList;
-  embedyt: string;
-  ini, fin: integer;
 begin
- ini:= 1;
- fin:= length(video.Text) - 11;
- embedyt := video.Text;
- delete(embedyt, ini, fin);
-
- codfull.Clear;
- try
- {  TOPO  }
-  codfull.Lines.Add('<html> <meta charset="UTF-8">');
-  codfull.Lines.Add('<head>');  
-  codfull.Lines.Add('<title>' + ncurso.Text + '</title>');
-   {fontes}
-  codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">');
-  codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Montserrat|Staatliches&display=swap" rel="stylesheet">');
-  codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Work+Sans:200&display=swap" rel="stylesheet">');
-
-  {  ESTILO  }
-
-  codfull.Lines.Add('<style>');
-  codfull.Lines.Add(estilo.text);
-  codfull.Lines.Add('</style>');
-
-
-
-  codfull.Lines.Add('</head>');
-  {  CORPO  }
-  codfull.Lines.Add('<body>');
-  codfull.Lines.Add('<div id="topo">');  {começo do topo}
-  codfull.Lines.Add('<div id="titulo"> ' + ncurso.Text + ' </div>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add( '<iframe width="720" height="405" id="videoyt" src="https://www.youtube.com/embed/' + embedyt +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<form method="get" action="' + linkvenda.Text + '"> <button type="submit" class="euquero"> QUERO COMEÇAR JÁ! </button></form>');
-  codfull.Lines.Add(' <br />');   
-  codfull.Lines.Add('</div>');           {fim do topo}    
-  codfull.Lines.Add('<div id="meio">');  {começo do meio}
-  codfull.Lines.Add('<div id="valor">Apenas por R$' + valor.Text + '! </div>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<center> <div id="descricao"> '+ descricao.Text +' </div> </center>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<div id="modulos"> ' + MakerMod.codMods.Text + ' </div>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<form method="get" action="' + linkvenda.Text + '"> <button type="submit" class="euquero"> QUERO COMEÇAR JÁ! </button></form>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('<garantia> Garantia de ' + garantia.Text + '! </garantia>');
-  codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('</div>');           {fim do meio}
-  codfull.Lines.Add('</body> ');
-  codfull.Lines.Add(' ');
-
-  {  EXPORTAÇÃO  }
- full := TStringList.Create;
- full.Add(codfull.Text);
- full.SaveToFile('previsualizacao.htm');
- finally
-   full.Free;
- end;
+ exportar;
 end;
 
 procedure TMaker.FormShow(Sender: TObject);
@@ -179,5 +189,7 @@ begin
 end;
 
 
+
 end.
+
 

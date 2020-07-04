@@ -44,10 +44,12 @@ uses unitmaker;
 procedure TMakerMod.cadModClick(Sender: TObject);
 begin
   countMod := countMod + 1;
-  codMods.Lines.Add('<modulo> <tmodulo>' + modname.Text + '</tmodulo>');
+  codMods.Lines.Add('<div class="modbox"> <div class="tmodulo">' + modname.Text + '</div>');
+  codMods.Lines.Add('<div class="aulas"> ');
   codMods.Lines.Add(modau.Text);
-  codMods.Lines.Add('</modulo>');
-  codMods.Lines.Add('   ');
+  codMods.Lines.Add('</div>');
+  codMods.Lines.Add('</div>');
+  codMods.Lines.Add('  <br /> ');
 
   txt1.Caption:= 'Nome do Módulo ' + IntToStr(countMod);
   txt2.Caption:= 'Aulas do Módulo ' + IntToStr(countMod);
