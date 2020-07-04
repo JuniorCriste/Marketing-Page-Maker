@@ -118,8 +118,10 @@ begin
   codfull.Lines.Add('<html> <meta charset="UTF-8">');
   codfull.Lines.Add('<head>');  
   codfull.Lines.Add('<title>' + ncurso.Text + '</title>');
+   {fontes}
   codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">');
-
+  codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Montserrat|Staatliches&display=swap" rel="stylesheet">');
+  codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Work+Sans:200&display=swap" rel="stylesheet">');
 
   {  ESTILO  }
 
@@ -139,13 +141,13 @@ begin
   codfull.Lines.Add(' <br />');
   codfull.Lines.Add(' <br />');
   codfull.Lines.Add('<form method="get" action="' + linkvenda.Text + '"> <button type="submit" class="euquero"> QUERO COMEÇAR JÁ! </button></form>');
-  codfull.Lines.Add(' <br />');
+  codfull.Lines.Add(' <br />');   
+  codfull.Lines.Add('</div>');           {fim do topo}    
+  codfull.Lines.Add('<div id="meio">');  {começo do meio}
   codfull.Lines.Add('<valor>Apenas por R$' + valor.Text + '! </valor>');
   codfull.Lines.Add(' <br />');
   codfull.Lines.Add('<descricao> '+ descricao.Text +' </descricao>'); 
   codfull.Lines.Add(' <br />');
-  codfull.Lines.Add('</div>');           {fim do topo}
-  codfull.Lines.Add('<div id="meio">');  {começo do meio}
   codfull.Lines.Add('<div id="modulos"> ' + MakerMod.codMods.Text + ' </div>');
   codfull.Lines.Add(' <br />');
   codfull.Lines.Add('<form method="get" action="' + linkvenda.Text + '"> <button type="submit" class="euquero"> QUERO COMEÇAR JÁ! </button></form>');
