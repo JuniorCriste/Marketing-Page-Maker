@@ -94,8 +94,9 @@ begin
  maker.codfull.Clear;
  try
  {  TOPO  }
-  maker.codfull.Lines.Add('<html> <meta charset="UTF-8">');
+  maker.codfull.Lines.Add('<html>');
   maker.codfull.Lines.Add('<head>');
+  maker.codfull.Lines.Add('<meta charset="UTF-8">');
   maker.codfull.Lines.Add('<title>' + maker.ncurso.Text + '</title>');
    {fontes}
   maker.codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">');
@@ -108,9 +109,9 @@ begin
   maker.codfull.Lines.Add(maker.estilo.text);
   maker.codfull.Lines.Add('</style>');
 
-
-
   maker.codfull.Lines.Add('</head>');
+
+
   {  CORPO  }
   maker.codfull.Lines.Add('<body>');
   maker.codfull.Lines.Add('<div id="topo">');  {começo do topo}
@@ -131,11 +132,11 @@ begin
   maker.codfull.Lines.Add(' <br />');
   maker.codfull.Lines.Add('<form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero"> QUERO COMEÇAR JÁ! </button></form>');
   maker.codfull.Lines.Add(' <br />');
-  maker.codfull.Lines.Add('<garantia> Garantia de ' + maker.garantia.Text + '! </garantia>');
+  maker.codfull.Lines.Add('</center><div id="garantia"> O nosso método conta com garantia e satisfação, ou seja, você tem ' + maker.garantia.Text + ' para se decidir, se ainda achar que o treinamento não é para você, basta pedir reembolso e devolverei integralmente seu dinheiro. Sem perguntas e questionamentos. </div> </center>');
   maker.codfull.Lines.Add(' <br />');
   maker.codfull.Lines.Add('</div>');           {fim do meio}
   maker.codfull.Lines.Add('</body> ');
-  maker.codfull.Lines.Add(' ');
+  maker.codfull.Lines.Add('</html>');
 
   {  EXPORTAÇÃO  }
  full := TStringList.Create;

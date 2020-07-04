@@ -47,17 +47,13 @@ var
 begin            
   countMod := countMod + 1;
 
-  linhas:= modau.lines.Count;
-
-  codMods.Lines.Add('<div class="modbox"> Módulo ' + IntToStr(countMod - 1) + ' <br /> <h2>' + modname.Text + '</h2>');
-  codMods.Lines.Add('<div class="aulas"> <b>');
+  linhas:= modau.lines.Count - 1;
+  codMods.Lines.Add('<div class="modbox"> Módulo ' + IntToStr(countMod - 1) + ' <h2>' + modname.Text + '</h2>');
+  codMods.Lines.Add('<p class="aulas">');
   for countLinhas:= 0 to linhas do
-  begin            
-  codMods.Lines.Add('<br />');
-  codMods.Lines.Add(modau.Lines[countLinhas]);
-  end;            
-  codMods.Lines.Add('</b>');
-  codMods.Lines.Add('</div>');
+  begin
+  codMods.Lines.Add('<br />  <b>' + modau.Lines[countLinhas] + '</b>');
+  end;
   codMods.Lines.Add('</div>');
 
   txt1.Caption:= 'Nome do Módulo ' + IntToStr(countMod);

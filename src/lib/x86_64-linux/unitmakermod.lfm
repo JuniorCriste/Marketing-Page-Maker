@@ -76,6 +76,7 @@ object MakerMod: TMakerMod
     ReadOnly = True
     TabOrder = 3
     Visible = False
+    WordWrap = False
   end
   object txt1: TLabel
     Left = 16

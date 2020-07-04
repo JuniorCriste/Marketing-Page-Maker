@@ -99,7 +99,7 @@ object Maker: TMaker
     Top = 365
     Width = 193
     TabOrder = 4
-    Text = '7'
+    Text = '7 dias'
     TextHint = 'Sem Garantia'
   end
   object Label8: TLabel
@@ -482,6 +482,11 @@ object Maker: TMaker
       'text-align: justify;'
       '}'
       ''
+      '#garantia{'
+      'width: 70%;'
+      'text-align: justify;'
+      '}'
+      ''
       '#valor{'
       'font-size: 125%;'
       '}'
@@ -528,8 +533,6 @@ object Maker: TMaker
       'text-align: justify;'
       'margin-left: 10px;'
       'margin-right: 10px;'
-      'font-size: 15px;'
-      'font-weight: bold; '
       '}'
       ''
       '#modulos:hover div {'
