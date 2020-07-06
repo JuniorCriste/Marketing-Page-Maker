@@ -16,6 +16,10 @@ object codfonte: Tcodfonte
     Align = alBottom
     ClientHeight = 45
     ClientWidth = 856
+    Color = 3682854
+    Font.Color = clCream
+    ParentColor = False
+    ParentFont = False
     TabOrder = 0
     object copycode: TButton
       Left = 8
@@ -35,6 +39,8 @@ object codfonte: Tcodfonte
     Caption = 'pn1'
     ClientHeight = 464
     ClientWidth = 856
+    Color = 15177593
+    ParentColor = False
     TabOrder = 1
     object AllCode: TMemo
       Left = 1
@@ -43,8 +49,10 @@ object codfonte: Tcodfonte
       Width = 854
       Align = alClient
       BorderStyle = bsNone
-      Color = 16763323
-      Font.Color = clNavy
+      Color = 3549952
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Style = [fsItalic]
       ParentFont = False
       ScrollBars = ssAutoVertical
       TabOrder = 0
