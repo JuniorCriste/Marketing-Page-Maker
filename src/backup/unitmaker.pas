@@ -17,6 +17,8 @@ type
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
+    PosIMG: TEdit;
+    PreIMG: TEdit;
     selectWall: TButton;
     estilo: TMemo;
     ncurso: TEdit;
@@ -59,9 +61,13 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure MenuItem15Click(Sender: TObject);
     procedure MenuItem16Click(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
+    procedure PosIMGChange(Sender: TObject);
+    procedure PreIMGChange(Sender: TObject);
     procedure selectWallClick(Sender: TObject);
   private
 
@@ -71,9 +77,9 @@ type
 
 var
   Maker: TMaker;
-
+  WallpaperAdress : string;
 implementation
-uses LCLIntf, UnitMakerMod, unitwallpaper, unitsMod;
+uses LCLIntf, UnitMakerMod, unitwallpaper, unitsMod, unitviewcode;
 
 
 
@@ -87,6 +93,7 @@ procedure exportar;
   full: TStringList;
   embedyt: string;
   ini, fin: integer;
+
 begin
  ini:= 1;
  fin:= length(maker.video.Text) - 11;
@@ -108,6 +115,14 @@ begin
   {  ESTILO  }
 
   maker.codfull.Lines.Add('<style>');
+
+  maker.codfull.Lines.Add('body{ ');
+  maker.codfull.Lines.Add('background-repeat: no-repeat;');
+  maker.codfull.Lines.Add('background-attachment: fixed;');
+  maker.codfull.Lines.Add('background-color: #0d0d0d;');
+  maker.codfull.Lines.Add('background-size: 100%;');
+  maker.codfull.Lines.Add( WallpaperAdress);
+
   maker.codfull.Lines.Add(maker.estilo.text);
   maker.codfull.Lines.Add('</style>');
 
@@ -143,7 +158,7 @@ begin
   {  EXPORTAÇÃO  }
  full := TStringList.Create;
  full.Add(maker.codfull.Text);
- full.SaveToFile('previsualizacao.htm');
+ full.SaveToFile('pre665.htm');
  finally
    full.Free;
  end;
@@ -155,9 +170,21 @@ begin
 
 end;
 
+procedure TMaker.PosIMGChange(Sender: TObject);
+begin
+
+end;
+
+procedure TMaker.PreIMGChange(Sender: TObject);
+begin
+
+end;
+
+
 procedure TMaker.selectWallClick(Sender: TObject);
 begin
   wallpaper.Show;
+  wallpaper.Visible:=true;
   maker.visible:= false
 end;
 
@@ -170,7 +197,7 @@ begin
   try
   full.Add('<a href="' + container1.Text + '" target="_blank"> Visitar Site </a>');
 
-  full.SaveToFile('previsualizacao.htm');
+  full.SaveToFile('pre665.htm');
   finally
     full.Free;
   end;
@@ -185,18 +212,34 @@ end;
 
 procedure TMaker.Button2Click(Sender: TObject);
 begin
+  WallpaperAdress := PreIMG.text + NameIMG + PosIMG.text;
   exportar;
-  OpenURL('previsualizacao.htm');
+  OpenURL('pre665.htm');
 end;
 
 procedure TMaker.Button3Click(Sender: TObject);
-begin
+begin               
+ WallpaperAdress := PreIMG.text + NameIMG + PosIMG.text;
  exportar;
 end;
+
+
+procedure TMaker.FormCreate(Sender: TObject);
+begin
+ sMod.visible:= false;
+end;
+
 
 procedure TMaker.FormShow(Sender: TObject);
 begin
  sMod.visible:= false;
+end;
+
+procedure TMaker.MenuItem15Click(Sender: TObject);
+begin
+  exportar;
+  codfonte.AllCode.Lines.LoadFromFile('pre665.htm');
+  codfonte.Show;
 end;
 
 

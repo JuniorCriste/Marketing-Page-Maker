@@ -30,7 +30,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="5">
+    <Units Count="6">
       <Unit0>
         <Filename Value="mpm.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -61,8 +61,15 @@
         <Filename Value="unitwallpaper.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="wallpaper"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit4>
+      <Unit5>
+        <Filename Value="unitviewcode.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="codfonte"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit5>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

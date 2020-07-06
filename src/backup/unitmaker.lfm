@@ -1,19 +1,20 @@
 object Maker: TMaker
-  Left = 340
-  Height = 536
+  Left = 155
+  Height = 579
   Top = 132
-  Width = 922
-  HorzScrollBar.Page = 910
-  VertScrollBar.Page = 496
+  Width = 1130
+  HorzScrollBar.Page = 1118
+  VertScrollBar.Page = 539
   AutoScroll = True
   Caption = 'Configure as propriedades da sua página'
-  ClientHeight = 496
-  ClientWidth = 910
+  ClientHeight = 539
+  ClientWidth = 1118
   Color = 2949120
   Font.Color = 13553358
   Font.Height = -21
   Font.Name = 'Sans'
   Menu = topmenu
+  OnCreate = FormCreate
   OnShow = FormShow
   Position = poDesktopCenter
   LCLVersion = '1.8.2.0'
@@ -414,15 +415,6 @@ object Maker: TMaker
     Top = 105
     Width = 109
     Lines.Strings = (
-      'body{'
-      'background-image: url(''https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/fundo.jpg'');'
-      'background-repeat: no-repeat;'
-      'background-attachment: fixed;'
-      'background-color: #0d0d0d;'
-      'background-size: 100%;'
-      '}'
-      ''
-      ''
       '#topo{'
       'width: 100%;'
       'text-align: center;'
@@ -433,9 +425,10 @@ object Maker: TMaker
       'width: 100%;'
       'text-align: center;'
       'font-size: 50px;'
-      'color: white;'
+      'color: #f6f7e4;'
       'text-transform: uppercase;'
       'font-weight: bold; '
+      'text-shadow: 2px 2px 4px black;'
       '}'
       ''
       '#videoyt{'
@@ -562,6 +555,26 @@ object Maker: TMaker
     OnClick = selectWallClick
     TabOrder = 14
   end
+  object PreIMG: TEdit
+    Left = 500
+    Height = 49
+    Top = 15
+    Width = 52
+    OnChange = PreIMGChange
+    TabOrder = 15
+    Text = 'background-image: url(''https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/wallpaper/'
+    Visible = False
+  end
+  object PosIMG: TEdit
+    Left = 501
+    Height = 49
+    Top = 68
+    Width = 52
+    OnChange = PosIMGChange
+    TabOrder = 16
+    Text = '.jpg''); }'
+    Visible = False
+  end
   object topmenu: TMainMenu
     left = 16
     top = 528
@@ -584,6 +597,7 @@ object Maker: TMaker
       end
       object MenuItem15: TMenuItem
         Caption = 'Ver Código'
+        OnClick = MenuItem15Click
       end
       object MenuItem16: TMenuItem
         Caption = 'Exportar Arquivo *htm'
