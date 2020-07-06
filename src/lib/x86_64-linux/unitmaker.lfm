@@ -1,14 +1,14 @@
 object Maker: TMaker
-  Left = 366
+  Left = 340
   Height = 536
-  Top = 174
-  Width = 744
-  HorzScrollBar.Page = 732
+  Top = 132
+  Width = 922
+  HorzScrollBar.Page = 910
   VertScrollBar.Page = 496
   AutoScroll = True
   Caption = 'Configure as propriedades da sua página'
   ClientHeight = 496
-  ClientWidth = 732
+  ClientWidth = 910
   Color = 2949120
   Font.Color = 13553358
   Font.Height = -21
@@ -123,7 +123,7 @@ object Maker: TMaker
     Left = 30
     Height = 248
     Hint = 'Descreva aqui seu curso'#10#10'Fale a temática'#10'Fale o público alvo'#10'Fale dos benefícios'#10'Fale das formas de pagamento'
-    Top = 280
+    Top = 264
     Width = 360
     Lines.Strings = (
       'O Curso *** é o mais completo do segmento, com módulos bem preenchidos, onde o aluno aprende cada detalhe.'
@@ -552,6 +552,15 @@ object Maker: TMaker
     ReadOnly = True
     TabOrder = 13
     Visible = False
+  end
+  object selectWall: TButton
+    Left = 30
+    Height = 49
+    Top = 520
+    Width = 360
+    Caption = 'Selecione um Fundo'
+    OnClick = selectWallClick
+    TabOrder = 14
   end
   object topmenu: TMainMenu
     left = 16

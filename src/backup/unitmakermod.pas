@@ -49,12 +49,12 @@ begin
 
   linhas:= modau.lines.Count - 1;
   codMods.Lines.Add('<div class="modbox"> Módulo ' + IntToStr(countMod - 1) + ' <h2>' + modname.Text + '</h2>');
-  codMods.Lines.Add('<div class="aulas">');
-  for countLinhas:= 1 to linhas do
+  codMods.Lines.Add('<p class="aulas">');
+  for countLinhas:= 0 to linhas do
   begin
   codMods.Lines.Add('<br />  <b>' + modau.Lines[countLinhas] + '</b>');
   end;
-  codMods.Lines.Add('</div> </div>');
+  codMods.Lines.Add('</div>');
 
   txt1.Caption:= 'Nome do Módulo ' + IntToStr(countMod);
   txt2.Caption:= 'Aulas do Módulo ' + IntToStr(countMod);

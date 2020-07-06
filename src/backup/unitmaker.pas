@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
-  ExtCtrls, Menus, StdCtrls, Buttons, UnitMakerMod, StrUtils;
+  ExtCtrls, Menus, StdCtrls, Buttons, StrUtils;
 
 type
 
@@ -17,6 +17,7 @@ type
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
+    selectWall: TButton;
     estilo: TMemo;
     ncurso: TEdit;
     valor: TEdit;
@@ -61,6 +62,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure MenuItem16Click(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
+    procedure selectWallClick(Sender: TObject);
   private
 
   public
@@ -71,7 +73,7 @@ var
   Maker: TMaker;
 
 implementation
-uses LCLIntf;
+uses LCLIntf, UnitMakerMod, unitwallpaper, unitsMod;
 
 
 
@@ -132,7 +134,7 @@ begin
   maker.codfull.Lines.Add(' <br />');
   maker.codfull.Lines.Add('<form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero"> QUERO COMEÇAR JÁ! </button></form>');
   maker.codfull.Lines.Add(' <br />');
-  maker.codfull.Lines.Add('</center><div id="garantia"> O nosso método conta com garantia e satisfação, ou seja, você tem ' + maker.garantia.Text + ' para se decidir, se ainda achar que o treinamento não é para você, basta pedir reembolso e devolverei integralmente seu dinheiro. Sem perguntas e questionamentos. </div> </center>');
+  maker.codfull.Lines.Add('<center><div id="garantia"> O nosso método conta com garantia e satisfação, ou seja, você tem ' + maker.garantia.Text + ' para se decidir, se ainda achar que o treinamento não é para você, basta pedir reembolso e devolverei integralmente seu dinheiro. Sem perguntas e questionamentos. </div> </center>');
   maker.codfull.Lines.Add(' <br />');
   maker.codfull.Lines.Add('</div>');           {fim do meio}
   maker.codfull.Lines.Add('</body> ');
@@ -151,6 +153,12 @@ begin
 procedure TMaker.MenuItem1Click(Sender: TObject);
 begin
 
+end;
+
+procedure TMaker.selectWallClick(Sender: TObject);
+begin
+  wallpaper.Show;
+  maker.visible:= false
 end;
 
 procedure TMaker.MenuItem16Click(Sender: TObject);
@@ -174,6 +182,7 @@ begin
   MakerMod.show;
 end;
 
+
 procedure TMaker.Button2Click(Sender: TObject);
 begin
   exportar;
@@ -187,6 +196,7 @@ end;
 
 procedure TMaker.FormShow(Sender: TObject);
 begin
+ sMod.visible:= false;
 end;
 
 

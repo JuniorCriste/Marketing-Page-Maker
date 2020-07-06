@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
-  ExtCtrls, Menus, StdCtrls, Buttons, UnitMakerMod, StrUtils;
+  ExtCtrls, Menus, StdCtrls, Buttons, StrUtils;
 
 type
 
@@ -17,6 +17,7 @@ type
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
+    selectWall: TButton;
     estilo: TMemo;
     ncurso: TEdit;
     valor: TEdit;
@@ -61,6 +62,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure MenuItem16Click(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
+    procedure selectWallClick(Sender: TObject);
   private
 
   public
@@ -71,7 +73,7 @@ var
   Maker: TMaker;
 
 implementation
-uses LCLIntf;
+uses LCLIntf, UnitMakerMod, unitwallpaper, unitsMod;
 
 
 
@@ -153,6 +155,13 @@ begin
 
 end;
 
+procedure TMaker.selectWallClick(Sender: TObject);
+begin
+  wallpaper.Show;
+  wallpaper.Visible:=true;
+  maker.visible:= false
+end;
+
 procedure TMaker.MenuItem16Click(Sender: TObject);
 var
   full: TStringList;
@@ -174,6 +183,7 @@ begin
   MakerMod.show;
 end;
 
+
 procedure TMaker.Button2Click(Sender: TObject);
 begin
   exportar;
@@ -187,6 +197,7 @@ end;
 
 procedure TMaker.FormShow(Sender: TObject);
 begin
+ sMod.visible:= false;
 end;
 
 
