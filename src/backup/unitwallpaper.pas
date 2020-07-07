@@ -48,7 +48,7 @@ type
 
 var
   wallpaper: Twallpaper;
-  public NameIMG: string;
+  NameIMG: string;
 
 implementation
 uses unitmaker;

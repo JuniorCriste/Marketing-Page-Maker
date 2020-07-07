@@ -61,6 +61,7 @@ begin
 
   if countMod > StrToInt(Maker.Qmod.Text) then
   begin
+    Maker.Visible:=true;
     MakerMod.Close;
   end;
 

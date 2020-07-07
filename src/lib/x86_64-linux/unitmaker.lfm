@@ -1,15 +1,15 @@
 object Maker: TMaker
-  Left = 155
-  Height = 579
-  Top = 132
-  Width = 1130
-  HorzScrollBar.Page = 1118
-  VertScrollBar.Page = 539
+  Left = 262
+  Height = 658
+  Top = 30
+  Width = 1082
+  HorzScrollBar.Page = 1082
+  VertScrollBar.Page = 578
   AutoScroll = True
   Caption = 'Configure as propriedades da sua página'
-  ClientHeight = 539
-  ClientWidth = 1118
-  Color = 2949120
+  ClientHeight = 618
+  ClientWidth = 1082
+  Color = 1966080
   Font.Color = 13553358
   Font.Height = -21
   Font.Name = 'Sans'
@@ -22,142 +22,190 @@ object Maker: TMaker
   object StatusBar1: TStatusBar
     Left = 0
     Height = 18
-    Top = 601
+    Top = 600
     Width = 1226
     Panels = <>
   end
   object Label1: TLabel
-    Left = 24
-    Height = 25
+    Left = 30
+    Height = 24
     Top = 141
-    Width = 288
-    Caption = 'Qual o nome do seu curso?'
+    Width = 275
+    Caption = 'Qual o nome do seu produto?'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Manjari'
     ParentColor = False
+    ParentFont = False
   end
   object ncurso: TEdit
     Left = 30
-    Height = 49
+    Height = 52
     Top = 168
     Width = 360
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentFont = False
     TabOrder = 1
     Text = 'Curso de Produção'
     TextHint = 'Nome do Curso'
   end
   object Label2: TLabel
     Left = 30
-    Height = 25
-    Top = 240
-    Width = 368
-    Caption = 'Descreva seu curso para o cliente:'
+    Height = 24
+    Top = 232
+    Width = 224
+    Caption = 'Descreva ele ao cliente:'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Manjari'
     ParentColor = False
+    ParentFont = False
   end
   object Label5: TLabel
     Left = 440
-    Height = 25
+    Height = 48
     Top = 141
-    Width = 453
-    Caption = 'Valor do Produto (Deixe vazio se for grátis)'
+    Width = 185
+    Caption = 'Valor do Produto '#10'(Vazio se for grátis)'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Manjari'
     ParentColor = False
+    ParentFont = False
   end
   object valor: TEdit
-    Left = 449
-    Height = 49
-    Top = 170
-    Width = 125
+    Left = 440
+    Height = 52
+    Top = 192
+    Width = 206
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    NumbersOnly = True
+    ParentFont = False
     TabOrder = 2
     Text = '97,00'
     TextHint = 'Grátis'
   end
   object Label6: TLabel
-    Left = 446
-    Height = 25
-    Top = 240
-    Width = 387
+    Left = 440
+    Height = 24
+    Top = 256
+    Width = 340
     Caption = 'Link para vídeo do Youtube (se tiver)'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Manjari'
     ParentColor = False
+    ParentFont = False
   end
   object video: TEdit
-    Left = 455
-    Height = 49
-    Top = 269
-    Width = 461
+    Left = 440
+    Height = 52
+    Top = 285
+    Width = 476
     Color = 15298024
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentFont = False
     TabOrder = 3
     Text = 'https://www.youtube.com/watch?v=31nEM5PIG2g'
     TextHint = 'Link do Youtube'
   end
   object Label7: TLabel
-    Left = 446
-    Height = 25
-    Top = 336
-    Width = 424
-    Caption = 'Tem Garantia? (se não tiver deixe vazio)'
+    Left = 680
+    Height = 48
+    Top = 141
+    Width = 191
+    Caption = 'Tem Garantia? '#10'(Senão, deixe limpo)'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Manjari'
     ParentColor = False
+    ParentFont = False
   end
   object garantia: TEdit
-    Left = 455
-    Height = 49
-    Top = 365
-    Width = 193
+    Left = 680
+    Height = 52
+    Top = 192
+    Width = 215
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentFont = False
     TabOrder = 4
     Text = '7 dias'
     TextHint = 'Sem Garantia'
   end
   object Label8: TLabel
-    Left = 452
-    Height = 25
-    Top = 435
-    Width = 350
+    Left = 32
+    Height = 24
+    Top = 496
+    Width = 319
     Caption = 'Quantos Módulos tem seu curso?'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Manjari'
     ParentColor = False
-  end
-  object Qmod: TEdit
-    Left = 461
-    Height = 49
-    Top = 464
-    Width = 155
-    TabOrder = 5
-    Text = '5'
-    TextHint = 'Sem Módulos'
+    ParentFont = False
   end
   object descricao: TMemo
     Left = 30
-    Height = 248
+    Height = 168
     Hint = 'Descreva aqui seu curso'#10#10'Fale a temática'#10'Fale o público alvo'#10'Fale dos benefícios'#10'Fale das formas de pagamento'
-    Top = 264
+    Top = 256
     Width = 360
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
     Lines.Strings = (
       'O Curso *** é o mais completo do segmento, com módulos bem preenchidos, onde o aluno aprende cada detalhe.'
       'Tudo isso em até 7x no cartão!'
       'Aproveite já!'
     )
-    TabOrder = 6
+    ParentFont = False
+    TabOrder = 5
   end
   object Label9: TLabel
-    Left = 464
-    Height = 25
-    Top = 541
-    Width = 166
+    Left = 440
+    Height = 24
+    Top = 344
+    Width = 144
     Caption = 'Link de Compra'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Manjari'
     ParentColor = False
+    ParentFont = False
   end
   object linkvenda: TEdit
-    Left = 473
-    Height = 49
-    Top = 570
-    Width = 455
-    TabOrder = 7
+    Left = 440
+    Height = 52
+    Top = 373
+    Width = 461
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentFont = False
+    TabOrder = 6
     Text = 'www.linkdaminhacompra.com.br/asdn'
     TextHint = 'Link para a compra'
   end
-  object Button1: TButton
-    Left = 624
-    Height = 49
-    Top = 464
-    Width = 304
+  object OpenMM: TButton
+    Left = 152
+    Height = 53
+    Top = 525
+    Width = 238
     Caption = 'Configurar Módulos'
-    OnClick = Button1Click
-    TabOrder = 8
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    OnClick = OpenMMClick
+    ParentFont = False
+    TabOrder = 7
   end
   object Button2: TButton
     Left = 976
@@ -165,11 +213,12 @@ object Maker: TMaker
     Top = 136
     Width = 250
     Caption = 'Visualizar no Navegador'
-    Font.Height = -16
-    Font.Name = 'Sans'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
     OnClick = Button2Click
     ParentFont = False
-    TabOrder = 9
+    TabOrder = 8
   end
   object Button3: TButton
     Left = 976
@@ -177,11 +226,12 @@ object Maker: TMaker
     Top = 184
     Width = 250
     Caption = 'Exportar *htm'
-    Font.Height = -16
-    Font.Name = 'Sans'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
     OnClick = Button3Click
     ParentFont = False
-    TabOrder = 10
+    TabOrder = 9
   end
   object Button4: TButton
     Left = 976
@@ -189,10 +239,11 @@ object Maker: TMaker
     Top = 232
     Width = 250
     Caption = 'Zerar Modelo'
-    Font.Height = -16
-    Font.Name = 'Sans'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
     ParentFont = False
-    TabOrder = 11
+    TabOrder = 10
   end
   object p1: TImage
     Left = 22
@@ -398,7 +449,7 @@ object Maker: TMaker
   end
   object codfull: TMemo
     Left = 384
-    Height = 90
+    Height = 48
     Top = 8
     Width = 108
     Font.Color = 13553358
@@ -406,14 +457,14 @@ object Maker: TMaker
     Font.Name = 'Sans'
     ParentFont = False
     ReadOnly = True
-    TabOrder = 12
+    TabOrder = 11
     Visible = False
   end
   object estilo: TMemo
     Left = 385
     Height = 36
-    Top = 105
-    Width = 109
+    Top = 56
+    Width = 107
     Lines.Strings = (
       '#topo{'
       'width: 100%;'
@@ -543,17 +594,21 @@ object Maker: TMaker
       '*/'
     )
     ReadOnly = True
-    TabOrder = 13
+    TabOrder = 12
     Visible = False
   end
   object selectWall: TButton
-    Left = 30
+    Left = 32
     Height = 49
-    Top = 520
+    Top = 432
     Width = 360
     Caption = 'Selecione um Fundo'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
     OnClick = selectWallClick
-    TabOrder = 14
+    ParentFont = False
+    TabOrder = 13
   end
   object PreIMG: TEdit
     Left = 500
@@ -561,7 +616,7 @@ object Maker: TMaker
     Top = 15
     Width = 52
     OnChange = PreIMGChange
-    TabOrder = 15
+    TabOrder = 14
     Text = 'background-image: url(''https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/wallpaper/'
     Visible = False
   end
@@ -571,13 +626,53 @@ object Maker: TMaker
     Top = 68
     Width = 52
     OnChange = PosIMGChange
-    TabOrder = 16
+    TabOrder = 15
     Text = '.jpg''); }'
     Visible = False
   end
+  object Label10: TLabel
+    Left = 440
+    Height = 24
+    Top = 440
+    Width = 293
+    Caption = 'Todos os direitos reservados a'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Manjari'
+    ParentColor = False
+    ParentFont = False
+  end
+  object autoria: TEdit
+    Left = 442
+    Height = 52
+    Top = 469
+    Width = 462
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    OnChange = autoriaChange
+    ParentFont = False
+    TabOrder = 16
+    Text = 'Seu nome ou responsável'
+    TextHint = 'Link para a compra'
+  end
+  object Qmod: TFloatSpinEdit
+    Left = 32
+    Height = 53
+    Top = 525
+    Width = 112
+    AutoSize = False
+    DecimalPlaces = 0
+    Increment = 1
+    MaxValue = 1000
+    MinValue = 0
+    OnChange = QmodChange
+    TabOrder = 17
+    Value = 3
+  end
   object topmenu: TMainMenu
-    left = 16
-    top = 528
+    left = 336
+    top = 32
     object MenuItem1: TMenuItem
       Caption = 'Arquivo'
       object MenuItem2: TMenuItem

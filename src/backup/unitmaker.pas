@@ -6,17 +6,20 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
-  ExtCtrls, Menus, StdCtrls, Buttons, StrUtils;
+  ExtCtrls, Menus, StdCtrls, Buttons, Spin, StrUtils;
 
 type
 
   { TMaker }
 
   TMaker = class(TForm)
-    Button1: TButton;
+    OpenMM: TButton;
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
+    Qmod: TFloatSpinEdit;
+    Label10: TLabel;
+    autoria: TEdit;
     PosIMG: TEdit;
     PreIMG: TEdit;
     selectWall: TButton;
@@ -29,7 +32,6 @@ type
     p1: TImage;
     p2: TImage;
     p3: TImage;
-    Qmod: TEdit;
     linkvenda: TEdit;
     Label1: TLabel;
     Label2: TLabel;
@@ -58,7 +60,8 @@ type
     MenuItem9: TMenuItem;
     topmenu: TMainMenu;
     StatusBar1: TStatusBar;
-    procedure Button1Click(Sender: TObject);
+    procedure autoriaChange(Sender: TObject);
+    procedure OpenMMClick(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -68,6 +71,7 @@ type
     procedure MenuItem1Click(Sender: TObject);
     procedure PosIMGChange(Sender: TObject);
     procedure PreIMGChange(Sender: TObject);
+    procedure QmodChange(Sender: TObject);
     procedure selectWallClick(Sender: TObject);
   private
 
@@ -142,16 +146,27 @@ begin
   maker.codfull.Lines.Add('<div id="meio">');  {começo do meio}
   maker.codfull.Lines.Add(' <br />');
   maker.codfull.Lines.Add('<center> <div id="descricao"> '+ maker.descricao.Text +' </div> </center>');
-  maker.codfull.Lines.Add(' <br />');
+  maker.codfull.Lines.Add(' <br />');        
+  if (maker.valor.Text <> '') and  (maker.valor.Text <> ' ')  then
+  begin
   maker.codfull.Lines.Add('<div id="valor">Apenas por R$' + maker.valor.Text + '! </div>');
   maker.codfull.Lines.Add(' <br />');
+  end else
+  begin
+  maker.codfull.Lines.Add('<div id="valor">Aproveite, gratis! </div>');
+  maker.codfull.Lines.Add(' <br />');
+  end;
   maker.codfull.Lines.Add('<div id="modulos"> ' + MakerMod.codMods.Text + ' </div>');
   maker.codfull.Lines.Add(' <br />');
   maker.codfull.Lines.Add('<form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero"> QUERO COMEÇAR JÁ! </button></form>');
   maker.codfull.Lines.Add(' <br />');
+  if (maker.garantia.Text <> '') and  (maker.garantia.Text <> ' ')  then
+  begin
   maker.codfull.Lines.Add('<center><div id="garantia"> O nosso método conta com garantia e satisfação, ou seja, você tem ' + maker.garantia.Text + ' para se decidir, se ainda achar que o treinamento não é para você, basta pedir reembolso e devolverei integralmente seu dinheiro. Sem perguntas e questionamentos. </div> </center>');
   maker.codfull.Lines.Add(' <br />');
+  end;
   maker.codfull.Lines.Add('</div>');           {fim do meio}
+  maker.codfull.Lines.Add(' Todos os direitos reservados a ' + maker.autoria.text + '.');
   maker.codfull.Lines.Add('</body> ');
   maker.codfull.Lines.Add('</html>');
 
@@ -180,6 +195,17 @@ begin
 
 end;
 
+procedure TMaker.QmodChange(Sender: TObject);
+begin
+  if Qmod.Value < 1 then
+  begin
+    OpenMM.Enabled:= false;
+    end else
+    begin
+    OpenMM.Enabled:= true;
+  end;
+end;
+
 
 procedure TMaker.selectWallClick(Sender: TObject);
 begin
@@ -204,9 +230,16 @@ begin
   }
   end;
 
-procedure TMaker.Button1Click(Sender: TObject);
+procedure TMaker.OpenMMClick(Sender: TObject);
 begin
   MakerMod.show;
+  MakerMod.Visible:= true;
+  maker.Visible:=false;
+end;
+
+procedure TMaker.autoriaChange(Sender: TObject);
+begin
+
 end;
 
 
@@ -237,6 +270,7 @@ end;
 
 procedure TMaker.MenuItem15Click(Sender: TObject);
 begin
+ codfonte.AllCode.Clear;
   exportar;
   codfonte.AllCode.Lines.LoadFromFile('pre665.htm');
   codfonte.Show;

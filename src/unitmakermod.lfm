@@ -7,8 +7,10 @@ object MakerMod: TMakerMod
   Caption = 'Editor de Módulos...'
   ClientHeight = 388
   ClientWidth = 476
+  Color = 2949120
   Font.Height = -20
   Font.Name = 'Sans'
+  FormStyle = fsStayOnTop
   OnCreate = FormCreate
   OnShow = FormShow
   Position = poDesktopCenter
