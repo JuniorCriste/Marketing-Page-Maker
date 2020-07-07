@@ -261,15 +261,15 @@ end;
 
 procedure TMaker.corbotaoClick(Sender: TObject);
 begin
-  try
-  coratual := ColorToRGB(cores.Color);
-  finally
-    begin
-    showmessage( '#'+ IntToHex(Red(coratual), 2)+ IntToHex(Green(coratual), 2)+ IntToHex(Blue(coratual), 2) );
-    end;
+ if cores.Execute then
+ begin
+  coratual := ColorToRGB(corbotao.Color);
+  showmessage( '#'+ IntToHex(Red(coratual), 2)+
+  IntToHex(Green(coratual), 2)+
+  IntToHex(Blue(coratual), 2) );
   end;
-end;
 
+  end;
 
 procedure TMaker.Button2Click(Sender: TObject);
 begin
