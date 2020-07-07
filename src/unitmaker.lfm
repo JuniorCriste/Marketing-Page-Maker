@@ -43,6 +43,8 @@ object Maker: TMaker
     Height = 52
     Top = 168
     Width = 360
+    AutoSize = False
+    BorderStyle = bsNone
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
@@ -80,6 +82,8 @@ object Maker: TMaker
     Height = 52
     Top = 192
     Width = 206
+    AutoSize = False
+    BorderStyle = bsNone
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
@@ -105,15 +109,16 @@ object Maker: TMaker
     Left = 440
     Height = 52
     Top = 285
-    Width = 476
-    Color = 15298024
+    Width = 455
+    AutoSize = False
+    BorderStyle = bsNone
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
     TabOrder = 3
     Text = 'https://www.youtube.com/watch?v=31nEM5PIG2g'
-    TextHint = 'Link do Youtube'
+    TextHint = 'Link do Youtube com o https://'
   end
   object Label7: TLabel
     Left = 680
@@ -132,6 +137,8 @@ object Maker: TMaker
     Height = 52
     Top = 192
     Width = 215
+    AutoSize = False
+    BorderStyle = bsNone
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
@@ -158,6 +165,7 @@ object Maker: TMaker
     Hint = 'Descreva aqui seu curso'#10#10'Fale a temática'#10'Fale o público alvo'#10'Fale dos benefícios'#10'Fale das formas de pagamento'
     Top = 256
     Width = 360
+    BorderStyle = bsNone
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
@@ -185,14 +193,16 @@ object Maker: TMaker
     Left = 440
     Height = 52
     Top = 373
-    Width = 461
+    Width = 352
+    AutoSize = False
+    BorderStyle = bsNone
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
     TabOrder = 6
-    Text = 'www.linkdaminhacompra.com.br/asdn'
-    TextHint = 'Link para a compra'
+    Text = 'https://www.linkdacompra.com.br'
+    TextHint = 'Link para a compra com o https://'
   end
   object OpenMM: TButton
     Left = 152
@@ -242,6 +252,7 @@ object Maker: TMaker
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
+    OnClick = Button4Click
     ParentFont = False
     TabOrder = 10
   end
@@ -643,10 +654,12 @@ object Maker: TMaker
     ParentFont = False
   end
   object autoria: TEdit
-    Left = 442
+    Left = 440
     Height = 52
     Top = 469
-    Width = 462
+    Width = 455
+    AutoSize = False
+    BorderStyle = bsNone
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
@@ -669,6 +682,32 @@ object Maker: TMaker
     OnChange = QmodChange
     TabOrder = 17
     Value = 3
+  end
+  object criadocom: TCheckBoxThemed
+    Left = 440
+    Height = 28
+    Top = 536
+    Width = 354
+    Caption = '"Criado com Marketing Page Maker"'
+    Checked = True
+    Font.Color = 13553358
+    Font.Height = -21
+    Font.Name = 'Manjari'
+    ParentFont = False
+    State = cbChecked
+    TabOrder = 18
+  end
+  object corbotao: TColorButton
+    Left = 792
+    Height = 52
+    Top = 373
+    Width = 104
+    BorderWidth = 0
+    ButtonColorSize = 16
+    ButtonColor = 7578909
+    Layout = blGlyphTop
+    Margin = 0
+    OnClick = corbotaoClick
   end
   object topmenu: TMainMenu
     left = 336
@@ -726,5 +765,32 @@ object Maker: TMaker
         Caption = 'Reportar Bug'
       end
     end
+  end
+  object cores: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 336
+    top = 64
   end
 end

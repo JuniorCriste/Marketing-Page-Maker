@@ -5,14 +5,18 @@ unit unitmaker;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
-  ExtCtrls, Menus, StdCtrls, Buttons, Spin, StrUtils;
+  Classes, SysUtils, FileUtil, CheckBoxThemed, RTTICtrls, Forms, Controls,
+  Graphics, Dialogs, ComCtrls, ExtCtrls, Menus, StdCtrls, Buttons, Spin,
+  StrUtils;
 
 type
 
   { TMaker }
 
   TMaker = class(TForm)
+    corbotao: TColorButton;
+    cores: TColorDialog;
+    criadocom: TCheckBoxThemed;
     OpenMM: TButton;
     Button2: TButton;
     Button3: TButton;
@@ -61,6 +65,8 @@ type
     topmenu: TMainMenu;
     StatusBar1: TStatusBar;
     procedure autoriaChange(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure corbotaoClick(Sender: TObject);
     procedure OpenMMClick(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -82,6 +88,7 @@ type
 var
   Maker: TMaker;
   WallpaperAdress : string;
+  coratual: longInt;
 implementation
 uses LCLIntf, UnitMakerMod, unitwallpaper, unitsMod, unitviewcode;
 
@@ -167,6 +174,11 @@ begin
   end;
   maker.codfull.Lines.Add('</div>');           {fim do meio}
   maker.codfull.Lines.Add(' Todos os direitos reservados a ' + maker.autoria.text + '.');
+  if maker.criadocom.Checked = true then
+  begin
+  maker.codfull.Lines.Add('<br />');
+  maker.codfull.Lines.Add('Criado com <a href="https://informaticode.store/.../MPM" target="_blank">Marketing Page Maker</a>');
+  end;
   maker.codfull.Lines.Add('</body> ');
   maker.codfull.Lines.Add('</html>');
 
@@ -240,6 +252,22 @@ end;
 procedure TMaker.autoriaChange(Sender: TObject);
 begin
 
+end;
+
+procedure TMaker.Button4Click(Sender: TObject);
+begin
+
+end;
+
+procedure TMaker.corbotaoClick(Sender: TObject);
+begin
+  try
+  coratual := ColorToRGB(cores.Color);
+  finally
+    begin
+    showmessage( '#'+ IntToHex(Red(coratual), 2)+ IntToHex(Green(coratual), 2)+ IntToHex(Blue(coratual), 2) );
+    end;
+  end;
 end;
 
 
