@@ -89,6 +89,7 @@ var
   Maker: TMaker;
   WallpaperAdress : string;
   coratual: longInt;
+  coratualS: string;
 implementation
 uses LCLIntf, UnitMakerMod, unitwallpaper, unitsMod, unitviewcode;
 
@@ -191,6 +192,18 @@ begin
  end;
  end;
 
+function PegaCor : string;
+begin
+ coratual := ColorToRGB(maker.corbotao.ButtonColor);
+
+ coratualS:= '#'+ IntToHex(Red(coratual), 2)+
+ IntToHex(Green(coratual), 2)+
+ IntToHex(Blue(coratual), 2) ;
+
+ result:= coratualS;
+end;
+
+
 
 procedure TMaker.MenuItem1Click(Sender: TObject);
 begin
@@ -261,15 +274,12 @@ end;
 
 procedure TMaker.corbotaoClick(Sender: TObject);
 begin
- if cores.Execute then
- begin
-  coratual := ColorToRGB(corbotao.Color);
-  showmessage( '#'+ IntToHex(Red(coratual), 2)+
-  IntToHex(Green(coratual), 2)+
-  IntToHex(Blue(coratual), 2) );
-  end;
-
-  end;
+ try
+ PegaCor();
+  finally
+   button4.Caption:= coratualS;
+ end;
+end;
 
 procedure TMaker.Button2Click(Sender: TObject);
 begin
