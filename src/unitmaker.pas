@@ -274,11 +274,7 @@ end;
 
 procedure TMaker.corbotaoClick(Sender: TObject);
 begin
- try
- PegaCor();
-  finally
-   button4.Caption:= coratualS;
- end;
+  button4.Caption:= pegacor;
 end;
 
 procedure TMaker.Button2Click(Sender: TObject);
