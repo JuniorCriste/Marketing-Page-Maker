@@ -138,6 +138,7 @@ begin
   maker.codfull.Lines.Add( WallpaperAdress);
 
   maker.codfull.Lines.Add(maker.estilo.text);
+  maker.codfull.Lines.Add('.euquero{ bacground-color: ' + coratualS + '; }');
   maker.codfull.Lines.Add('</style>');
 
   maker.codfull.Lines.Add('</head>');

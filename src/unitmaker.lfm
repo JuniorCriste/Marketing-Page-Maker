@@ -20,7 +20,7 @@ object Maker: TMaker
   LCLVersion = '1.8.2.0'
   WindowState = wsMaximized
   object DemoCorBut: TPanel
-    Left = 783
+    Left = 792
     Height = 52
     Top = 373
     Width = 27
@@ -202,7 +202,7 @@ object Maker: TMaker
     Left = 440
     Height = 52
     Top = 373
-    Width = 352
+    Width = 373
     AutoSize = False
     BorderStyle = bsNone
     Font.Color = clWhite
@@ -509,7 +509,6 @@ object Maker: TMaker
       '.euquero{'
       'width: 720px;'
       'height: 100px;'
-      'background-image: linear-gradient(#1da573, #20cc8d,  #1da573);'
       'border: none;'
       'color: #2f3030;'
       'font-size: 19px;'
@@ -522,7 +521,7 @@ object Maker: TMaker
       ''
       '.euquero:hover{'
       'font-size: 20px;'
-      ' box-shadow: 0px 5px 5px 4px black;'
+      'box-shadow: 0px 5px 5px 4px black;'
       '}'
       ''
       ''
@@ -707,12 +706,17 @@ object Maker: TMaker
     TabOrder = 18
   end
   object corbot: TButton
-    Left = 800
+    Left = 816
     Height = 52
+    Hint = 'Cor do botão de compra'
     Top = 373
-    Width = 96
-    Caption = 'COR'
+    Width = 80
+    Caption = 'Cor '
+    Font.Color = 13553358
+    Font.Height = -21
+    Font.Name = 'Roboto'
     OnClick = corbotClick
+    ParentFont = False
     TabOrder = 19
   end
   object topmenu: TMainMenu
