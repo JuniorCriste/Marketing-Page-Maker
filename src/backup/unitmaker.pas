@@ -14,13 +14,14 @@ type
   { TMaker }
 
   TMaker = class(TForm)
-    Button1: TButton;
+    corbot: TButton;
     cores: TColorDialog;
     criadocom: TCheckBoxThemed;
     OpenMM: TButton;
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
+    DemoCorBut: TPanel;
     Qmod: TFloatSpinEdit;
     Label10: TLabel;
     autoria: TEdit;
@@ -65,7 +66,7 @@ type
     topmenu: TMainMenu;
     StatusBar1: TStatusBar;
     procedure autoriaChange(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
+    procedure corbotClick(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure corbotaoClick(Sender: TObject);
     procedure OpenMMClick(Sender: TObject);
@@ -195,9 +196,6 @@ begin
 
 function PegaCor : string;
 begin
- try
- maker.cores.Execute;
- finally
  coratual := ColorToRGB(maker.cores.Color);
 
  coratualS:= '#'+ IntToHex(Red(coratual), 2)+
@@ -205,7 +203,6 @@ begin
  IntToHex(Blue(coratual), 2) ;
 
  result:= coratualS;
- end;
   end;
 
 
@@ -272,9 +269,16 @@ begin
 
 end;
 
-procedure TMaker.Button1Click(Sender: TObject);
+procedure TMaker.corbotClick(Sender: TObject);
 begin
-  button4.Caption:= pegacor;
+try
+ cores.Execute;
+ finally
+   begin
+   DemoCorBut.Color:= cores.Color;
+   pegacor;
+   end;
+ end;
 end;
 
 procedure TMaker.Button4Click(Sender: TObject);

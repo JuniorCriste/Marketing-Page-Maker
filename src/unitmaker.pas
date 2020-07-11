@@ -21,6 +21,7 @@ type
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
+    DemoCorBut: TPanel;
     Qmod: TFloatSpinEdit;
     Label10: TLabel;
     autoria: TEdit;
@@ -195,9 +196,6 @@ begin
 
 function PegaCor : string;
 begin
- try
- maker.cores.Execute;
- finally
  coratual := ColorToRGB(maker.cores.Color);
 
  coratualS:= '#'+ IntToHex(Red(coratual), 2)+
@@ -205,7 +203,6 @@ begin
  IntToHex(Blue(coratual), 2) ;
 
  result:= coratualS;
- end;
   end;
 
 
@@ -274,7 +271,14 @@ end;
 
 procedure TMaker.corbotClick(Sender: TObject);
 begin
-  pegacor;
+try
+ cores.Execute;
+ finally
+   begin
+   DemoCorBut.Color:= cores.Color;
+   pegacor;
+   end;
+ end;
 end;
 
 procedure TMaker.Button4Click(Sender: TObject);

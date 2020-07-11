@@ -19,6 +19,13 @@ object Maker: TMaker
   Position = poDesktopCenter
   LCLVersion = '1.8.2.0'
   WindowState = wsMaximized
+  object DemoCorBut: TPanel
+    Left = 783
+    Height = 53
+    Top = 373
+    Width = 27
+    TabOrder = 20
+  end
   object StatusBar1: TStatusBar
     Left = 0
     Height = 18
@@ -697,13 +704,13 @@ object Maker: TMaker
     State = cbChecked
     TabOrder = 18
   end
-  object Button1: TButton
-    Left = 793
-    Height = 53
-    Top = 374
-    Width = 103
-    Caption = 'Button1'
-    OnClick = Button1Click
+  object corbot: TButton
+    Left = 800
+    Height = 52
+    Top = 373
+    Width = 96
+    Caption = 'COR'
+    OnClick = corbotClick
     TabOrder = 19
   end
   object topmenu: TMainMenu
