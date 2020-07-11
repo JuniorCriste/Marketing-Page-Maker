@@ -31,7 +31,7 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="275"/>
-        <CursorPos X="4" Y="280"/>
+        <CursorPos X="3" Y="277"/>
         <UsageCount Value="50"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -86,7 +86,7 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit7>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="26" HistoryIndex="25">
       <Position1>
         <Filename Value="unitmaker.pas"/>
         <Caret Line="256" Column="3" TopLine="254"/>
@@ -149,64 +149,48 @@
       </Position15>
       <Position16>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="92" Column="21" TopLine="167"/>
+        <Caret Line="272" Column="25" TopLine="260"/>
       </Position16>
       <Position17>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="272" Column="25" TopLine="260"/>
+        <Caret Line="270" Column="2" TopLine="263"/>
       </Position17>
       <Position18>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="277" Column="23" TopLine="287"/>
+        <Caret Line="266" Column="5" TopLine="262"/>
       </Position18>
       <Position19>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="270" Column="2" TopLine="263"/>
+        <Caret Line="202" Column="8" TopLine="185"/>
       </Position19>
       <Position20>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="266" Column="5" TopLine="262"/>
+        <Caret Line="197" Column="25" TopLine="188"/>
       </Position20>
       <Position21>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="202" Column="8" TopLine="185"/>
+        <Caret Line="275" Column="10" TopLine="266"/>
       </Position21>
       <Position22>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="197" Column="25" TopLine="188"/>
+        <Caret Line="274" Column="6" TopLine="270"/>
       </Position22>
       <Position23>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="275" Column="10" TopLine="266"/>
+        <Caret Line="278" Column="24" TopLine="269"/>
       </Position23>
       <Position24>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="195" Column="17" TopLine="231"/>
+        <Caret Line="277" Column="12" TopLine="268"/>
       </Position24>
       <Position25>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="274" Column="6" TopLine="270"/>
+        <Caret Line="199" Column="24" TopLine="189"/>
       </Position25>
       <Position26>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="203" Column="2" TopLine="216"/>
+        <Caret Line="277" Column="28" TopLine="275"/>
       </Position26>
-      <Position27>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="277" Column="27" TopLine="281"/>
-      </Position27>
-      <Position28>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="278" Column="24" TopLine="269"/>
-      </Position28>
-      <Position29>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="277" Column="12" TopLine="268"/>
-      </Position29>
-      <Position30>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="199" Column="24" TopLine="189"/>
-      </Position30>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

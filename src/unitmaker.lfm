@@ -697,17 +697,14 @@ object Maker: TMaker
     State = cbChecked
     TabOrder = 18
   end
-  object corbotao: TColorButton
-    Left = 792
+  object corbot: TButton
+    Left = 793
     Height = 52
     Top = 373
-    Width = 104
-    BorderWidth = 0
-    ButtonColorSize = 16
-    ButtonColor = 7578909
-    Layout = blGlyphTop
-    Margin = 0
-    OnClick = corbotaoClick
+    Width = 103
+    Caption = 'COR'
+    OnClick = corbotClick
+    TabOrder = 19
   end
   object topmenu: TMainMenu
     left = 336
@@ -767,6 +764,8 @@ object Maker: TMaker
     end
   end
   object cores: TColorDialog
+    Width = 590
+    Height = 345
     Color = clBlack
     CustomColors.Strings = (
       'ColorA=000000'
