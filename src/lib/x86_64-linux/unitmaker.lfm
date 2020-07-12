@@ -1,10 +1,10 @@
 object Maker: TMaker
-  Left = 262
+  Left = 281
   Height = 658
-  Top = 30
+  Top = 96
   Width = 1082
   HorzScrollBar.Page = 1082
-  VertScrollBar.Page = 578
+  VertScrollBar.Page = 604
   AutoScroll = True
   Caption = 'Configure as propriedades da sua página'
   ClientHeight = 618
@@ -19,10 +19,19 @@ object Maker: TMaker
   Position = poDesktopCenter
   LCLVersion = '1.8.2.0'
   WindowState = wsMaximized
-  object DemoCorBut: TPanel
-    Left = 792
+  object DemoCorTxt: TPanel
+    Left = 608
     Height = 52
-    Top = 373
+    Top = 400
+    Width = 27
+    Color = 3158063
+    ParentColor = False
+    TabOrder = 22
+  end
+  object DemoCorBut: TPanel
+    Left = 888
+    Height = 52
+    Top = 400
     Width = 27
     Color = 7578909
     ParentColor = False
@@ -32,7 +41,7 @@ object Maker: TMaker
     Left = 0
     Height = 18
     Top = 600
-    Width = 1226
+    Width = 1330
     Panels = <>
   end
   object Label1: TLabel
@@ -58,7 +67,7 @@ object Maker: TMaker
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 0
     Text = 'Curso de Produção'
     TextHint = 'Nome do Curso'
   end
@@ -98,7 +107,7 @@ object Maker: TMaker
     Font.Name = 'Roboto'
     NumbersOnly = True
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 1
     Text = '97,00'
     TextHint = 'Grátis'
   end
@@ -118,19 +127,19 @@ object Maker: TMaker
     Left = 440
     Height = 52
     Top = 285
-    Width = 455
+    Width = 551
     AutoSize = False
     BorderStyle = bsNone
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
-    TabOrder = 3
+    TabOrder = 2
     Text = 'https://www.youtube.com/watch?v=31nEM5PIG2g'
     TextHint = 'Link do Youtube com o https://'
   end
   object Label7: TLabel
-    Left = 680
+    Left = 776
     Height = 48
     Top = 141
     Width = 191
@@ -142,7 +151,7 @@ object Maker: TMaker
     ParentFont = False
   end
   object garantia: TEdit
-    Left = 680
+    Left = 776
     Height = 52
     Top = 192
     Width = 215
@@ -152,7 +161,7 @@ object Maker: TMaker
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 3
     Text = '7 dias'
     TextHint = 'Sem Garantia'
   end
@@ -184,14 +193,14 @@ object Maker: TMaker
       'Aproveite já!'
     )
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 4
   end
   object Label9: TLabel
     Left = 440
     Height = 24
     Top = 344
-    Width = 144
-    Caption = 'Link de Compra'
+    Width = 165
+    Caption = 'Botão de Compra'
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Manjari'
@@ -199,17 +208,17 @@ object Maker: TMaker
     ParentFont = False
   end
   object linkvenda: TEdit
-    Left = 440
+    Left = 720
     Height = 52
-    Top = 373
-    Width = 373
+    Top = 400
+    Width = 189
     AutoSize = False
     BorderStyle = bsNone
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
-    TabOrder = 6
+    TabOrder = 5
     Text = 'https://www.linkdacompra.com.br'
     TextHint = 'Link para a compra com o https://'
   end
@@ -224,10 +233,10 @@ object Maker: TMaker
     Font.Name = 'Roboto'
     OnClick = OpenMMClick
     ParentFont = False
-    TabOrder = 7
+    TabOrder = 6
   end
   object Button2: TButton
-    Left = 976
+    Left = 1080
     Height = 30
     Top = 136
     Width = 250
@@ -237,10 +246,10 @@ object Maker: TMaker
     Font.Name = 'Roboto'
     OnClick = Button2Click
     ParentFont = False
-    TabOrder = 8
+    TabOrder = 7
   end
   object Button3: TButton
-    Left = 976
+    Left = 1080
     Height = 30
     Top = 184
     Width = 250
@@ -250,10 +259,10 @@ object Maker: TMaker
     Font.Name = 'Roboto'
     OnClick = Button3Click
     ParentFont = False
-    TabOrder = 9
+    TabOrder = 8
   end
   object Button4: TButton
-    Left = 976
+    Left = 1080
     Height = 30
     Top = 232
     Width = 250
@@ -263,7 +272,7 @@ object Maker: TMaker
     Font.Name = 'Roboto'
     OnClick = Button4Click
     ParentFont = False
-    TabOrder = 10
+    TabOrder = 9
   end
   object p1: TImage
     Left = 22
@@ -313,10 +322,10 @@ object Maker: TMaker
     }
   end
   object p2: TImage
-    Left = 440
+    Left = 432
     Height = 90
     Top = 8
-    Width = 453
+    Width = 559
     Center = True
     Picture.Data = {
       1754506F727461626C654E6574776F726B47726170686963A407000089504E47
@@ -384,7 +393,7 @@ object Maker: TMaker
     }
   end
   object p3: TImage
-    Left = 976
+    Left = 1080
     Height = 90
     Top = 8
     Width = 240
@@ -477,7 +486,7 @@ object Maker: TMaker
     Font.Name = 'Sans'
     ParentFont = False
     ReadOnly = True
-    TabOrder = 11
+    TabOrder = 10
     Visible = False
   end
   object estilo: TMemo
@@ -510,7 +519,6 @@ object Maker: TMaker
       'width: 720px;'
       'height: 100px;'
       'border: none;'
-      'color: #2f3030;'
       'font-size: 19px;'
       'border-radius: 15px 15px 15px 15px;'
       'box-shadow: 0px 5px 10px 5px black;'
@@ -613,7 +621,7 @@ object Maker: TMaker
       '*/'
     )
     ReadOnly = True
-    TabOrder = 12
+    TabOrder = 11
     Visible = False
   end
   object selectWall: TButton
@@ -627,7 +635,7 @@ object Maker: TMaker
     Font.Name = 'Roboto'
     OnClick = selectWallClick
     ParentFont = False
-    TabOrder = 13
+    TabOrder = 12
   end
   object PreIMG: TEdit
     Left = 500
@@ -635,7 +643,7 @@ object Maker: TMaker
     Top = 15
     Width = 52
     OnChange = PreIMGChange
-    TabOrder = 14
+    TabOrder = 13
     Text = 'background-image: url(''https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/wallpaper/'
     Visible = False
   end
@@ -645,14 +653,14 @@ object Maker: TMaker
     Top = 68
     Width = 52
     OnChange = PosIMGChange
-    TabOrder = 15
+    TabOrder = 14
     Text = '.jpg''); }'
     Visible = False
   end
   object Label10: TLabel
     Left = 440
     Height = 24
-    Top = 440
+    Top = 480
     Width = 293
     Caption = 'Todos os direitos reservados a'
     Font.Color = clWhite
@@ -664,8 +672,8 @@ object Maker: TMaker
   object autoria: TEdit
     Left = 440
     Height = 52
-    Top = 469
-    Width = 455
+    Top = 509
+    Width = 551
     AutoSize = False
     BorderStyle = bsNone
     Font.Color = clWhite
@@ -673,7 +681,7 @@ object Maker: TMaker
     Font.Name = 'Roboto'
     OnChange = autoriaChange
     ParentFont = False
-    TabOrder = 16
+    TabOrder = 15
     Text = 'Seu nome ou responsável'
     TextHint = 'Link para a compra'
   end
@@ -688,13 +696,13 @@ object Maker: TMaker
     MaxValue = 1000
     MinValue = 0
     OnChange = QmodChange
-    TabOrder = 17
+    TabOrder = 16
     Value = 3
   end
   object criadocom: TCheckBoxThemed
     Left = 440
     Height = 28
-    Top = 536
+    Top = 576
     Width = 354
     Caption = '"Criado com Marketing Page Maker"'
     Checked = True
@@ -703,13 +711,13 @@ object Maker: TMaker
     Font.Name = 'Manjari'
     ParentFont = False
     State = cbChecked
-    TabOrder = 18
+    TabOrder = 17
   end
   object corbot: TButton
-    Left = 816
+    Left = 912
     Height = 52
     Hint = 'Cor do botão de compra'
-    Top = 373
+    Top = 400
     Width = 80
     Caption = 'Cor '
     Font.Color = 13553358
@@ -717,7 +725,60 @@ object Maker: TMaker
     Font.Name = 'Roboto'
     OnClick = corbotClick
     ParentFont = False
-    TabOrder = 19
+    TabOrder = 18
+  end
+  object txtbotao: TEdit
+    Left = 440
+    Height = 52
+    Top = 400
+    Width = 189
+    AutoSize = False
+    BorderStyle = bsNone
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentFont = False
+    TabOrder = 21
+    Text = 'Quero Começar Já!'
+    TextHint = 'Texto do Botão'
+  end
+  object txtbt: TLabel
+    Left = 440
+    Height = 24
+    Top = 372
+    Width = 55
+    Caption = 'Texto'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Manjari'
+    ParentColor = False
+    ParentFont = False
+  end
+  object txtbt2: TLabel
+    Left = 720
+    Height = 24
+    Top = 372
+    Width = 36
+    Caption = 'Link'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Manjari'
+    ParentColor = False
+    ParentFont = False
+  end
+  object cortxt: TButton
+    Left = 632
+    Height = 52
+    Hint = 'Cor do botão de compra'
+    Top = 400
+    Width = 80
+    Caption = 'Cor '
+    Font.Color = 13553358
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    OnClick = cortxtClick
+    ParentFont = False
+    TabOrder = 23
   end
   object topmenu: TMainMenu
     left = 336
