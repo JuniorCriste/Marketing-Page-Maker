@@ -334,6 +334,9 @@ end;
 procedure TMaker.FormCreate(Sender: TObject);
 begin
  sMod.visible:= false;
+ CorAtualTxt:= '#2F3030';
+ CorAtualBot:= '#1DA573';
+
 end;
 
 

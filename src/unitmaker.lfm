@@ -1,10 +1,10 @@
 object Maker: TMaker
-  Left = 281
+  Left = 167
   Height = 658
-  Top = 53
+  Top = 116
   Width = 1082
   HorzScrollBar.Page = 1082
-  VertScrollBar.Page = 604
+  VertScrollBar.Page = 588
   AutoScroll = True
   Caption = 'Configure as propriedades da sua página'
   ClientHeight = 618
@@ -660,7 +660,7 @@ object Maker: TMaker
   object Label10: TLabel
     Left = 440
     Height = 24
-    Top = 480
+    Top = 464
     Width = 293
     Caption = 'Todos os direitos reservados a'
     Font.Color = clWhite
@@ -672,7 +672,7 @@ object Maker: TMaker
   object autoria: TEdit
     Left = 440
     Height = 52
-    Top = 509
+    Top = 493
     Width = 551
     AutoSize = False
     BorderStyle = bsNone
@@ -702,7 +702,7 @@ object Maker: TMaker
   object criadocom: TCheckBoxThemed
     Left = 440
     Height = 28
-    Top = 576
+    Top = 560
     Width = 354
     Caption = '"Criado com Marketing Page Maker"'
     Checked = True
