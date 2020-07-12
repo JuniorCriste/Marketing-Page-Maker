@@ -1,7 +1,7 @@
 object Maker: TMaker
   Left = 281
   Height = 658
-  Top = 96
+  Top = 53
   Width = 1082
   HorzScrollBar.Page = 1082
   VertScrollBar.Page = 604
