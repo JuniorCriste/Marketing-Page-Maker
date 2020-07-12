@@ -15,8 +15,13 @@ type
 
   TMaker = class(TForm)
     corbot: TButton;
+    cortxt: TButton;
     cores: TColorDialog;
     criadocom: TCheckBoxThemed;
+    DemoCorTxt: TPanel;
+    txtbt: TLabel;
+    txtbt2: TLabel;
+    txtbotao: TEdit;
     OpenMM: TButton;
     Button2: TButton;
     Button3: TButton;
