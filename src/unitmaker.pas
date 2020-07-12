@@ -74,6 +74,7 @@ type
     procedure corbotClick(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure corbotaoClick(Sender: TObject);
+    procedure cortxtClick(Sender: TObject);
     procedure OpenMMClick(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -97,6 +98,8 @@ var
   WallpaperAdress : string;
   coratual: longInt;
   coratualS: string;
+  coratualTxt: string;
+  coratualBot: string;
 implementation
 uses LCLIntf, UnitMakerMod, unitwallpaper, unitsMod, unitviewcode;
 
@@ -143,7 +146,8 @@ begin
   maker.codfull.Lines.Add( WallpaperAdress);
 
   maker.codfull.Lines.Add(maker.estilo.text);
-  maker.codfull.Lines.Add('.euquero{ background-color: ' + coratualS + '; }');
+  maker.codfull.Lines.Add('.euquero{ background-color: ' + coratualBot + ';');
+  maker.codfull.Lines.Add('color: ' + coratualTxt + '; }');
   maker.codfull.Lines.Add('</style>');
 
   maker.codfull.Lines.Add('</head>');
@@ -281,8 +285,10 @@ try
  cores.Execute;
  finally
    begin
-   DemoCorBut.Color:= cores.Color;
+   DemoCorTxt.Color:= cores.Color;
    pegacor;
+   CorAtualTxt := corAtulS;
+
    end;
  end;
 end;
@@ -296,6 +302,20 @@ procedure TMaker.corbotaoClick(Sender: TObject);
 begin
 
 end;
+
+procedure TMaker.cortxtClick(Sender: TObject);
+begin
+try
+ cores.Execute;
+ finally
+   begin
+   DemoCorTxt.Color:= cores.Color;
+   pegacor;
+   CorAtualTxt := corAtulS;
+
+   end;
+ end;
+ end;
 
 procedure TMaker.Button2Click(Sender: TObject);
 begin
