@@ -1,7 +1,7 @@
 object Maker: TMaker
   Left = 167
   Height = 658
-  Top = 116
+  Top = 53
   Width = 1082
   HorzScrollBar.Page = 1082
   VertScrollBar.Page = 588
@@ -536,10 +536,8 @@ object Maker: TMaker
       '#meio{'
       'width: 100%;'
       'text-align: center;'
-      'font-family: ''Roboto'', sans-serif;'
       'background-color: #efefef;'
       'color: black;'
-      'width: 100%;'
       'height: auto;'#9
       'font-size: 35px;'
       'margin-left: -30px;'
@@ -609,6 +607,23 @@ object Maker: TMaker
       '#modulos:hover div {'
       '  height: 200px;'
       '}'
+      ''
+      ''
+      ''
+      ''
+      '#atr{'
+      'width: 50%;'
+      'text-align: center;'
+      'font-family: ''Roboto'', sans-serif;'
+      'color: white;'
+      'background-color: black;'
+      'height: auto;'#9
+      'font-size: 15px;'
+      'margin-top: 30px;'
+      'opacity: 0.7;'
+      'border-radius: 20px;'
+      '}'
+      ''
       ''
       ''
       '/*'

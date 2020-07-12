@@ -186,12 +186,14 @@ begin
   maker.codfull.Lines.Add(' <br />');
   end;
   maker.codfull.Lines.Add('</div>');           {fim do meio}
+  maker.codfull.Lines.Add('<center><div id="atr">');
   maker.codfull.Lines.Add(' Todos os direitos reservados a ' + maker.autoria.text + '.');
   if maker.criadocom.Checked = true then
   begin
   maker.codfull.Lines.Add('<br />');
   maker.codfull.Lines.Add('Criado com <a href="https://informaticode.store/.../MPM" target="_blank">Marketing Page Maker</a>');
-  end;
+  end;         
+  maker.codfull.Lines.Add('</div></center>');
   maker.codfull.Lines.Add('</body> ');
   maker.codfull.Lines.Add('</html>');
 
@@ -334,6 +336,9 @@ end;
 procedure TMaker.FormCreate(Sender: TObject);
 begin
  sMod.visible:= false;
+ CorAtualTxt:= '#2F3030';
+ CorAtualBot:= '#1DA573';
+
 end;
 
 
