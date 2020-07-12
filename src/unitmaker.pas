@@ -287,7 +287,7 @@ try
    begin
    DemoCorBut.Color:= cores.Color;
    pegacor;
-   CorAtualTxt := corAtualS;
+   CorAtualBot := corAtualS;
 
    end;
  end;

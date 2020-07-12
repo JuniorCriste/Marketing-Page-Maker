@@ -285,9 +285,9 @@ try
  cores.Execute;
  finally
    begin
-   DemoCorBot.Color:= cores.Color;
+   DemoCorBut.Color:= cores.Color;
    pegacor;
-   CorAtualTxt := corAtualS;
+   CorAtualBot := corAtualS;
 
    end;
  end;
