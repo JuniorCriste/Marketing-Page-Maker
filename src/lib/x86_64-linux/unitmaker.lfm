@@ -758,8 +758,8 @@ object Maker: TMaker
     Left = 720
     Height = 24
     Top = 372
-    Width = 36
-    Caption = 'Link'
+    Width = 115
+    Caption = 'Link e Botão'
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Manjari'
