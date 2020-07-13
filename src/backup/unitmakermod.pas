@@ -14,6 +14,8 @@ type
 
   TMakerMod = class(TForm)
     addatv: TImage;
+    addcertificado: TImage;
+    addbonus: TImage;
     cadMod: TButton;
     codMods: TMemo;
     addaula: TImage;
@@ -24,6 +26,8 @@ type
     modau: TMemo;
     procedure addatvClick(Sender: TObject);
     procedure addaulaClick(Sender: TObject);
+    procedure addbonusClick(Sender: TObject);
+    procedure addcertificadoClick(Sender: TObject);
     procedure cadModClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -84,9 +88,19 @@ begin
   modau.SelText:= '<aula/> ';
 end;
 
+procedure TMakerMod.addbonusClick(Sender: TObject);
+begin
+  modau.SelText:= '<bonus/> ';
+end;
+
+procedure TMakerMod.addcertificadoClick(Sender: TObject);
+begin
+  modau.SelText:= '<certificado/> ';
+end;
+
 procedure TMakerMod.addatvClick(Sender: TObject);
 begin
-  modau.SelText:= '<exerc/> ';
+  modau.SelText:= '<exercicio/> ';
 end;
 
 procedure TMakerMod.FormCreate(Sender: TObject);

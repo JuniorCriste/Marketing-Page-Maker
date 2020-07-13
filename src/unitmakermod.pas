@@ -29,6 +29,7 @@ type
     procedure addbonusClick(Sender: TObject);
     procedure addcertificadoClick(Sender: TObject);
     procedure cadModClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
@@ -81,6 +82,11 @@ begin
   modau.Lines.Add('Aula 03');
   modau.Lines.Add('Aula ...');
 
+end;
+
+procedure TMakerMod.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+  Maker.Visible:=true;
 end;
 
 procedure TMakerMod.addaulaClick(Sender: TObject);

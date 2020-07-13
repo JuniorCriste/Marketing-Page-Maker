@@ -26,6 +26,7 @@ type
     w7: TImage;
     w11: TImage;
     w12: TImage;
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure w10Click(Sender: TObject);
     procedure w11Click(Sender: TObject);
     procedure w12Click(Sender: TObject);
@@ -125,6 +126,11 @@ begin
   NameIMG:= 'fundocam'; 
   Maker.visible:= true;
   wallpaper.Close;
+end;
+
+procedure Twallpaper.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+  Maker.Visible:=true;
 end;
 
 procedure Twallpaper.w11Click(Sender: TObject);

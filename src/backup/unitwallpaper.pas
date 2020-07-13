@@ -61,98 +61,98 @@ procedure Twallpaper.w2Click(Sender: TObject);
 begin
   NameIMG:= 'fundovid';   
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w3Click(Sender: TObject);
 begin
   NameIMG:= 'fundotrv';    
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w4Click(Sender: TObject);
 begin
   NameIMG:= 'fundomkt';      
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w5Click(Sender: TObject);
 begin
   NameIMG:= 'fundosc1'; 
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w6Click(Sender: TObject);
 begin
   NameIMG:= 'fundosc2';      
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w7Click(Sender: TObject);
 begin
   NameIMG:= 'fundopop';    
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w8Click(Sender: TObject);
 begin
   NameIMG:= 'fundocod';     
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w9Click(Sender: TObject);
 begin
   NameIMG:= 'fundoflw';  
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w1Click(Sender: TObject);
 begin
   NameIMG:= 'fundovnt';
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w10Click(Sender: TObject);
 begin
   NameIMG:= 'fundocam'; 
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w11Click(Sender: TObject);
 begin
   NameIMG:= 'fundohap';       
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w12Click(Sender: TObject);
 begin
   NameIMG:= 'fundogau';       
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w13Click(Sender: TObject);
 begin
   NameIMG:= 'fundobck';      
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 procedure Twallpaper.w14Click(Sender: TObject);
 begin
   NameIMG:= 'fundowht';      
   Maker.visible:= true;
-  wallpaper.Visible:=false;
+  wallpaper.Close;
 end;
 
 end.
