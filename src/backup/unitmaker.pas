@@ -18,8 +18,11 @@ type
     cortxt: TButton;
     cores: TColorDialog;
     criadocom: TCheckBoxThemed;
+    modAnim: TCheckBoxThemed;
     DemoCorTxt: TPanel;
     adv1: TImage;
+    modStyle1: TMemo;
+    modStyle2: TMemo;
     txtbt: TLabel;
     txtbt2: TLabel;
     txtbotao: TEdit;
@@ -149,6 +152,15 @@ begin
   maker.codfull.Lines.Add(maker.estilo.text);
   maker.codfull.Lines.Add('.euquero{ background-color: ' + coratualBot + ';');
   maker.codfull.Lines.Add('color: ' + coratualTxt + '; }');
+
+  if maker.ModAnim.Checked = true then
+  begin
+    maker.codFull.Lines.add(maker.modStyle1.Text)
+    else
+    maker.codFull.Lines.add(maker.modStyle2.Text);
+  end;
+
+
   maker.codfull.Lines.Add('</style>');
 
   maker.codfull.Lines.Add('</head>');

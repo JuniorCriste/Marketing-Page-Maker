@@ -3376,7 +3376,7 @@ object Maker: TMaker
     }
     Proportional = True
   end
-  object criadocom1: TCheckBoxThemed
+  object modAnim: TCheckBoxThemed
     Left = 30
     Height = 28
     Top = 588

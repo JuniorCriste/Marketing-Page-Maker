@@ -1,10 +1,10 @@
 object Maker: TMaker
-  Left = 167
+  Left = 284
   Height = 711
   Top = 0
   Width = 1082
   HorzScrollBar.Page = 1082
-  VertScrollBar.Page = 588
+  VertScrollBar.Page = 616
   AutoScroll = True
   Caption = 'Configure as propriedades da sua página'
   ClientHeight = 671
@@ -35,7 +35,7 @@ object Maker: TMaker
     Width = 27
     Color = 7578909
     ParentColor = False
-    TabOrder = 20
+    TabOrder = 19
   end
   object StatusBar1: TStatusBar
     Left = 0
@@ -574,40 +574,11 @@ object Maker: TMaker
       'justify-content: center;'
       '}'
       ''
-      '.modBox{'
-      'width: 300px;'
-      'height: 80px;'
-      'font-size: 14px;'
-      'padding: 5px;'
-      'color:  black;'
-      'margin: 10px;'
-      'background-color:  #dbdbdb; '
-      'overflow: hidden;'
-      'transition: 0.3s ease-out;'
-      '}'
-      ''
-      '.modBox:hover{'
-      'color:  white;'
-      'background-color:  #304949;'
-      'transform: scaleX(1.25) scaleY(1.25);'
-      'background-size: cover;'
-      'transition: 0.3s ease-out;'
-      'overflow-Y: auto;'
-      '-webkit-box-shadow: -2px 0px 25px -4px rgba(0,0,0,0.75);'
-      '-moz-box-shadow: -2px 0px 25px -4px rgba(0,0,0,0.75);'
-      'box-shadow: -2px 0px 25px -4px rgba(0,0,0,0.75);'
-      '}'
-      ''
       '.aulas{'
       'text-align: justify;'
       'margin-left: 10px;'
       'margin-right: 10px;'
       '}'
-      ''
-      '#modulos:hover div {'
-      '  height: 200px;'
-      '}'
-      ''
       ''
       ''
       ''
@@ -625,15 +596,12 @@ object Maker: TMaker
       '}'
       ''
       ''
-      ''
-      '/*'
       '@media only screen and (max-width: 1036px){'
       '    '
       'body{'
       'background-size: 300%;'
       '}'
       '}'
-      '*/'
     )
     ReadOnly = True
     TabOrder = 11
@@ -753,7 +721,7 @@ object Maker: TMaker
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
-    TabOrder = 21
+    TabOrder = 20
     Text = 'Quero Começar Já!'
     TextHint = 'Texto do Botão'
   end
@@ -3407,6 +3375,84 @@ object Maker: TMaker
       889941AB740000000049454E44AE426082
     }
     Proportional = True
+  end
+  object modAnim: TCheckBoxThemed
+    Left = 30
+    Height = 28
+    Top = 588
+    Width = 202
+    Caption = 'Módulos Animados'
+    Checked = True
+    Font.Color = 13553358
+    Font.Height = -21
+    Font.Name = 'Manjari'
+    ParentFont = False
+    State = cbChecked
+    TabOrder = 24
+  end
+  object modStyle1: TMemo
+    Left = 385
+    Height = 36
+    Top = 96
+    Width = 47
+    Lines.Strings = (
+      '.modBox{'
+      'width: 300px;'
+      'height: 80px;'
+      'font-size: 14px;'
+      'padding: 5px;'
+      'color:  black;'
+      'margin: 10px;'
+      'background-color:  #dbdbdb; '
+      'overflow: hidden;'
+      'transition: 0.3s ease-out;'
+      '}'
+      ''
+      '.modBox:hover{'
+      'color:  white;'
+      'background-color:  #304949;'
+      'transform: scaleX(1.25) scaleY(1.25);'
+      'background-size: cover;'
+      'transition: 0.3s ease-out;'
+      'overflow-Y: auto;'
+      '-webkit-box-shadow: -2px 0px 25px -4px rgba(0,0,0,0.75);'
+      '-moz-box-shadow: -2px 0px 25px -4px rgba(0,0,0,0.75);'
+      'box-shadow: -2px 0px 25px -4px rgba(0,0,0,0.75);'
+      '}'
+      ''
+      '#modulos:hover div {'
+      '  height: 200px;'
+      '}'
+    )
+    ReadOnly = True
+    TabOrder = 25
+    Visible = False
+  end
+  object modStyle2: TMemo
+    Left = 440
+    Height = 36
+    Top = 96
+    Width = 52
+    Lines.Strings = (
+      '.modBox{'
+      'width: 300px;'
+      'height: 200px;'
+      'font-size: 14px;'
+      'padding: 5px;'
+      'color:  black;'
+      'margin: 10px;'
+      'background-color:  #dbdbdb; '
+      'overflow: hidden;'
+      'transition: 0.3s ease-out;'
+      '}'
+      ''
+      '.modBox:hover{'
+      'overflow-Y: auto;'
+      '}'
+    )
+    ReadOnly = True
+    TabOrder = 26
+    Visible = False
   end
   object topmenu: TMainMenu
     left = 336
