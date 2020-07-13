@@ -6,20 +6,24 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ExtCtrls;
+  ExtCtrls, Buttons;
 
 type
 
   { TMakerMod }
 
   TMakerMod = class(TForm)
+    addatv: TImage;
     cadMod: TButton;
     codMods: TMemo;
+    addaula: TImage;
     txt1: TLabel;
     modname: TEdit;
     Label1: TLabel;
     txt2: TLabel;
     modau: TMemo;
+    procedure addatvClick(Sender: TObject);
+    procedure addaulaClick(Sender: TObject);
     procedure cadModClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -61,6 +65,7 @@ begin
 
   if countMod > StrToInt(Maker.Qmod.Text) then
   begin
+    Maker.Visible:=true;
     MakerMod.Close;
   end;
 
@@ -72,6 +77,16 @@ begin
   modau.Lines.Add('Aula 03');
   modau.Lines.Add('Aula ...');
 
+end;
+
+procedure TMakerMod.addaulaClick(Sender: TObject);
+begin
+  modau.SelText:= '<aula/> ';
+end;
+
+procedure TMakerMod.addatvClick(Sender: TObject);
+begin
+  modau.SelText:= '<exerc/> ';
 end;
 
 procedure TMakerMod.FormCreate(Sender: TObject);

@@ -596,6 +596,27 @@ object Maker: TMaker
       '}'
       ''
       ''
+      'exerc{'
+      '    background-image: url(''https://informaticode.store/imgs/exercicios_emo.png'');'
+      '    width: 10px;'
+      '    height: 10px;'
+      '    padding-left: 30px;'
+      '    background-size:30px;'
+      '    background-repeat: no-repeat;'
+      '}'
+      ''
+      ''
+      'aula{'
+      '    background-image: url(''https://informaticode.store/imgs/livros_emo.png'');'
+      '    width: 10px;'
+      '    height: 10px;'
+      '    padding-left: 30px;'
+      '    background-size:30px;'
+      '    background-repeat: no-repeat;'
+      '}'
+      ''
+      ''
+      ''
       '@media only screen and (max-width: 1036px){'
       '    '
       'body{'
@@ -3508,6 +3529,9 @@ object Maker: TMaker
       end
       object MenuItem12: TMenuItem
         Caption = 'Reportar Bug'
+      end
+      object MenuItem18: TMenuItem
+        Caption = 'Tutorial em Vídeo'
       end
     end
   end

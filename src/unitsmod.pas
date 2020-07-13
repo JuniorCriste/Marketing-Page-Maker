@@ -14,17 +14,18 @@ type
 
   TsMod = class(TForm)
     wallpaper: TImage;
-    prev1: TButton;
-    othem: TButton;
-    prev2: TButton;
-    prev3: TButton;
-    selec1: TButton;
+    tuto: TButton;
+    donate: TButton;
+    createNew: TButton;
     prevm1: TImage;
     prevm2: TImage;
     prevm3: TImage;
-    selec2: TButton;
-    selec3: TButton;
-    procedure selec1Click(Sender: TObject);
+    about: TButton;
+    procedure prev1Click(Sender: TObject);
+    procedure donateClick(Sender: TObject);
+    procedure createNewClick(Sender: TObject);
+    procedure aboutClick(Sender: TObject);
+    procedure tutoClick(Sender: TObject);
   private
 
   public
@@ -40,9 +41,29 @@ implementation
 
 { TsMod }
 
-procedure TsMod.selec1Click(Sender: TObject);
+procedure TsMod.createNewClick(Sender: TObject);
 begin
   Maker.show;
+end;
+
+procedure TsMod.aboutClick(Sender: TObject);
+begin
+  OpenURL('https://informaticode.store/.../MPM');
+end;
+
+procedure TsMod.tutoClick(Sender: TObject);
+begin
+  OpenURL('https://informaticode.store/.../MPM#video');
+end;
+
+procedure TsMod.prev1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TsMod.donateClick(Sender: TObject);
+begin
+  OpenURL('https://www.informaticode.com.br/p/doacoes.html');
 end;
 
 end.

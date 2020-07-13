@@ -18,6 +18,7 @@ type
     cortxt: TButton;
     cores: TColorDialog;
     criadocom: TCheckBoxThemed;
+    MenuItem18: TMenuItem;
     modAnim: TCheckBoxThemed;
     DemoCorTxt: TPanel;
     adv1: TImage;
@@ -155,8 +156,10 @@ begin
 
   if maker.ModAnim.Checked = true then
   begin
-    maker.codFull.Lines.add(maker.modStyle1.Text)
+    maker.codFull.Lines.add(maker.modStyle1.Text);
+    end
     else
+    begin
     maker.codFull.Lines.add(maker.modStyle2.Text);
   end;
 

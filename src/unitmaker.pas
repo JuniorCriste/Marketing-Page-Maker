@@ -18,6 +18,7 @@ type
     cortxt: TButton;
     cores: TColorDialog;
     criadocom: TCheckBoxThemed;
+    MenuItem18: TMenuItem;
     modAnim: TCheckBoxThemed;
     DemoCorTxt: TPanel;
     adv1: TImage;

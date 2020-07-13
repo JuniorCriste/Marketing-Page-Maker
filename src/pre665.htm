@@ -11,7 +11,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-color: #0d0d0d;
 background-size: 100%;
-background-image: url('https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/wallpaper/fundosc2.jpg'); }
+background-image: url('https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/wallpaper/.jpg'); }
 #topo{
 width: 100%;
 text-align: center;
@@ -113,6 +113,27 @@ border-radius: 20px;
 }
 
 
+exerc{
+    background-image: url('https://informaticode.store/imgs/exercicios_emo.png');
+    width: 10px;
+    height: 10px;
+    padding-left: 30px;
+    background-size:30px;
+    background-repeat: no-repeat;
+}
+
+
+aula{
+    background-image: url('https://informaticode.store/imgs/livros_emo.png');
+    width: 10px;
+    height: 10px;
+    padding-left: 30px;
+    background-size:30px;
+    background-repeat: no-repeat;
+}
+
+
+
 @media only screen and (max-width: 1036px){
     
 body{
@@ -124,7 +145,7 @@ background-size: 300%;
 color: #2F3030; }
 .modBox{
 width: 300px;
-height: 200px;
+height: 80px;
 font-size: 14px;
 padding: 5px;
 color:  black;
@@ -135,7 +156,19 @@ transition: 0.3s ease-out;
 }
 
 .modBox:hover{
+color:  white;
+background-color:  #304949;
+transform: scaleX(1.25) scaleY(1.25);
+background-size: cover;
+transition: 0.3s ease-out;
 overflow-Y: auto;
+-webkit-box-shadow: -2px 0px 25px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 0px 25px -4px rgba(0,0,0,0.75);
+box-shadow: -2px 0px 25px -4px rgba(0,0,0,0.75);
+}
+
+#modulos:hover div {
+  height: 200px;
 }
 
 </style>
@@ -161,8 +194,8 @@ Aproveite já!
 <div id="modulos"> <div class="modbox"> Módulo 1 <h2>Nome do Módulo</h2>
 <p class="aulas">
 <br />  <b>Aula 00</b>
-<br />  <b>Aula 01</b>
-<br />  <b>Aula 02</b>
+<br />  <b>Aula 01<aula /><aula /><aula /></b>
+<br />  <b><aula />Aula 02</b>
 <br />  <b>Aula 03</b>
 <br />  <b>Aula ...</b>
 </div>
@@ -171,7 +204,7 @@ Aproveite já!
 <br />  <b>Aula 00</b>
 <br />  <b>Aula 01</b>
 <br />  <b>Aula 02</b>
-<br />  <b>Aula 03</b>
+<br />  <b><aula />Aula 03</b>
 <br />  <b>Aula ...</b>
 </div>
 <div class="modbox"> Módulo 3 <h2>Nome do Módulo</h2>
