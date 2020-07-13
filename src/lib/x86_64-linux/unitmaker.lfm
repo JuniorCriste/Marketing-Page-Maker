@@ -596,8 +596,8 @@ object Maker: TMaker
       '}'
       ''
       ''
-      'exerc{'
-      '    background-image: url(''https://informaticode.store/imgs/exercicios_emo.png'');'
+      'exercicio{'
+      '    background-image: url(''https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/exercicios_emo.png'');'
       '    width: 10px;'
       '    height: 10px;'
       '    padding-left: 30px;'
@@ -607,7 +607,27 @@ object Maker: TMaker
       ''
       ''
       'aula{'
-      '    background-image: url(''https://informaticode.store/imgs/livros_emo.png'');'
+      '    background-image: url(''https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/livros_emo.png'');'
+      '    width: 10px;'
+      '    height: 10px;'
+      '    padding-left: 30px;'
+      '    background-size:30px;'
+      '    background-repeat: no-repeat;'
+      '}'
+      ''
+      ''
+      'certificado{'
+      '    background-image: url(''https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/certificado_emo.png'');'
+      '    width: 10px;'
+      '    height: 10px;'
+      '    padding-left: 30px;'
+      '    background-size:30px;'
+      '    background-repeat: no-repeat;'
+      '}'
+      ''
+      ''
+      'bonus{'
+      '    background-image: url(''https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/bonus_emo.png'');'
       '    width: 10px;'
       '    height: 10px;'
       '    padding-left: 30px;'
@@ -3529,6 +3549,9 @@ object Maker: TMaker
       end
       object MenuItem12: TMenuItem
         Caption = 'Reportar Bug'
+      end
+      object MenuItem18: TMenuItem
+        Caption = 'Tutorial em Vídeo'
       end
     end
   end

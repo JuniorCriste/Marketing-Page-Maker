@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  StdCtrls, UnitMaker;
+  StdCtrls, UnitMaker, lclintf;
 
 type
 
@@ -16,14 +16,14 @@ type
     wallpaper: TImage;
     tuto: TButton;
     donate: TButton;
-    createNew: TButton;
+    newFile: TButton;
     prevm1: TImage;
     prevm2: TImage;
     prevm3: TImage;
     about: TButton;
     procedure prev1Click(Sender: TObject);
     procedure donateClick(Sender: TObject);
-    procedure createNewClick(Sender: TObject);
+    procedure newFileClick(Sender: TObject);
     procedure aboutClick(Sender: TObject);
     procedure tutoClick(Sender: TObject);
   private
@@ -41,7 +41,7 @@ implementation
 
 { TsMod }
 
-procedure TsMod.createNewClick(Sender: TObject);
+procedure TsMod.newFileClick(Sender: TObject);
 begin
   Maker.show;
 end;

@@ -16,15 +16,16 @@ type
     wallpaper: TImage;
     tuto: TButton;
     donate: TButton;
-    createNew: TButton;
+    newFile: TButton;
     prevm1: TImage;
     prevm2: TImage;
     prevm3: TImage;
     about: TButton;
     procedure prev1Click(Sender: TObject);
     procedure donateClick(Sender: TObject);
-    procedure createNewClick(Sender: TObject);
+    procedure newFileClick(Sender: TObject);
     procedure aboutClick(Sender: TObject);
+    procedure tutoClick(Sender: TObject);
   private
 
   public
@@ -40,7 +41,7 @@ implementation
 
 { TsMod }
 
-procedure TsMod.createNewClick(Sender: TObject);
+procedure TsMod.newFileClick(Sender: TObject);
 begin
   Maker.show;
 end;
@@ -48,6 +49,11 @@ end;
 procedure TsMod.aboutClick(Sender: TObject);
 begin
   OpenURL('https://informaticode.store/.../MPM');
+end;
+
+procedure TsMod.tutoClick(Sender: TObject);
+begin
+  OpenURL('https://informaticode.store/.../MPM#video');
 end;
 
 procedure TsMod.prev1Click(Sender: TObject);
