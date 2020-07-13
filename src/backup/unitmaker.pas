@@ -19,6 +19,7 @@ type
     cores: TColorDialog;
     criadocom: TCheckBoxThemed;
     DemoCorTxt: TPanel;
+    adv1: TImage;
     txtbt: TLabel;
     txtbt2: TLabel;
     txtbotao: TEdit;

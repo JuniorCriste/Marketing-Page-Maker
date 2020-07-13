@@ -18,8 +18,11 @@ type
     cortxt: TButton;
     cores: TColorDialog;
     criadocom: TCheckBoxThemed;
+    criadocom1: TCheckBoxThemed;
     DemoCorTxt: TPanel;
     adv1: TImage;
+    modStyle1: TMemo;
+    modStyle2: TMemo;
     txtbt: TLabel;
     txtbt2: TLabel;
     txtbotao: TEdit;
