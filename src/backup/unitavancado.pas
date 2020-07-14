@@ -166,6 +166,11 @@ begin
   end;
 
 
+      { DUVIDAS FREQUENTES}
+  avancado.codigoAvancado.Lines.Add('<div id="duvfre">') ;
+  avancado.codigoAvancado.Lines.Add(makerDuvidas.codDuvs.Text) ;
+  avancado.codigoAvancado.Lines.Add('<div>') ;
+
 end;
 
 procedure Tavancado.QmodChange(Sender: TObject);
@@ -187,7 +192,6 @@ end;
 
 procedure Tavancado.OpenMMClick(Sender: TObject);
 begin
-  MakerDuvidas.c;
   MakerDuvidas.Visible:= true;
   avancado.Visible:= false;
 end;

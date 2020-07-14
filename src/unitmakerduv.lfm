@@ -7,6 +7,7 @@ object makerDuvidas: TmakerDuvidas
   ClientHeight = 375
   ClientWidth = 475
   Color = 4605443
+  OnClose = FormClose
   OnShow = FormShow
   LCLVersion = '1.8.2.0'
   object Label1: TLabel

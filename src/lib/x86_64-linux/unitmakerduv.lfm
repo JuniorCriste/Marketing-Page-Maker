@@ -1,0 +1,102 @@
+object makerDuvidas: TmakerDuvidas
+  Left = 309
+  Height = 375
+  Top = 153
+  Width = 475
+  Caption = 'Editor de Dúvidas Frequentes...'
+  ClientHeight = 375
+  ClientWidth = 475
+  Color = 4605443
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '1.8.2.0'
+  object Label1: TLabel
+    Left = 0
+    Height = 32
+    Top = 8
+    Width = 479
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Editor de Dúvidas'
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object txt1: TLabel
+    Left = 16
+    Height = 28
+    Top = 40
+    Width = 165
+    Caption = 'Título da Dúvida *'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+  end
+  object duvida: TEdit
+    Left = 10
+    Height = 52
+    Top = 72
+    Width = 451
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentFont = False
+    TabOrder = 0
+    TextHint = 'Dúvida'
+  end
+  object txt2: TLabel
+    Left = 14
+    Height = 28
+    Top = 136
+    Width = 199
+    Caption = 'Resposta da Dúvida *'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+  end
+  object resposta: TMemo
+    Left = 11
+    Height = 150
+    Top = 169
+    Width = 449
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    Lines.Strings = (
+      'Resposta da dúvida...'
+    )
+    ParentFont = False
+    ScrollBars = ssAutoVertical
+    TabOrder = 1
+    WordWrap = False
+  end
+  object cadDuv: TButton
+    Left = 10
+    Height = 43
+    Top = 321
+    Width = 449
+    Caption = 'Cadastrar Dúvida'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    OnClick = cadDuvClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object codDuvs: TMemo
+    Left = 480
+    Height = 295
+    Top = 40
+    Width = 425
+    ReadOnly = True
+    TabOrder = 3
+    Visible = False
+    WordWrap = False
+  end
+end

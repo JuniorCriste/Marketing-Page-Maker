@@ -209,6 +209,9 @@ begin
   maker.codfull.Lines.Add('<center><div id="garantia"> O nosso método conta com garantia e satisfação, ou seja, você tem ' + maker.garantia.Text + ' para se decidir, se ainda achar que o treinamento não é para você, basta pedir reembolso e devolverei integralmente seu dinheiro. Sem perguntas e questionamentos. </div> </center>');
   maker.codfull.Lines.Add(' <br />');
   end;
+
+  maker.codfull.Lines.Add(avancado.codigoAvancado.Text);
+
   maker.codfull.Lines.Add('</div>');           {fim do meio}
   maker.codfull.Lines.Add('<center><div id="atr">');
   maker.codfull.Lines.Add(' Todos os direitos reservados a ' + maker.autoria.text + '.');

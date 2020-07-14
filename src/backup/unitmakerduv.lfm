@@ -7,6 +7,8 @@ object makerDuvidas: TmakerDuvidas
   ClientHeight = 375
   ClientWidth = 475
   Color = 4605443
+  OnClose = FormClose
+  OnShow = FormShow
   LCLVersion = '1.8.2.0'
   object Label1: TLabel
     Left = 0
@@ -24,33 +26,37 @@ object makerDuvidas: TmakerDuvidas
   end
   object txt1: TLabel
     Left = 16
-    Height = 24
+    Height = 28
     Top = 40
     Width = 165
-    Caption = 'Título da Dúvida'
+    Caption = 'Título da Dúvida *'
     Font.Color = clWhite
-    Font.Height = -20
-    Font.Name = 'Sans'
+    Font.Height = -21
+    Font.Name = 'Roboto'
     ParentColor = False
     ParentFont = False
   end
   object duvida: TEdit
     Left = 10
-    Height = 40
+    Height = 52
     Top = 72
     Width = 451
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentFont = False
     TabOrder = 0
     TextHint = 'Dúvida'
   end
   object txt2: TLabel
     Left = 14
-    Height = 24
+    Height = 28
     Top = 136
-    Width = 181
-    Caption = 'Aulas do Módulo *'
+    Width = 199
+    Caption = 'Resposta da Dúvida *'
     Font.Color = clWhite
-    Font.Height = -20
-    Font.Name = 'Sans'
+    Font.Height = -21
+    Font.Name = 'Roboto'
     ParentColor = False
     ParentFont = False
   end
@@ -59,8 +65,9 @@ object makerDuvidas: TmakerDuvidas
     Height = 150
     Top = 169
     Width = 449
-    Font.Height = -16
-    Font.Name = 'Sans'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
     Lines.Strings = (
       'Resposta da dúvida...'
     )
@@ -75,7 +82,11 @@ object makerDuvidas: TmakerDuvidas
     Top = 321
     Width = 449
     Caption = 'Cadastrar Dúvida'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
     OnClick = cadDuvClick
+    ParentFont = False
     TabOrder = 2
   end
   object codDuvs: TMemo

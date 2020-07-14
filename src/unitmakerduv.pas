@@ -20,6 +20,7 @@ type
     txt1: TLabel;
     txt2: TLabel;
     procedure cadDuvClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
   private
 
@@ -29,12 +30,12 @@ type
 
 var
   makerDuvidas: TmakerDuvidas;
-  countDuv: integer;
+  countDuvs: integer;
 
 implementation
 
 uses
-  unitmaker;
+  unitmaker, unitavancado;
 
 {$R *.lfm}
 
@@ -42,16 +43,29 @@ uses
 
 procedure TmakerDuvidas.cadDuvClick(Sender: TObject);
 begin
-  codDuvs.Lines.Add('<div class="pergunta"><h2>' + duvida.Text + '</h2>');
-  codDuvs.Lines.Add('<div class="resposta">' + resposta.Text);
+  countDuvs := countDuvs + 1;
+  codDuvs.Lines.Add('<div class="duvida"><h2>' + duvida.Text + '</h2>');
+  codDuvs.Lines.Add('<div class="resposta">' + resposta.Text + '</div> </div>');
+  if countDuvs = avancado.Qmod.Value then
+  begin
+  avancado.Visible:= true;
+  makerDuvidas.Visible:= false;
+  end;
+end;
+
+procedure TmakerDuvidas.FormClose(Sender: TObject; var CloseAction: TCloseAction
+  );
+begin
+  avancado.Visible:= true;
+  makerDuvidas.Visible:= false;
 end;
 
 procedure TmakerDuvidas.FormShow(Sender: TObject);
 begin
-  countDuv := 1;
+  countDuvs := 1;
   codDuvs.Lines.Clear;
-  txt1.Caption:= 'Título da Dúvida ' + IntToStr(countDuv);
-  txt2.Caption:= 'Resposta da Dúvida ' + IntToStr(countDuv);
+  txt1.Caption:= 'Título da Dúvida ' + IntToStr(countDuvs);
+  txt2.Caption:= 'Resposta da Dúvida ' + IntToStr(countDuvs);
 end;
 
 

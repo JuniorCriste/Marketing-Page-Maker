@@ -74,6 +74,7 @@ object avancado: Tavancado
     Caption = 'Configurar Dúvidas'
     Font.Height = -21
     Font.Name = 'Roboto'
+    OnClick = OpenMMClick
     ParentFont = False
     TabOrder = 2
   end
