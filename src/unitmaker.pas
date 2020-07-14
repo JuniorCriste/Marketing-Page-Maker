@@ -92,6 +92,7 @@ type
     procedure PreIMGChange(Sender: TObject);
     procedure QmodChange(Sender: TObject);
     procedure selectWallClick(Sender: TObject);
+    procedure valorKeyPress(Sender: TObject; var Key: char);
   private
 
   public
@@ -181,7 +182,7 @@ begin
   maker.codfull.Lines.Add('<form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero">'+ maker.txtbotao.Text +'</button></form>');
   end else
   begin
-  maker.codfull.Lines.Add(' <style> #titulo{ margin-top: 70; margin-bottom: 70; } </style>');
+  maker.codfull.Lines.Add(' <style> #titulo{ margin-top: 80; margin-bottom: 70; } </style>');
   end;
   maker.codfull.Lines.Add('</div>');           {fim do topo}
   maker.codfull.Lines.Add('<div id="meio">');  {começo do meio}
@@ -199,7 +200,7 @@ begin
   end;
   maker.codfull.Lines.Add('<div id="modulos"> ' + MakerMod.codMods.Text + ' </div>');
   maker.codfull.Lines.Add(' <br />');
-  maker.codfull.Lines.Add('<form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero"> QUERO COMEÇAR JÁ! </button></form>');
+  maker.codfull.Lines.Add('<form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero">'+ maker.txtbotao.Text +'</button></form>');
   maker.codfull.Lines.Add(' <br />');
   if (maker.garantia.Text <> '') and  (maker.garantia.Text <> ' ')  then
   begin
@@ -272,6 +273,15 @@ begin
   wallpaper.Show;
   wallpaper.Visible:=true;
   maker.visible:= false
+end;
+
+procedure TMaker.valorKeyPress(Sender: TObject; var Key: char);
+begin
+  if  not ( Key in ['0'..'9', Chr(8), Chr(46),  Chr(44)] ) then
+  begin
+  Key := #0
+  end;
+
 end;
 
 procedure TMaker.MenuItem16Click(Sender: TObject);
