@@ -180,7 +180,7 @@ begin
   if (maker.video.Text <> '') and  (maker.video.Text <> ' ')  then
   begin
   maker.codfull.Lines.Add( '<iframe width="720" height="405" id="videoyt" src="https://www.youtube.com/embed/' + embedyt +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-  maker.codfull.Lines.Add(' <br />');
+  maker.codfull.Lines.Add('<br /> <br />');
   maker.codfull.Lines.Add('<form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero">'+ maker.txtbotao.Text +'</button></form>');
   end else
   begin
@@ -210,7 +210,7 @@ begin
   maker.codfull.Lines.Add(' <br />');
   end;
 
-  maker.codfull.Lines.Add(avancado.codigoAvancado.Text);
+  maker.codfull.Lines.Add('<center>' + avancado.codigoAvancado.Text + '</center>');
 
   maker.codfull.Lines.Add('</div>');           {fim do meio}
   maker.codfull.Lines.Add('<center><div id="atr">');
