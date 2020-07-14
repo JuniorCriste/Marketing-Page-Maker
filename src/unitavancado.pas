@@ -73,6 +73,8 @@ uses
 
 procedure exportarAvancado;
 begin
+  avancado.codigoAvancado.Clear;
+
   if (avancado.descricao2.Text <> '') and  (avancado.descricao2.Text <> ' ')  then
   begin
   avancado.codigoAvancado.Lines.Add('<div id="descricao2">');
@@ -86,7 +88,7 @@ begin
   end;
 
    { IMAGENS OPCIONAIS}        
-  avancado.codigoAvancado.Lines.Add('div id="imgop"');
+  avancado.codigoAvancado.Lines.Add('<div id="imgop">');
 
   if avancado.OPgarantia.Checked = true then
   begin
@@ -109,61 +111,62 @@ begin
 
 
    { OPÇÕES DE PAGAMENTO}
-   avancado.codigoAvancado.Lines.Add('<div id="fpag">');
+  avancado.codigoAvancado.Lines.Add('<div id="fpag">');
 
-   if avancado.PAGblt.Checked = true then
+  if avancado.PAGblt.Checked = true then
   begin
   avancado.codigoAvancado.Lines.Add
-  ('<img id="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/boleto.png">');
+  ('<img src="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/boleto.png">');
   end;
 
-   if avancado.PAGhpc.Checked = true then
+  if avancado.PAGhpc.Checked = true then
   begin
   avancado.codigoAvancado.Lines.Add
-  ('<img id="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/hipercard.png">');
+  ('<img src="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/hipercard.png">');
   end;
 
-   if avancado.PAGvis.Checked = true then
+  if avancado.PAGvis.Checked = true then
   begin
   avancado.codigoAvancado.Lines.Add
-  ('<img id="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/visa.png">');
+  ('<img src="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/visa.png">');
   end;
 
-   if avancado.PAGpp.Checked = true then
+  if avancado.PAGpp.Checked = true then
   begin
   avancado.codigoAvancado.Lines.Add
-  ('<img id="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/paypal.png">');
+  ('<img src="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/paypal.png">');
   end;
 
-   if avancado.PAGhpr.Checked = true then
+  if avancado.PAGhpr.Checked = true then
   begin
   avancado.codigoAvancado.Lines.Add
-  ('<img id="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/hiper.png">');
+  ('<img src="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/hiper.png">');
   end;
 
-   if avancado.PAGmas.Checked = true then
+  if avancado.PAGmas.Checked = true then
   begin
   avancado.codigoAvancado.Lines.Add
-  ('<img id="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/mastercard.png">');
+  ('<img src="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/mastercard.png">');
   end;
 
-   if avancado.PAGelo.Checked = true then
+  if avancado.PAGelo.Checked = true then
   begin
   avancado.codigoAvancado.Lines.Add
-  ('<img id="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/elo.png">');
+  ('<img src="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/elo.png">');
   end;
 
-   if avancado.PAGame.Checked = true then
+  if avancado.PAGame.Checked = true then
   begin
   avancado.codigoAvancado.Lines.Add
-  ('<img id="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/american.png">');
+  ('<img src="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/american.png">');
   end;
 
-   if avancado.PAGhot.Checked = true then
+  if avancado.PAGhot.Checked = true then
   begin
   avancado.codigoAvancado.Lines.Add
-  ('<img id="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/hotpay.png">');
+  ('<img src="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Formas%20de%20Pagamento/hotpay.png">');
   end;
+  avancado.codigoAvancado.Lines.Add('</div>') ;
 
 
       { DUVIDAS FREQUENTES}

@@ -64,8 +64,8 @@ procedure TmakerDuvidas.FormShow(Sender: TObject);
 begin
   countDuvs := 1;
   codDuvs.Lines.Clear;
-  txt1.Caption:= 'Título da Dúvida ' + IntToStr(countDuv);
-  txt2.Caption:= 'Resposta da Dúvida ' + IntToStr(countDuv);
+  txt1.Caption:= 'Título da Dúvida ' + IntToStr(countDuvs);
+  txt2.Caption:= 'Resposta da Dúvida ' + IntToStr(countDuvs);
 end;
 
 

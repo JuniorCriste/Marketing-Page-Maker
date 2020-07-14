@@ -46,6 +46,8 @@ begin
   countDuvs := countDuvs + 1;
   codDuvs.Lines.Add('<div class="duvida"><h2>' + duvida.Text + '</h2>');
   codDuvs.Lines.Add('<div class="resposta">' + resposta.Text + '</div> </div>');
+  txt1.Caption:= 'Título da Dúvida ' + IntToStr(countDuvs);
+  txt2.Caption:= 'Resposta da Dúvida ' + IntToStr(countDuvs);
   if countDuvs = avancado.Qmod.Value then
   begin
   avancado.Visible:= true;
@@ -62,8 +64,8 @@ end;
 
 procedure TmakerDuvidas.FormShow(Sender: TObject);
 begin
-  countDuvs := 1;
-  codDuvs.Lines.Clear;
+  countDuvs := 0;
+  codDuvs.Clear;
   txt1.Caption:= 'Título da Dúvida ' + IntToStr(countDuvs);
   txt2.Caption:= 'Resposta da Dúvida ' + IntToStr(countDuvs);
 end;
