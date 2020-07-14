@@ -174,10 +174,15 @@ begin
   maker.codfull.Lines.Add('<div id="topo">');  {começo do topo}
   maker.codfull.Lines.Add('<div id="titulo"> ' + maker.ncurso.Text + ' </div>');
   maker.codfull.Lines.Add(' <br />');
+  if (maker.video.Text <> '') and  (maker.video.Text <> ' ')  then
+  begin
   maker.codfull.Lines.Add( '<iframe width="720" height="405" id="videoyt" src="https://www.youtube.com/embed/' + embedyt +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
   maker.codfull.Lines.Add(' <br />');
-  maker.codfull.Lines.Add(' <br />');
   maker.codfull.Lines.Add('<form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero">'+ maker.txtbotao.Text +'</button></form>');
+  end else
+  begin
+  maker.codfull.Lines.Add(' <style> #titulo{ margin-top: 40; margin-bottom: 30; } </style>');
+  end;
   maker.codfull.Lines.Add('</div>');           {fim do topo}
   maker.codfull.Lines.Add('<div id="meio">');  {começo do meio}
   maker.codfull.Lines.Add(' <br />');
@@ -186,11 +191,11 @@ begin
   if (maker.valor.Text <> '') and  (maker.valor.Text <> ' ')  then
   begin
   maker.codfull.Lines.Add('<div id="valor">Apenas por <br>R$' + maker.valor.Text + '</b>! </div>');
-  maker.codfull.Lines.Add(' <br />');
+
   end else
   begin
   maker.codfull.Lines.Add('<div id="valor"><b>Aproveite, grátis!</b></div>');
-  maker.codfull.Lines.Add(' <br />');
+
   end;
   maker.codfull.Lines.Add('<div id="modulos"> ' + MakerMod.codMods.Text + ' </div>');
   maker.codfull.Lines.Add(' <br />');

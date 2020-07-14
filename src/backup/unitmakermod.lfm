@@ -11,6 +11,7 @@ object MakerMod: TMakerMod
   Font.Height = -20
   Font.Name = 'Sans'
   FormStyle = fsStayOnTop
+  OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
   Position = poDesktopCenter
