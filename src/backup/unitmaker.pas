@@ -14,6 +14,7 @@ type
   { TMaker }
 
   TMaker = class(TForm)
+    maisr: TButton;
     corbot: TButton;
     cortxt: TButton;
     cores: TColorDialog;
@@ -277,13 +278,9 @@ end;
 
 procedure TMaker.valorKeyPress(Sender: TObject; var Key: char);
 begin
-  if  not ( Key in ['0'..'9', Chr(8), DecimalSeparator, Chr(46),  Chr(44)] ) then
+  if  not ( Key in ['0'..'9', Chr(8), Chr(46),  Chr(44)] ) then
   begin
   Key := #0
-  end;
-  if  Key = #46 then
-  begin
-  Key := DecimalSeparator
   end;
 
 end;

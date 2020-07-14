@@ -36,7 +36,7 @@
         <PackageName Value="LCL"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="6">
+    <Units Count="7">
       <Unit0>
         <Filename Value="mpm.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -77,6 +77,14 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit5>
+      <Unit6>
+        <Filename Value="unitavancado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="avancado"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="unitAvancado"/>
+      </Unit6>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

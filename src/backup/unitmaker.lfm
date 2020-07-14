@@ -22,7 +22,7 @@ object Maker: TMaker
   object DemoCorTxt: TPanel
     Left = 608
     Height = 52
-    Top = 400
+    Top = 408
     Width = 27
     Color = 3158063
     ParentColor = False
@@ -31,7 +31,7 @@ object Maker: TMaker
   object DemoCorBut: TPanel
     Left = 888
     Height = 52
-    Top = 400
+    Top = 408
     Width = 27
     Color = 7578909
     ParentColor = False
@@ -199,7 +199,7 @@ object Maker: TMaker
   object Label9: TLabel
     Left = 440
     Height = 24
-    Top = 344
+    Top = 352
     Width = 165
     Caption = 'Botão de Compra'
     Font.Color = clWhite
@@ -211,7 +211,7 @@ object Maker: TMaker
   object linkvenda: TEdit
     Left = 720
     Height = 52
-    Top = 400
+    Top = 408
     Width = 189
     AutoSize = False
     BorderStyle = bsNone
@@ -685,7 +685,7 @@ object Maker: TMaker
   object Label10: TLabel
     Left = 440
     Height = 24
-    Top = 464
+    Top = 472
     Width = 293
     Caption = 'Todos os direitos reservados a'
     Font.Color = clWhite
@@ -697,7 +697,7 @@ object Maker: TMaker
   object autoria: TEdit
     Left = 440
     Height = 52
-    Top = 493
+    Top = 501
     Width = 551
     AutoSize = False
     BorderStyle = bsNone
@@ -717,17 +717,21 @@ object Maker: TMaker
     Width = 112
     AutoSize = False
     DecimalPlaces = 0
+    Font.Color = 13553358
+    Font.Height = -21
+    Font.Name = 'Roboto'
     Increment = 1
     MaxValue = 1000
     MinValue = 0
     OnChange = QmodChange
+    ParentFont = False
     TabOrder = 16
     Value = 3
   end
   object criadocom: TCheckBoxThemed
     Left = 440
     Height = 28
-    Top = 560
+    Top = 588
     Width = 354
     Caption = '"Criado com Marketing Page Maker"'
     Checked = True
@@ -742,7 +746,7 @@ object Maker: TMaker
     Left = 912
     Height = 52
     Hint = 'Cor do botão de compra'
-    Top = 400
+    Top = 408
     Width = 80
     Caption = 'Cor '
     Font.Color = 13553358
@@ -755,7 +759,7 @@ object Maker: TMaker
   object txtbotao: TEdit
     Left = 440
     Height = 52
-    Top = 400
+    Top = 408
     Width = 189
     AutoSize = False
     BorderStyle = bsNone
@@ -770,7 +774,7 @@ object Maker: TMaker
   object txtbt: TLabel
     Left = 440
     Height = 24
-    Top = 372
+    Top = 380
     Width = 55
     Caption = 'Texto'
     Font.Color = clWhite
@@ -782,7 +786,7 @@ object Maker: TMaker
   object txtbt2: TLabel
     Left = 720
     Height = 24
-    Top = 372
+    Top = 380
     Width = 115
     Caption = 'Link e Botão'
     Font.Color = clWhite
@@ -795,7 +799,7 @@ object Maker: TMaker
     Left = 632
     Height = 52
     Hint = 'Cor do botão de compra'
-    Top = 400
+    Top = 408
     Width = 80
     Caption = 'Cor '
     Font.Color = 13553358
@@ -3495,6 +3499,18 @@ object Maker: TMaker
     ReadOnly = True
     TabOrder = 26
     Visible = False
+  end
+  object maisr: TButton
+    Left = 823
+    Height = 52
+    Top = 564
+    Width = 168
+    Caption = 'Avançado...'
+    Font.Color = 13553358
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentFont = False
+    TabOrder = 27
   end
   object topmenu: TMainMenu
     left = 336
