@@ -3509,6 +3509,7 @@ object Maker: TMaker
     Font.Color = 13553358
     Font.Height = -21
     Font.Name = 'Roboto'
+    OnClick = maisrClick
     ParentFont = False
     TabOrder = 27
   end

@@ -2,11 +2,11 @@ object MakerMod: TMakerMod
   Left = 431
   Height = 388
   Top = 153
-  Width = 476
+  Width = 472
   BorderStyle = bsSingle
   Caption = 'Editor de Módulos...'
   ClientHeight = 388
-  ClientWidth = 476
+  ClientWidth = 472
   Color = 4605443
   Font.Height = -20
   Font.Name = 'Sans'

@@ -1,7 +1,7 @@
 object avancado: Tavancado
-  Left = 379
+  Left = 492
   Height = 564
-  Top = 20
+  Top = 16
   Width = 837
   BorderStyle = bsDialog
   Caption = 'Configure as propriedades da sua página [Avançado...]'
@@ -74,6 +74,7 @@ object avancado: Tavancado
     Caption = 'Configurar Dúvidas'
     Font.Height = -21
     Font.Name = 'Roboto'
+    OnClick = OpenMMClick
     ParentFont = False
     TabOrder = 2
   end
@@ -947,19 +948,18 @@ object avancado: Tavancado
     Height = 47
     Top = 504
     Width = 296
-    Caption = 'Aplicar'
+    Caption = 'Voltar Para Tela Principal...'
     Font.Height = -21
     Font.Name = 'Roboto'
     OnClick = okClick
     ParentFont = False
     TabOrder = 5
   end
-  object Panel1: TPanel
+  object IMGop: TPanel
     Left = 528
     Height = 216
     Top = 48
     Width = 296
-    Caption = 'Panel1'
     ClientHeight = 216
     ClientWidth = 296
     Color = 15724527
@@ -5993,5 +5993,14 @@ object avancado: Tavancado
       ParentFont = False
       TabOrder = 2
     end
+  end
+  object codigoAvancado: TMemo
+    Left = 248
+    Height = 44
+    Top = 504
+    Width = 259
+    ReadOnly = True
+    TabOrder = 7
+    Visible = False
   end
 end

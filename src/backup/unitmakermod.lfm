@@ -2,12 +2,12 @@ object MakerMod: TMakerMod
   Left = 431
   Height = 388
   Top = 153
-  Width = 476
+  Width = 472
   BorderStyle = bsSingle
   Caption = 'Editor de Módulos...'
   ClientHeight = 388
-  ClientWidth = 476
-  Color = 13618980
+  ClientWidth = 472
+  Color = 4605443
   Font.Height = -20
   Font.Name = 'Sans'
   FormStyle = fsStayOnTop
@@ -25,7 +25,7 @@ object MakerMod: TMakerMod
     Alignment = taCenter
     AutoSize = False
     Caption = 'Editor de Módulos'
-    Font.Color = 1447446
+    Font.Color = clWhite
     Font.Height = -20
     Font.Name = 'Sans'
     ParentColor = False
@@ -65,7 +65,7 @@ object MakerMod: TMakerMod
     Top = 136
     Width = 181
     Caption = 'Aulas do Módulo *'
-    Font.Color = 1447446
+    Font.Color = clWhite
     Font.Height = -20
     Font.Name = 'Sans'
     ParentColor = False
@@ -96,7 +96,7 @@ object MakerMod: TMakerMod
     Top = 40
     Width = 184
     Caption = 'Nome do Módulo *'
-    Font.Color = 1447446
+    Font.Color = clWhite
     Font.Height = -20
     Font.Name = 'Sans'
     ParentColor = False

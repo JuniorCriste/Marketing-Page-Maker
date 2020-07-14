@@ -81,6 +81,7 @@ type
     procedure Button4Click(Sender: TObject);
     procedure corbotaoClick(Sender: TObject);
     procedure cortxtClick(Sender: TObject);
+    procedure maisrClick(Sender: TObject);
     procedure OpenMMClick(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -108,7 +109,7 @@ var
   coratualTxt: string;
   coratualBot: string;
 implementation
-uses LCLIntf, UnitMakerMod, unitwallpaper, unitsMod, unitviewcode;
+uses LCLIntf, UnitMakerMod, unitwallpaper, unitsMod, unitviewcode, unitavancado;
 
 
 
@@ -350,6 +351,12 @@ try
    end;
  end;
  end;
+
+procedure TMaker.maisrClick(Sender: TObject);
+begin
+  avancado.Visible:= true;
+  maker.Visible:= false;
+end;
 
 procedure TMaker.Button2Click(Sender: TObject);
 begin
