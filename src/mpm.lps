@@ -8,7 +8,7 @@
         <Filename Value="mpm.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="73"/>
+        <UsageCount Value="75"/>
       </Unit0>
       <Unit1>
         <Filename Value="unitsmod.pas"/>
@@ -18,7 +18,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitsMod"/>
         <CursorPos X="31" Y="9"/>
-        <UsageCount Value="73"/>
+        <UsageCount Value="75"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -29,9 +29,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="205"/>
-        <CursorPos Y="190"/>
-        <UsageCount Value="72"/>
+        <TopLine Value="146"/>
+        <CursorPos X="39" Y="159"/>
+        <UsageCount Value="74"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
@@ -44,7 +44,7 @@
         <EditorIndex Value="5"/>
         <TopLine Value="108"/>
         <CursorPos X="65" Y="122"/>
-        <UsageCount Value="69"/>
+        <UsageCount Value="71"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit3>
@@ -56,7 +56,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="4"/>
         <CursorPos X="24" Y="133"/>
-        <UsageCount Value="55"/>
+        <UsageCount Value="57"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit4>
@@ -67,7 +67,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="3"/>
-        <UsageCount Value="50"/>
+        <UsageCount Value="52"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit5>
@@ -80,9 +80,9 @@
         <UnitName Value="unitAvancado"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="156"/>
-        <CursorPos X="40" Y="159"/>
-        <UsageCount Value="32"/>
+        <TopLine Value="162"/>
+        <CursorPos X="30" Y="174"/>
+        <UsageCount Value="34"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit6>
@@ -96,7 +96,7 @@
         <EditorIndex Value="6"/>
         <TopLine Value="46"/>
         <CursorPos X="17" Y="51"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="32"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit7>
@@ -115,120 +115,120 @@
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="unitmakerduv.pas"/>
-        <Caret Line="68" Column="70" TopLine="55"/>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="360" Column="3" TopLine="358"/>
       </Position1>
       <Position2>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="200" Column="3" TopLine="118"/>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="183" Column="34" TopLine="179"/>
       </Position2>
       <Position3>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="192" Column="3" TopLine="190"/>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="360" Column="3" TopLine="358"/>
       </Position3>
       <Position4>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="192" Column="3" TopLine="190"/>
+        <Filename Value="unitmakerduv.pas"/>
+        <Caret Line="50" Column="31" TopLine="42"/>
       </Position4>
       <Position5>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="200" Column="3" TopLine="193"/>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="213" Column="40" TopLine="206"/>
       </Position5>
       <Position6>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="213" Column="57" TopLine="206"/>
+        <Caret Line="360" Column="3" TopLine="358"/>
       </Position6>
       <Position7>
         <Filename Value="unitmaker.pas"/>
         <Caret Line="360" Column="3" TopLine="358"/>
       </Position7>
       <Position8>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="183" Column="34" TopLine="179"/>
-      </Position8>
-      <Position9>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="360" Column="3" TopLine="358"/>
-      </Position9>
-      <Position10>
-        <Filename Value="unitmakerduv.pas"/>
-        <Caret Line="50" Column="31" TopLine="42"/>
-      </Position10>
-      <Position11>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="213" Column="40" TopLine="206"/>
-      </Position11>
-      <Position12>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="360" Column="3" TopLine="358"/>
-      </Position12>
-      <Position13>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="360" Column="3" TopLine="358"/>
-      </Position13>
-      <Position14>
         <Filename Value="unitavancado.pas"/>
         <Caret Line="84" TopLine="81"/>
-      </Position14>
-      <Position15>
+      </Position8>
+      <Position9>
         <Filename Value="unitavancado.pas"/>
         <Caret Line="188" Column="3" TopLine="186"/>
-      </Position15>
-      <Position16>
+      </Position9>
+      <Position10>
         <Filename Value="unitavancado.pas"/>
         <Caret Line="159" Column="20" TopLine="108"/>
+      </Position10>
+      <Position11>
+        <Filename Value="unitavancado.pas"/>
+        <Caret Line="188" Column="3" TopLine="186"/>
+      </Position11>
+      <Position12>
+        <Filename Value="unitavancado.pas"/>
+        <Caret Line="103" Column="51" TopLine="93"/>
+      </Position12>
+      <Position13>
+        <Filename Value="unitavancado.pas"/>
+        <Caret Line="190" Column="3" TopLine="188"/>
+      </Position13>
+      <Position14>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="147" Column="51" TopLine="106"/>
+      </Position14>
+      <Position15>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="215" Column="39" TopLine="212"/>
+      </Position15>
+      <Position16>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="372" Column="3" TopLine="370"/>
       </Position16>
       <Position17>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="188" Column="3" TopLine="186"/>
+        <Caret Line="80" Column="57" TopLine="78"/>
       </Position17>
       <Position18>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="103" Column="51" TopLine="93"/>
+        <Caret Line="184" Column="3" TopLine="182"/>
       </Position18>
       <Position19>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="190" Column="3" TopLine="188"/>
+        <Caret Line="167" Column="40" TopLine="154"/>
       </Position19>
       <Position20>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="147" Column="51" TopLine="106"/>
+        <Filename Value="unitavancado.pas"/>
+        <Caret Line="189" Column="3" TopLine="187"/>
       </Position20>
       <Position21>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="215" Column="39" TopLine="212"/>
+        <Filename Value="unitavancado.pas"/>
+        <Caret Line="172" Column="3" TopLine="165"/>
       </Position21>
       <Position22>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="372" Column="3" TopLine="370"/>
+        <Filename Value="unitavancado.pas"/>
+        <Caret Line="189" Column="3" TopLine="187"/>
       </Position22>
       <Position23>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="80" Column="57" TopLine="78"/>
+        <Caret Line="164" Column="192" TopLine="159"/>
       </Position23>
       <Position24>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="184" Column="3" TopLine="182"/>
+        <Caret Line="189" Column="3" TopLine="187"/>
       </Position24>
       <Position25>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="167" Column="40" TopLine="154"/>
+        <Caret Line="159" Column="40" TopLine="156"/>
       </Position25>
       <Position26>
         <Filename Value="unitavancado.pas"/>
         <Caret Line="189" Column="3" TopLine="187"/>
       </Position26>
       <Position27>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="172" Column="3" TopLine="165"/>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="225" Column="70" TopLine="221"/>
       </Position27>
       <Position28>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="189" Column="3" TopLine="187"/>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="372" Column="3" TopLine="370"/>
       </Position28>
       <Position29>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="164" Column="192" TopLine="159"/>
+        <Caret Line="171" Column="40" TopLine="90"/>
       </Position29>
       <Position30>
         <Filename Value="unitavancado.pas"/>

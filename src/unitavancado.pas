@@ -166,10 +166,13 @@ begin
 
 
       { DUVIDAS FREQUENTES}
+  if avancado.Qmod.Value > 0 then
+  begin
   avancado.codigoAvancado.Lines.Add('<div id="duvfre">') ;
   avancado.codigoAvancado.Lines.Add(makerDuvidas.codDuvs.Text) ;
-  avancado.codigoAvancado.Lines.Add('<div>') ;
- 
+  avancado.codigoAvancado.Lines.Add('</div>') ;
+  end;
+
   avancado.codigoAvancado.Lines.Add('</center>');
 end;
 

@@ -156,7 +156,7 @@ begin
   begin
   avancado.codigoAvancado.Lines.Add('<div id="descricao2">');
   avancado.codigoAvancado.Lines.Add(avancado.descricao2.Text);
-  avancado.codigoAvancado.Lines.Add('<div>');
+  avancado.codigoAvancado.Lines.Add('</div>');
   end;
 
   if avancado.Qmod.Value > 0 then
@@ -168,7 +168,7 @@ begin
       { DUVIDAS FREQUENTES}
   avancado.codigoAvancado.Lines.Add('<div id="duvfre">') ;
   avancado.codigoAvancado.Lines.Add(makerDuvidas.codDuvs.Text) ;
-  avancado.codigoAvancado.Lines.Add('<div>') ;
+  avancado.codigoAvancado.Lines.Add('</div>') ;
  
   avancado.codigoAvancado.Lines.Add('</center>');
 end;

@@ -549,15 +549,17 @@ object Maker: TMaker
       ''
       '#meio{'
       'width: 100%;'
-      'text-align: center;'
-      'background-color: #efefef;'
-      'color: black;'
       'height: auto;'#9
+      'position: flex;'
+      'align-items: center;'
+      'justify-content: center;'
+      'background-color: #efefef;'
+      'text-align: center;'
+      'color: black;'
       'font-size: 35px;'
-      'margin-left: -30px;'
-      'padding-right: 38px;'
       'font-family: ''Work Sans'', sans-serif;'
-      'position: relative;'
+      'margin: 0;'
+      'padding: 0;'
       '}'
       ''
       '#descricao{'
@@ -670,13 +672,15 @@ object Maker: TMaker
       'height: auto;'#9
       'display: flex;'
       'flex-wrap: wrap;'
-      'position: relative;'
+      'position: flex;'
+      'align-items: center; '
+      'justify-content: center; '
       '}'
       ''
       '.duvida{'
       'padding: 20px;'
       'height: 150px;'
-      'width: 20%;'
+      'width: 40%;'
       'background-color: #dddddd;'
       'border-radius: 20px 20px 20px 20px;'
       'margin: 30px;'
@@ -858,7 +862,7 @@ object Maker: TMaker
   object adv1: TImage
     Left = 1080
     Height = 250
-    Top = 338
+    Top = 344
     Width = 250
     Picture.Data = {
       1754506F727461626C654E6574776F726B477261706869635545010089504E47

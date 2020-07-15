@@ -154,8 +154,9 @@ begin
   maker.codfull.Lines.Add('body{ ');
   maker.codfull.Lines.Add('background-repeat: no-repeat;');
   maker.codfull.Lines.Add('background-attachment: fixed;');
-  maker.codfull.Lines.Add('background-color: #0d0d0d;');
+  maker.codfull.Lines.Add('background-color: #0d0d0d;'); 
   maker.codfull.Lines.Add('background-size: 100%;');
+  maker.codfull.Lines.Add('margin: 0; padding: 0;');
   maker.codfull.Lines.Add( WallpaperAdress);
 
   maker.codfull.Lines.Add(maker.estilo.text);
@@ -192,7 +193,7 @@ begin
   maker.codfull.Lines.Add(' <style> #titulo{ margin-top: 80; margin-bottom: 70; } </style>');
   end;
   maker.codfull.Lines.Add('</div>');           {fim do topo}
-  maker.codfull.Lines.Add('<div id="meio">');  {começo do meio}
+  maker.codfull.Lines.Add('<center><div id="meio">');  {começo do meio}
   maker.codfull.Lines.Add(' <br />');
   maker.codfull.Lines.Add('<center> <div id="descricao"> '+ maker.descricao.Text +' </div> </center>');
   maker.codfull.Lines.Add(' <br />');        
@@ -224,7 +225,7 @@ begin
 
   maker.codfull.Lines.Add('<center>' + avancado.codigoAvancado.Text + '</center>');
 
-  maker.codfull.Lines.Add('</div>');           {fim do meio}
+  maker.codfull.Lines.Add('</div></center>');           {fim do meio}
   maker.codfull.Lines.Add('<center><div id="atr">');
   maker.codfull.Lines.Add(' Todos os direitos reservados a ' + maker.autoria.text + '.');
   if maker.criadocom.Checked = true then
