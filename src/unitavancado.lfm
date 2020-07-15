@@ -1,7 +1,7 @@
 object avancado: Tavancado
   Left = 492
   Height = 564
-  Top = 16
+  Top = 44
   Width = 837
   BorderStyle = bsDialog
   Caption = 'Configure as propriedades da sua página [Avançado...]'

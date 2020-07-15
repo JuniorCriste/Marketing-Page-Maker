@@ -1,7 +1,7 @@
 object codfonte: Tcodfonte
   Left = 314
   Height = 509
-  Top = 130
+  Top = 158
   Width = 856
   Caption = 'Código Fonte'
   ClientHeight = 509

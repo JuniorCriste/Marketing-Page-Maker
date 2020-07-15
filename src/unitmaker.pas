@@ -142,6 +142,11 @@ begin
   maker.codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Montserrat|Staatliches&display=swap" rel="stylesheet">');
   maker.codfull.Lines.Add('<link href="https://fonts.googleapis.com/css?family=Work+Sans:200&display=swap" rel="stylesheet">');
 
+  if (avancado.favIcon.Text <> '') and  (avancado.favIcon.Text <> ' ')  then
+  begin
+  maker.codfull.Lines.Add('<link rel="icon" href="' +avancado.favicon.Text+ '" type="image/x-icon"/>');
+  end;
+
   {  ESTILO  }
 
   maker.codfull.Lines.Add('<style>');
@@ -203,7 +208,14 @@ begin
   maker.codfull.Lines.Add('<div id="modulos"> ' + MakerMod.codMods.Text + ' </div>');
   maker.codfull.Lines.Add(' <br />');
   maker.codfull.Lines.Add('<form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero">'+ maker.txtbotao.Text +'</button></form>');
-  maker.codfull.Lines.Add(' <br />');
+
+  if avancado.OPgarantia.Checked = true then
+  begin
+  maker.codfull.Lines.Add
+  ('<br /><center><img id="IMGgarantia" src="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Principal/garantia.png">');
+  end;
+  maker.codfull.Lines.Add(' </ center>');
+
   if (maker.garantia.Text <> '') and  (maker.garantia.Text <> ' ')  then
   begin
   maker.codfull.Lines.Add('<center><div id="garantia"> O nosso método conta com garantia e satisfação, ou seja, você tem ' + maker.garantia.Text + ' para se decidir, se ainda achar que o treinamento não é para você, basta pedir reembolso e devolverei integralmente seu dinheiro. Sem perguntas e questionamentos. </div> </center>');

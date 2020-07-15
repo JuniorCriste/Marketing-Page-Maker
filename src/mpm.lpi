@@ -89,6 +89,7 @@
         <Filename Value="unitmakerduv.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="makerDuvidas"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitmakerDuv"/>
       </Unit7>

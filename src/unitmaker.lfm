@@ -1,13 +1,13 @@
 object Maker: TMaker
   Left = 284
-  Height = 711
+  Height = 698
   Top = 0
   Width = 1082
   HorzScrollBar.Page = 1082
   VertScrollBar.Page = 616
   AutoScroll = True
   Caption = 'Configure as propriedades da sua página'
-  ClientHeight = 671
+  ClientHeight = 658
   ClientWidth = 1082
   Color = 1966080
   Font.Color = 13553358
@@ -40,7 +40,7 @@ object Maker: TMaker
   object StatusBar1: TStatusBar
     Left = 0
     Height = 18
-    Top = 653
+    Top = 640
     Width = 1330
     Panels = <>
   end
@@ -496,6 +496,19 @@ object Maker: TMaker
     Top = 56
     Width = 107
     Lines.Strings = (
+      'img{'
+      '-webkit-user-drag: none;'
+      ' -khtml-user-drag: none;'
+      ' -moz-user-drag: none;'
+      ' -o-user-drag: none;'
+      ' user-drag: none;'
+      '}'
+      ''
+      '#IMGgarantia{'
+      'width: 337px;'
+      'height: 228px;'
+      '}'
+      ''
       '#topo{'
       'width: 100%;'
       'text-align: center;'
@@ -642,7 +655,31 @@ object Maker: TMaker
       '}'
       ''
       '#fpag{'
-      'margin top: 20;'
+      'margin top: 40;'
+      '}'
+      ''
+      '#duvfre{'
+      'background-color: #efefef;'
+      'color: black;'
+      'width: 1000px;'
+      'height: auto;'#9
+      'display: flex;'
+      'font-size: 18px;'
+      'padding-right: 38px;'
+      'font-family: ''Work Sans'', sans-serif;'
+      'flex-direction: row;'
+      'flex-wrap: wrap;'
+      'justify-content: center;'
+      '}'
+      ''
+      '.duvida{'
+      'padding: 20px;'
+      'height: 130px;'
+      'width: 450px;'
+      'background-color: #dddddd;'
+      'border-radius: 20px 20px 20px 20px;'
+      'margin: 30px;'
+      'margin-top: 10px;'
       '}'
       ''
       '@media only screen and (max-width: 1036px){'

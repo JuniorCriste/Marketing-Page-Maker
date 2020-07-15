@@ -45,10 +45,10 @@ procedure TmakerDuvidas.cadDuvClick(Sender: TObject);
 begin
   codDuvs.Lines.Add('<div class="duvida"><h2>' + duvida.Text + '</h2>');
   codDuvs.Lines.Add('<div class="resposta">' + resposta.Text + '</div> </div>');
+  countDuvs := countDuvs + 1;                              
   txt1.Caption:= 'Título da Dúvida ' + IntToStr(countDuvs);
-  txt2.Caption:= 'Resposta da Dúvida ' + IntToStr(countDuvs); 
-  countDuvs := countDuvs + 1;
-  if countDuvs = avancado.Qmod.Value then
+  txt2.Caption:= 'Resposta da Dúvida ' + IntToStr(countDuvs);
+  if countDuvs > avancado.Qmod.Value then
   begin
   avancado.Visible:= true;
   makerDuvidas.Visible:= false;

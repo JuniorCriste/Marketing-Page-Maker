@@ -1,7 +1,7 @@
 object sMod: TsMod
   Left = 560
   Height = 193
-  Top = 287
+  Top = 315
   Width = 450
   BorderStyle = bsSingle
   Caption = 'Escolha um modelo'

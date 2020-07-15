@@ -51,8 +51,8 @@ object codfonte: Tcodfonte
       BorderStyle = bsNone
       Color = 3549952
       Font.Color = clWhite
-      Font.Height = -16
-      Font.Style = [fsItalic]
+      Font.Height = -11
+      Font.Orientation = 15
       ParentFont = False
       ScrollBars = ssAutoVertical
       TabOrder = 0
