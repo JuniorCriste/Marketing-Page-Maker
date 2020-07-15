@@ -99,7 +99,6 @@ object avancado: Tavancado
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
-    MaxLength = 450
     ParentFont = False
     TabOrder = 3
   end
