@@ -1,7 +1,7 @@
 object Maker: TMaker
-  Left = 284
+  Left = 223
   Height = 698
-  Top = 0
+  Top = 11
   Width = 1082
   HorzScrollBar.Page = 1082
   VertScrollBar.Page = 616
@@ -42,7 +42,7 @@ object Maker: TMaker
     Left = 0
     Height = 18
     Top = 640
-    Width = 1330
+    Width = 1336
     Panels = <>
   end
   object Label1: TLabel
@@ -237,7 +237,7 @@ object Maker: TMaker
     ParentFont = False
     TabOrder = 6
   end
-  object Button2: TButton
+  object viewnav: TButton
     Left = 1080
     Height = 30
     Top = 136
@@ -246,33 +246,33 @@ object Maker: TMaker
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
-    OnClick = Button2Click
+    OnClick = viewnavClick
     ParentFont = False
     TabOrder = 7
   end
-  object Button3: TButton
+  object export: TButton
     Left = 1080
     Height = 30
-    Top = 184
+    Top = 264
     Width = 250
-    Caption = 'Exportar *htm'
+    Caption = 'Exportar Aquivo *htm'
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
-    OnClick = Button3Click
+    OnClick = exportClick
     ParentFont = False
     TabOrder = 8
   end
-  object Button4: TButton
+  object zero: TButton
     Left = 1080
     Height = 30
-    Top = 232
+    Top = 176
     Width = 250
     Caption = 'Zerar Modelo'
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
-    OnClick = Button4Click
+    OnClick = zeroClick
     ParentFont = False
     TabOrder = 9
   end
@@ -606,7 +606,6 @@ object Maker: TMaker
       '}'
       ''
       ''
-      ''
       '#atr{'
       'width: 50%;'
       'text-align: center;'
@@ -618,8 +617,9 @@ object Maker: TMaker
       'margin-top: 30px;'
       'opacity: 0.7;'
       'border-radius: 20px;'
+      'padding: 10px;'
+      'margin-bottom: 50px;'
       '}'
-      ''
       ''
       'exercicio{'
       '    background-image: url(''https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/exercicios_emo.png'');'
@@ -664,6 +664,13 @@ object Maker: TMaker
       'margin: 20;'
       '}'
       ''
+      ''
+      '#fpag img{'
+      'border: 1px solid #999e9a;'
+      'border-radius: 4px;'
+      '}'
+      ''
+      ''
       '#duvfre{'
       'margin-top: 20;'
       'background-color: #efefef;'
@@ -679,8 +686,10 @@ object Maker: TMaker
       'justify-content: center; '
       '}'
       ''
+      ''
       '.duvida{'
-      'padding: 20px;'
+      'padding-left: 20px;'
+      'padding-right: 20px;'
       'height: 150px;'
       'width: 40%;'
       'background-color: #dddddd;'
@@ -698,9 +707,8 @@ object Maker: TMaker
       ''
       ''
       '#meio{'
-      'width: 110%;'
-      'margin: 0;'
-      'padding: 0;'
+      'width: 100%;'
+      'justify-content: center;'
       '}'
       ''
       '.duvida{'
@@ -874,6 +882,7 @@ object Maker: TMaker
     TabOrder = 23
   end
   object adv1: TImage
+    Cursor = crHandPoint
     Left = 1080
     Height = 250
     Top = 344
@@ -3577,14 +3586,24 @@ object Maker: TMaker
     ParentFont = False
     TabOrder = 27
   end
+  object publi: TLabel
+    Left = 1080
+    Height = 34
+    Top = 320
+    Width = 256
+    AutoSize = False
+    Caption = 'Veja também:'
+    Font.Color = 13553358
+    Font.Height = -16
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+  end
   object topmenu: TMainMenu
     left = 336
     top = 32
     object MenuItem1: TMenuItem
       Caption = 'Arquivo'
-      object MenuItem2: TMenuItem
-        Caption = 'Salvar Modelo'
-      end
       object MenuItem3: TMenuItem
         Caption = 'Zerar Modelo'
       end
@@ -3596,44 +3615,53 @@ object Maker: TMaker
       Caption = 'Projeto'
       object MenuItem14: TMenuItem
         Caption = 'Visualizar no Navegador'
+        OnClick = MenuItem14Click
       end
       object MenuItem15: TMenuItem
         Caption = 'Ver Código'
         OnClick = MenuItem15Click
       end
-      object MenuItem16: TMenuItem
-        Caption = 'Exportar Arquivo *htm'
-        OnClick = MenuItem16Click
+      object MenuItem2: TMenuItem
+        Caption = 'Apenas Exportar'
+        OnClick = MenuItem2Click
       end
-      object MenuItem17: TMenuItem
-        Caption = 'Exportar Tudo'
+      object MenuItem16: TMenuItem
+        Caption = 'Exportar e Salvar Arquivo *htm'
+        OnClick = MenuItem16Click
       end
     end
     object MenuItem5: TMenuItem
       Caption = 'Sobre'
       object MenuItem6: TMenuItem
         Caption = 'Informaticode'
+        OnClick = MenuItem6Click
       end
       object MenuItem7: TMenuItem
         Caption = 'Junior Criste'
+        OnClick = MenuItem7Click
       end
       object MenuItem8: TMenuItem
         Caption = 'Marketing Page Maker'
+        OnClick = MenuItem8Click
       end
     end
     object MenuItem9: TMenuItem
       Caption = 'Ajuda'
       object MenuItem10: TMenuItem
         Caption = 'Versão'
+        OnClick = MenuItem10Click
       end
       object MenuItem11: TMenuItem
         Caption = 'Manual'
+        OnClick = MenuItem11Click
       end
       object MenuItem12: TMenuItem
-        Caption = 'Reportar Bug'
+        Caption = 'Reportar Bug ou Contato'
+        OnClick = MenuItem12Click
       end
       object MenuItem18: TMenuItem
         Caption = 'Tutorial em Vídeo'
+        OnClick = MenuItem18Click
       end
     end
   end
@@ -3665,5 +3693,10 @@ object Maker: TMaker
     )
     left = 336
     top = 64
+  end
+  object salvador: TSaveDialog
+    Title = 'Escolha um lugar para salvar sua página!'
+    left = 336
+    top = 104
   end
 end

@@ -14,24 +14,27 @@ type
   { TMaker }
 
   TMaker = class(TForm)
+    publi: TLabel;
     maisr: TButton;
     corbot: TButton;
     cortxt: TButton;
     cores: TColorDialog;
     criadocom: TCheckBoxThemed;
     MenuItem18: TMenuItem;
+    MenuItem2: TMenuItem;
     modAnim: TCheckBoxThemed;
     DemoCorTxt: TPanel;
     adv1: TImage;
     modStyle1: TMemo;
     modStyle2: TMemo;
+    salvador: TSaveDialog;
     txtbt: TLabel;
     txtbt2: TLabel;
     txtbotao: TEdit;
     OpenMM: TButton;
-    Button2: TButton;
-    Button3: TButton;
-    Button4: TButton;
+    viewnav: TButton;
+    export: TButton;
+    zero: TButton;
     DemoCorBut: TPanel;
     Qmod: TFloatSpinEdit;
     Label10: TLabel;
@@ -65,8 +68,6 @@ type
     MenuItem14: TMenuItem;
     MenuItem15: TMenuItem;
     MenuItem16: TMenuItem;
-    MenuItem17: TMenuItem;
-    MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
@@ -78,14 +79,23 @@ type
     StatusBar1: TStatusBar;
     procedure autoriaChange(Sender: TObject);
     procedure corbotClick(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
+    procedure MenuItem2Click(Sender: TObject);
+    procedure zeroClick(Sender: TObject);
     procedure corbotaoClick(Sender: TObject);
     procedure cortxtClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure maisrClick(Sender: TObject);
+    procedure MenuItem10Click(Sender: TObject);
+    procedure MenuItem11Click(Sender: TObject);
+    procedure MenuItem12Click(Sender: TObject);
+    procedure MenuItem14Click(Sender: TObject);
+    procedure MenuItem18Click(Sender: TObject);
+    procedure MenuItem6Click(Sender: TObject);
+    procedure MenuItem7Click(Sender: TObject);
+    procedure MenuItem8Click(Sender: TObject);
     procedure OpenMMClick(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
+    procedure viewnavClick(Sender: TObject);
+    procedure exportClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure MenuItem15Click(Sender: TObject);
@@ -109,6 +119,7 @@ var
   coratualS: string;
   coratualTxt: string;
   coratualBot: string;
+  caminho: string;
 implementation
 uses LCLIntf, UnitMakerMod, unitwallpaper, unitsMod, unitviewcode, unitavancado;
 
@@ -242,7 +253,7 @@ begin
   {  EXPORTAÇÃO  }
  full := TStringList.Create;
  full.Add(maker.codfull.Text);
- full.SaveToFile('pre665.htm');
+ full.SaveToFile(caminho);
  finally
    full.Free;
  end;
@@ -346,7 +357,12 @@ try
  end;
 end;
 
-procedure TMaker.Button4Click(Sender: TObject);
+procedure TMaker.MenuItem2Click(Sender: TObject);
+begin
+  export.Click;
+end;
+
+procedure TMaker.zeroClick(Sender: TObject);
 begin
 
 end;
@@ -381,17 +397,65 @@ begin
   maker.Visible:= false;
 end;
 
-procedure TMaker.Button2Click(Sender: TObject);
+procedure TMaker.MenuItem10Click(Sender: TObject);
+begin
+  showmessage('Marketing Page Maker Versão 0.01 | Edição Especial - "CEGONHA"');
+end;
+
+procedure TMaker.MenuItem11Click(Sender: TObject);
+begin
+  OpenURL('https://informaticode.store/.../MPM');
+end;
+
+procedure TMaker.MenuItem12Click(Sender: TObject);
+begin
+  OpenURL('https://instagram.com/informaticode/');
+end;
+
+procedure TMaker.MenuItem14Click(Sender: TObject);
+begin
+  viewnav.Click;
+end;
+
+procedure TMaker.MenuItem18Click(Sender: TObject);
+begin
+  OpenURL('https://informaticode.store/.../MPM#video');
+end;
+
+procedure TMaker.MenuItem6Click(Sender: TObject);
+begin
+  OpenURL('https://www.informaticode.com.br/p/sobre.html');
+end;
+
+procedure TMaker.MenuItem7Click(Sender: TObject);
+begin
+  OpenURL('https://www.informaticode.com.br/p/junior-criste.html');
+end;
+
+procedure TMaker.MenuItem8Click(Sender: TObject);
+begin
+  OpenURL('https://informaticode.store/.../MPM#about');
+end;
+
+procedure TMaker.viewnavClick(Sender: TObject);
 begin
   WallpaperAdress := PreIMG.text + NameIMG + PosIMG.text;
+  caminho:= 'pre665.htm';
   exportar;
   OpenURL('pre665.htm');
 end;
 
-procedure TMaker.Button3Click(Sender: TObject);
+procedure TMaker.exportClick(Sender: TObject);
 begin               
  WallpaperAdress := PreIMG.text + NameIMG + PosIMG.text;
- exportar;
+ try
+  salvador.Execute
+ finally
+  caminho:= salvador.FileName;
+  exportar;
+  showmessage('SUA PÁGINA FOI SALVA!')
+ end;
+
 end;
 
 
