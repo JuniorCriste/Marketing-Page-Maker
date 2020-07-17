@@ -152,7 +152,8 @@ begin
 
   maker.codfull.Lines.Add('<style>');
 
-  maker.codfull.Lines.Add('body{ ');
+  maker.codfull.Lines.Add('body{ ');                        
+  maker.codfull.Lines.Add('overflow-x: hidden;');
   maker.codfull.Lines.Add('background-repeat: no-repeat;');
   maker.codfull.Lines.Add('background-attachment: fixed;');
   maker.codfull.Lines.Add('background-color: #0d0d0d;'); 
@@ -371,7 +372,7 @@ try
 
 procedure TMaker.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
-  application.Terminated;
+  application.Terminate;
 end;
 
 procedure TMaker.maisrClick(Sender: TObject);

@@ -695,6 +695,18 @@ object Maker: TMaker
       'body{'
       'background-size: 300%;'
       '}'
+      ''
+      ''
+      '#meio{'
+      'width: 110%;'
+      'margin: 0;'
+      'padding: 0;'
+      '}'
+      ''
+      '.duvida{'
+      'width: 70%;'
+      '}'
+      ''
       '}'
     )
     ReadOnly = True
