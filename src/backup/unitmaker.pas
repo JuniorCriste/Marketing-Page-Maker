@@ -81,6 +81,7 @@ type
     procedure Button4Click(Sender: TObject);
     procedure corbotaoClick(Sender: TObject);
     procedure cortxtClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure maisrClick(Sender: TObject);
     procedure OpenMMClick(Sender: TObject);
     procedure Button2Click(Sender: TObject);
@@ -368,6 +369,11 @@ try
  end;
  end;
 
+procedure TMaker.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+  application.Terminated;
+end;
+
 procedure TMaker.maisrClick(Sender: TObject);
 begin
   avancado.Visible:= true;
@@ -400,6 +406,13 @@ end;
 procedure TMaker.FormShow(Sender: TObject);
 begin
  sMod.visible:= false;
+  if Qmod.Value < 1 then
+  begin
+    OpenMM.Enabled:= false;
+    end else
+    begin
+    OpenMM.Enabled:= true;
+  end;
 end;
 
 procedure TMaker.MenuItem15Click(Sender: TObject);

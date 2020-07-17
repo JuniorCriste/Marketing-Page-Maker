@@ -14,6 +14,7 @@ object Maker: TMaker
   Font.Height = -21
   Font.Name = 'Sans'
   Menu = topmenu
+  OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
   Position = poDesktopCenter
@@ -660,10 +661,11 @@ object Maker: TMaker
       '}'
       ''
       '#fpag{'
-      'margin top: 40;'
+      'margin: 20;'
       '}'
       ''
       '#duvfre{'
+      'margin-top: 20;'
       'background-color: #efefef;'
       'color: black;'
       'font-size: 18px;'
@@ -776,7 +778,7 @@ object Maker: TMaker
     OnChange = QmodChange
     ParentFont = False
     TabOrder = 16
-    Value = 3
+    Value = 0
   end
   object criadocom: TCheckBoxThemed
     Left = 440
