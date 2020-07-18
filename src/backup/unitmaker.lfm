@@ -268,7 +268,7 @@ object Maker: TMaker
     Height = 30
     Top = 176
     Width = 250
-    Caption = 'Zerar Modelo'
+    Caption = 'Limpar Campos'
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
@@ -573,6 +573,7 @@ object Maker: TMaker
       'width: 70%;'
       'text-align: justify;'
       'margin-top: 30;'
+      'margin-bottom: 30;'
       'word-break: break-word;'
       '}'
       ''
@@ -667,12 +668,11 @@ object Maker: TMaker
       ''
       '#fpag img{'
       'border: 1px solid #999e9a;'
-      'border-radius: 4px;'
+      'border-radius: 7px;'
       '}'
       ''
       ''
       '#duvfre{'
-      'margin-top: 20;'
       'background-color: #efefef;'
       'color: black;'
       'font-size: 18px;'
@@ -3606,9 +3606,11 @@ object Maker: TMaker
       Caption = 'Arquivo'
       object MenuItem3: TMenuItem
         Caption = 'Zerar Modelo'
+        OnClick = MenuItem3Click
       end
       object MenuItem4: TMenuItem
         Caption = 'Sair'
+        OnClick = MenuItem4Click
       end
     end
     object MenuItem13: TMenuItem
@@ -3620,10 +3622,6 @@ object Maker: TMaker
       object MenuItem15: TMenuItem
         Caption = 'Ver Código'
         OnClick = MenuItem15Click
-      end
-      object MenuItem2: TMenuItem
-        Caption = 'Apenas Exportar'
-        OnClick = MenuItem2Click
       end
       object MenuItem16: TMenuItem
         Caption = 'Exportar e Salvar Arquivo *htm'

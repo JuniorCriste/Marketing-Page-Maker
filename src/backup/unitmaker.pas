@@ -21,7 +21,6 @@ type
     cores: TColorDialog;
     criadocom: TCheckBoxThemed;
     MenuItem18: TMenuItem;
-    MenuItem2: TMenuItem;
     modAnim: TCheckBoxThemed;
     DemoCorTxt: TPanel;
     adv1: TImage;
@@ -80,6 +79,8 @@ type
     procedure autoriaChange(Sender: TObject);
     procedure corbotClick(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
     procedure zeroClick(Sender: TObject);
     procedure corbotaoClick(Sender: TObject);
     procedure cortxtClick(Sender: TObject);
@@ -316,20 +317,9 @@ begin
 end;
 
 procedure TMaker.MenuItem16Click(Sender: TObject);
-var
-  full: TStringList;
 begin
-{
-  full := TStringList.Create;
-  try
-  full.Add('<a href="' + container1.Text + '" target="_blank"> Visitar Site </a>');
-
-  full.SaveToFile('pre665.htm');
-  finally
-    full.Free;
-  end;
-  }
-  end;
+ export.Click;
+end;
 
 procedure TMaker.OpenMMClick(Sender: TObject);
 begin
@@ -362,9 +352,26 @@ begin
   export.Click;
 end;
 
+procedure TMaker.MenuItem3Click(Sender: TObject);
+begin
+  zero.Click;
+end;
+
+procedure TMaker.MenuItem4Click(Sender: TObject);
+begin
+  application.Terminate;
+end;
+
 procedure TMaker.zeroClick(Sender: TObject);
 begin
-
+  ncurso.Clear;
+  descricao.Clear;
+  valor.Clear;
+  garantia.Clear;
+  video.Clear;
+  txtbotao.Clear;
+  linkvenda.Clear;
+  autoria.Clear;
 end;
 
 procedure TMaker.corbotaoClick(Sender: TObject);
@@ -451,9 +458,9 @@ begin
  try
   salvador.Execute
  finally
-  caminho:= salvador.FileName;
+  caminho:= salvador.FileName + '.htm';
   exportar;
-  showmessage('SUA PÁGINA FOI SALVA!')
+  showmessage('SUA PÁGINA FOI SALVA EM' + caminho + '!')
  end;
 
 end;

@@ -21,7 +21,6 @@ type
     cores: TColorDialog;
     criadocom: TCheckBoxThemed;
     MenuItem18: TMenuItem;
-    MenuItem2: TMenuItem;
     modAnim: TCheckBoxThemed;
     DemoCorTxt: TPanel;
     adv1: TImage;
@@ -77,9 +76,12 @@ type
     MenuItem9: TMenuItem;
     topmenu: TMainMenu;
     StatusBar1: TStatusBar;
+    procedure adv1Click(Sender: TObject);
     procedure autoriaChange(Sender: TObject);
     procedure corbotClick(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
     procedure zeroClick(Sender: TObject);
     procedure corbotaoClick(Sender: TObject);
     procedure cortxtClick(Sender: TObject);
@@ -212,7 +214,7 @@ begin
   maker.codfull.Lines.Add(' <br />');        
   if (maker.valor.Text <> '') and  (maker.valor.Text <> ' ')  then
   begin
-  maker.codfull.Lines.Add('<div id="valor">Apenas por <br>R$' + maker.valor.Text + '</b>! </div>');
+  maker.codfull.Lines.Add('<div id="valor">Apenas por <br><b>R$' + maker.valor.Text + '</b>! </div>');
 
   end else
   begin
@@ -316,20 +318,9 @@ begin
 end;
 
 procedure TMaker.MenuItem16Click(Sender: TObject);
-var
-  full: TStringList;
 begin
-{
-  full := TStringList.Create;
-  try
-  full.Add('<a href="' + container1.Text + '" target="_blank"> Visitar Site </a>');
-
-  full.SaveToFile('pre665.htm');
-  finally
-    full.Free;
-  end;
-  }
-  end;
+ export.Click;
+end;
 
 procedure TMaker.OpenMMClick(Sender: TObject);
 begin
@@ -341,6 +332,11 @@ end;
 procedure TMaker.autoriaChange(Sender: TObject);
 begin
 
+end;
+
+procedure TMaker.adv1Click(Sender: TObject);
+begin
+  OpenURL('https://informaticode.store/.../Curso-de-Marketing-crie-Seu-Curso');
 end;
 
 procedure TMaker.corbotClick(Sender: TObject);
@@ -362,9 +358,26 @@ begin
   export.Click;
 end;
 
+procedure TMaker.MenuItem3Click(Sender: TObject);
+begin
+  zero.Click;
+end;
+
+procedure TMaker.MenuItem4Click(Sender: TObject);
+begin
+  application.Terminate;
+end;
+
 procedure TMaker.zeroClick(Sender: TObject);
 begin
-
+  ncurso.Clear;
+  descricao.Clear;
+  valor.Clear;
+  garantia.Clear;
+  video.Clear;
+  txtbotao.Clear;
+  linkvenda.Clear;
+  autoria.Clear;
 end;
 
 procedure TMaker.corbotaoClick(Sender: TObject);

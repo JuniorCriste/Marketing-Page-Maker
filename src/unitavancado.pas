@@ -161,7 +161,7 @@ begin
 
   if avancado.Qmod.Value > 0 then
   begin
-   avancado.codigoAvancado.Lines.Add('<center><form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero">'+ maker.txtbotao.Text +'</button></form></center>');
+   avancado.codigoAvancado.Lines.Add('<br /><center><form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero">'+ maker.txtbotao.Text +'</button></form></center>');
   end;
 
 
