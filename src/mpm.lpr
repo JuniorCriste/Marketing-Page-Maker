@@ -14,6 +14,7 @@ uses
 {$R *.res}
 
 begin
+  Application.Scaled:=True;
   Application.Title:='Marketing-Page-Maker';
   RequireDerivedFormResource:=True;
   Application.Initialize;

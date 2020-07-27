@@ -64,7 +64,7 @@ object avancado: Tavancado
     OnChange = QmodChange
     ParentFont = False
     TabOrder = 1
-    Value = 3
+    Value = 0
   end
   object OpenMM: TButton
     Left = 138
@@ -6003,7 +6003,7 @@ object avancado: Tavancado
     TabOrder = 7
     Visible = False
   end
-  object ok1: TButton
+  object CancelAndBack: TButton
     Left = 384
     Height = 47
     Top = 504
@@ -6011,7 +6011,7 @@ object avancado: Tavancado
     Caption = 'Cancelar'
     Font.Height = -21
     Font.Name = 'Roboto'
-    OnClick = ok1Click
+    OnClick = CancelAndBackClick
     ParentFont = False
     TabOrder = 8
   end

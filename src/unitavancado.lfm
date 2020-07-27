@@ -64,7 +64,7 @@ object avancado: Tavancado
     OnChange = QmodChange
     ParentFont = False
     TabOrder = 1
-    Value = 3
+    Value = 0
   end
   object OpenMM: TButton
     Left = 138
