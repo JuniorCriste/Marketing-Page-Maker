@@ -534,17 +534,20 @@ object Maker: TMaker
       'width: 720px;'
       'height: 100px;'
       'border: none;'
-      'font-size: 19px;'
+      'font-size: 18px;'
       'border-radius: 15px 15px 15px 15px;'
-      'box-shadow: 0px 5px 10px 5px black;'
+      'box-shadow: 0px 5px 10px 5px #363636;'
       'font-weight: bold;'
       'transition: 0.6s;'
-      'cursor: pointer;        '
+      'cursor: pointer;  '
+      'text-transform: uppercase;'
+      'font-weight: bold; '
       '}'
       ''
       '.euquero:hover{'
       'font-size: 20px;'
-      'box-shadow: 0px 5px 5px 4px black;'
+      'box-shadow: 0px 10px 10px 10px #969494;'
+      'letter-spacing: 2px;'
       '}'
       ''
       ''
@@ -661,16 +664,16 @@ object Maker: TMaker
       '    background-repeat: no-repeat;'
       '}'
       ''
+      ''
       '#fpag{'
-      'margin: 20;'
+      'margin-top: 25;'
       '}'
       ''
       ''
       '#fpag img{'
       'border: 1px solid #999e9a;'
-      'border-radius: 7px;'
+      'border-radius: 14px;'
       '}'
-      ''
       ''
       '#duvfre{'
       'background-color: #efefef;'
@@ -887,6 +890,7 @@ object Maker: TMaker
     Height = 250
     Top = 344
     Width = 250
+    OnClick = adv1Click
     Picture.Data = {
       1754506F727461626C654E6574776F726B477261706869635545010089504E47
       0D0A1A0A0000000D494844520000015E0000015E0806000000CD2B771A000001

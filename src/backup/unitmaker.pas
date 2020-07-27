@@ -76,6 +76,7 @@ type
     MenuItem9: TMenuItem;
     topmenu: TMainMenu;
     StatusBar1: TStatusBar;
+    procedure adv1Click(Sender: TObject);
     procedure autoriaChange(Sender: TObject);
     procedure corbotClick(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
@@ -213,7 +214,7 @@ begin
   maker.codfull.Lines.Add(' <br />');        
   if (maker.valor.Text <> '') and  (maker.valor.Text <> ' ')  then
   begin
-  maker.codfull.Lines.Add('<div id="valor">Apenas por <br>R$' + maker.valor.Text + '</b>! </div>');
+  maker.codfull.Lines.Add('<div id="valor">Apenas por <br><b>R$' + maker.valor.Text + '</b>! </div>');
 
   end else
   begin
@@ -331,6 +332,11 @@ end;
 procedure TMaker.autoriaChange(Sender: TObject);
 begin
 
+end;
+
+procedure TMaker.adv1Click(Sender: TObject);
+begin
+  OpenURL('https://informaticode.store/.../Curso-de-Marketing-crie-Seu-Curso');
 end;
 
 procedure TMaker.corbotClick(Sender: TObject);
