@@ -29,6 +29,7 @@ type
     img9: TImage;
     descricao2: TMemo;
     FPag: TPanel;
+    CancelAndBack: TButton;
     OPcertificado: TCheckBox;
     OPgarantia: TCheckBox;
     OPseguro: TCheckBox;
@@ -51,6 +52,7 @@ type
     txt4: TLabel;
     txt5: TLabel;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure CancelAndBackClick(Sender: TObject);
     procedure okClick(Sender: TObject);
     procedure OpenMMClick(Sender: TObject);
     procedure QmodChange(Sender: TObject);
@@ -204,9 +206,14 @@ end;
 
 procedure Tavancado.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
-  exportarAvancado;
+  { exportarAvancado; }
   maker.Visible:= true;
   avancado.Visible:= false;
+end;
+
+procedure Tavancado.CancelAndBackClick(Sender: TObject);
+begin
+  avancado.Close;
 end;
 
 end.

@@ -948,7 +948,7 @@ object avancado: Tavancado
     Height = 47
     Top = 504
     Width = 296
-    Caption = 'Voltar Para Tela Principal...'
+    Caption = 'Aplicar e Voltar...'
     Font.Height = -21
     Font.Name = 'Roboto'
     OnClick = okClick
@@ -5995,12 +5995,24 @@ object avancado: Tavancado
     end
   end
   object codigoAvancado: TMemo
-    Left = 248
+    Left = 48
     Height = 44
     Top = 504
     Width = 259
     ReadOnly = True
     TabOrder = 7
     Visible = False
+  end
+  object CancelAndBack: TButton
+    Left = 384
+    Height = 47
+    Top = 504
+    Width = 136
+    Caption = 'Cancelar'
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    OnClick = CancelAndBackClick
+    ParentFont = False
+    TabOrder = 8
   end
 end
