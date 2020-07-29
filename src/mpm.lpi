@@ -6,14 +6,12 @@
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
       <Title Value="Marketing-Page-Maker"/>
-      <Scaled Value="True"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
       <XPManifest>
         <TextName Value="Informaticode.Marketing-Page-Maker.MarketingPageMaker"/>
         <TextDesc Value="Marketing Page Maker created by Junior Criste"/>
       </XPManifest>
-      <Icon Value="0"/>
     </General>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>

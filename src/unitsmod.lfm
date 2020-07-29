@@ -4,7 +4,7 @@ object sMod: TsMod
   Top = 315
   Width = 450
   BorderStyle = bsSingle
-  Caption = 'Escolha um modelo'
+  Caption = 'Marketing Page Maker'
   ClientHeight = 193
   ClientWidth = 450
   Icon.Data = {
