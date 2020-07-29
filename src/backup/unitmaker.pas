@@ -175,7 +175,7 @@ begin
   maker.codfull.Lines.Add( WallpaperAdress);
 
   maker.codfull.Lines.Add(maker.estilo.text);
-  maker.codfull.Lines.Add('.euquero{ background-color: ' + coratualBot + ';');
+  maker.codfull.Lines.Add('.euquero, .euquerotp { background-color: ' + coratualBot + ';');
   maker.codfull.Lines.Add('color: ' + coratualTxt + '; }');
 
   if maker.ModAnim.Checked = true then

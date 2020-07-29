@@ -255,7 +255,7 @@ object Maker: TMaker
     Height = 30
     Top = 264
     Width = 250
-    Caption = 'Exportar Aquivo *htm'
+    Caption = 'Exportar Arquivo *htm'
     Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'

@@ -1,7 +1,7 @@
 object MakerMod: TMakerMod
   Left = 431
   Height = 388
-  Top = 153
+  Top = 181
   Width = 472
   BorderStyle = bsSingle
   Caption = 'Editor de Módulos...'

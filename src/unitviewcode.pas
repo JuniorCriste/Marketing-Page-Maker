@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  StdCtrls;
+  StdCtrls, clipbrd;
 
 type
 
@@ -17,6 +17,7 @@ type
     AllCode: TMemo;
     pn1: TPanel;
     pn2: TPanel;
+    procedure copycodeClick(Sender: TObject);
   private
 
   public
@@ -29,6 +30,13 @@ var
 implementation
 
 {$R *.lfm}
+
+{ Tcodfonte }
+
+procedure Tcodfonte.copycodeClick(Sender: TObject);
+begin
+  Clipboard.AsText:= Allcode.Text;
+end;
 
 end.
 

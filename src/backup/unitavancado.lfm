@@ -9,6 +9,7 @@ object avancado: Tavancado
   ClientWidth = 837
   Color = 1966080
   OnClose = FormClose
+  OnShow = FormShow
   Position = poDesktopCenter
   LCLVersion = '1.8.2.0'
   object txt1: TLabel

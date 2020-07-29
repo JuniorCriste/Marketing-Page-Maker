@@ -27,6 +27,7 @@ object codfonte: Tcodfonte
       Top = 4
       Width = 328
       Caption = 'Copiar Código Fonte'
+      OnClick = copycodeClick
       TabOrder = 0
     end
   end

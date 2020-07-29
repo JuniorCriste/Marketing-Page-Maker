@@ -15,7 +15,6 @@ object MakerMod: TMakerMod
   OnCreate = FormCreate
   OnShow = FormShow
   Position = poDesktopCenter
-  ShowInTaskBar = stNever
   LCLVersion = '1.8.2.0'
   object Label1: TLabel
     Left = 0

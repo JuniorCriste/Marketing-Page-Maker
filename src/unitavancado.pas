@@ -53,6 +53,7 @@ type
     txt5: TLabel;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure CancelAndBackClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure okClick(Sender: TObject);
     procedure OpenMMClick(Sender: TObject);
     procedure QmodChange(Sender: TObject);
@@ -64,6 +65,7 @@ type
 
 var
   avancado: Tavancado;
+  apl1: integer;
 
 implementation
 uses
@@ -205,7 +207,8 @@ end;
 
 procedure Tavancado.okClick(Sender: TObject);
 begin
-  exportarAvancado;
+  exportarAvancado;        
+  apl1 := apl1 + 1;
 
   maker.Visible:= true;
   avancado.Visible:= false;
@@ -222,11 +225,26 @@ begin
   { exportarAvancado; }
   maker.Visible:= true;
   avancado.Visible:= false;
+  if apl1 = 0 then
+  begin
+  Qmod.Value:= 0;
+  end;
 end;
 
 procedure Tavancado.CancelAndBackClick(Sender: TObject);
 begin
   avancado.Close;
+end;
+
+procedure Tavancado.FormShow(Sender: TObject);
+begin
+   if Qmod.Value < 1 then
+  begin
+    OpenMM.Enabled:= false;
+    end else
+    begin
+    OpenMM.Enabled:= true;
+  end;
 end;
 
 end.

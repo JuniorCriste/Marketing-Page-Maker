@@ -53,6 +53,7 @@ type
     txt5: TLabel;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure CancelAndBackClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure okClick(Sender: TObject);
     procedure OpenMMClick(Sender: TObject);
     procedure QmodChange(Sender: TObject);
@@ -64,6 +65,7 @@ type
 
 var
   avancado: Tavancado;
+  apl1: integer;
 
 implementation
 uses
@@ -84,13 +86,15 @@ begin
   avancado.codigoAvancado.Lines.Add('<div id="imgop">');
 
   if avancado.OPcertificado.Checked = true then
-  begin
+  begin           
+  addBotao := addBotao + 1;
   avancado.codigoAvancado.Lines.Add
   ('<br /><img id="IMGcertificado" src="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Principal/certificado.png">');
   end;
 
   if avancado.OPseguro.Checked = true then
-  begin
+  begin                
+  addBotao := addBotao + 1;
   avancado.codigoAvancado.Lines.Add
   ('<br /><img id="IMGseguro" src="https://raw.githubusercontent.com/JuniorCriste/storage/master/MPM/Pagina/Principal/seguro.png">');
   end;
@@ -174,7 +178,7 @@ begin
 
   if (avancado.Qmod.Value > 0) or (addBotao > 0) then
   begin
-   avancado.codigoAvancado.Lines.Add('<br /><center><form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero">'+ maker.txtbotao.Text +'</button></form></center>');
+   avancado.codigoAvancado.Lines.Add('<br /><center><form method="get" action="' + maker.linkvenda.Text + '"> <button type="submit" class="euquero">'+ maker.txtbotao.Text +'</button></form><br /></center>');
   end;
 
 
@@ -203,7 +207,8 @@ end;
 
 procedure Tavancado.okClick(Sender: TObject);
 begin
-  exportarAvancado;
+  exportarAvancado;        
+  apl1 := Qmod.Value;
 
   maker.Visible:= true;
   avancado.Visible:= false;
@@ -220,11 +225,26 @@ begin
   { exportarAvancado; }
   maker.Visible:= true;
   avancado.Visible:= false;
+  if apl1 = 0 then
+  begin
+  Qmod.Value:= 0;
+  end;
 end;
 
 procedure Tavancado.CancelAndBackClick(Sender: TObject);
 begin
   avancado.Close;
+end;
+
+procedure Tavancado.FormShow(Sender: TObject);
+begin
+   if Qmod.Value < 1 then
+  begin
+    OpenMM.Enabled:= false;
+    end else
+    begin
+    OpenMM.Enabled:= true;
+  end;
 end;
 
 end.
