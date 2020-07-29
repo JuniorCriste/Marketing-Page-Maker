@@ -14,7 +14,8 @@ uses
 {$R *.res}
 
 begin
-  Application.Title:='Marketing-Page-Maker';
+  Application.Scaled:=True;
+  Application.Title:='Marketing Page Maker';
   RequireDerivedFormResource:=True;
   Application.Initialize;
   Application.CreateForm(TsMod, sMod);

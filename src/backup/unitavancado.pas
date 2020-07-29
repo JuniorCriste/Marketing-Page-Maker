@@ -208,7 +208,7 @@ end;
 procedure Tavancado.okClick(Sender: TObject);
 begin
   exportarAvancado;        
-  apl1 := Qmod.Value;
+  apl1 := apl1 + 1;
 
   maker.Visible:= true;
   avancado.Visible:= false;

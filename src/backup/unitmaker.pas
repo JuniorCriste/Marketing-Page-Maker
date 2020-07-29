@@ -496,9 +496,13 @@ end;
 procedure TMaker.MenuItem15Click(Sender: TObject);
 begin
  codfonte.AllCode.Clear;
-  exportar;
-  codfonte.AllCode.Lines.LoadFromFile('pre665.htm');
-  codfonte.Show;
+
+ WallpaperAdress := PreIMG.text + NameIMG + PosIMG.text;
+ caminho:= 'pre665.htm';
+ exportar;
+
+ codfonte.AllCode.Lines.LoadFromFile('pre665.htm');
+ codfonte.Show;
 end;
 
 

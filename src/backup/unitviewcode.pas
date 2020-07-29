@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  StdCtrls;
+  StdCtrls, clipbrd;
 
 type
 
@@ -35,7 +35,7 @@ implementation
 
 procedure Tcodfonte.copycodeClick(Sender: TObject);
 begin
-  AllCode.CopyToClipboard;
+  Clipboard.AsText:= Allcode.Text;
 end;
 
 end.

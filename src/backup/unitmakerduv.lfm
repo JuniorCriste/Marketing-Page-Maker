@@ -1,7 +1,7 @@
 object makerDuvidas: TmakerDuvidas
   Left = 309
   Height = 375
-  Top = 153
+  Top = 181
   Width = 475
   Caption = 'Editor de Dúvidas Frequentes...'
   ClientHeight = 375
