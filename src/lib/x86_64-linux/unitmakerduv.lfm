@@ -1,7 +1,7 @@
 object makerDuvidas: TmakerDuvidas
-  Left = 309
+  Left = 379
   Height = 375
-  Top = 181
+  Top = 151
   Width = 475
   Caption = 'Editor de Dúvidas Frequentes...'
   ClientHeight = 375
@@ -5830,14 +5830,14 @@ object makerDuvidas: TmakerDuvidas
   end
   object duvida: TEdit
     Left = 10
-    Height = 52
+    Height = 45
     Top = 72
     Width = 451
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
     TabOrder = 0
+    Text = 'Qual a dúvida?'
     TextHint = 'Dúvida'
   end
   object txt2: TLabel
@@ -5857,7 +5857,6 @@ object makerDuvidas: TmakerDuvidas
     Height = 150
     Top = 169
     Width = 449
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     Lines.Strings = (
@@ -5874,7 +5873,6 @@ object makerDuvidas: TmakerDuvidas
     Top = 321
     Width = 449
     Caption = 'Cadastrar Dúvida'
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     OnClick = cadDuvClick

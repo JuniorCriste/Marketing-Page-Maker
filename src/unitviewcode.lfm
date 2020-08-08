@@ -5820,6 +5820,7 @@ object codfonte: Tcodfonte
       Width = 328
       Caption = 'Copiar Código Fonte'
       OnClick = copycodeClick
+      ParentFont = False
       TabOrder = 0
     end
   end

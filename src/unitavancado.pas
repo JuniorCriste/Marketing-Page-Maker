@@ -69,7 +69,7 @@ var
 
 implementation
 uses
-  unitmaker, unitmakerduv;
+  unitmaker, unitmakerDuv;
 
 {$R *.lfm}
 
@@ -100,6 +100,14 @@ begin
   end;
  avancado.codigoAvancado.Lines.Add('</div>');
 
+
+  { TEXTO EXTRA}
+  if (avancado.descricao2.Text <> '') and  (avancado.descricao2.Text <> ' ')  then
+  begin
+  avancado.codigoAvancado.Lines.Add('<div id="descricao2">');
+  avancado.codigoAvancado.Lines.Add(avancado.descricao2.Text);
+  avancado.codigoAvancado.Lines.Add('</div>');
+  end;
 
    { OPÇÕES DE PAGAMENTO}
   avancado.codigoAvancado.Lines.Add('<div id="fpag">');
@@ -168,13 +176,7 @@ begin
   end;
   avancado.codigoAvancado.Lines.Add('</div>') ;
   
-      { TEXTO EXTRA}
-  if (avancado.descricao2.Text <> '') and  (avancado.descricao2.Text <> ' ')  then
-  begin
-  avancado.codigoAvancado.Lines.Add('<div id="descricao2">');
-  avancado.codigoAvancado.Lines.Add(avancado.descricao2.Text);
-  avancado.codigoAvancado.Lines.Add('</div>');
-  end;
+
 
   if (avancado.Qmod.Value > 0) or (addBotao > 0) then
   begin

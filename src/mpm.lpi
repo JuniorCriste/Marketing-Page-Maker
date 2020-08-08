@@ -87,7 +87,7 @@
         <UnitName Value="unitAvancado"/>
       </Unit6>
       <Unit7>
-        <Filename Value="unitmakerduv.pas"/>
+        <Filename Value="../../Marketing-Page-Maker/src/unitmakerduv.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="makerDuvidas"/>
         <HasResources Value="True"/>
@@ -103,6 +103,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="../../Marketing-Page-Maker/src"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

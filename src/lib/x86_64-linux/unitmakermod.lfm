@@ -5824,10 +5824,9 @@ object MakerMod: TMakerMod
   end
   object modname: TEdit
     Left = 10
-    Height = 52
+    Height = 45
     Top = 72
     Width = 451
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
@@ -5840,7 +5839,6 @@ object MakerMod: TMakerMod
     Height = 150
     Top = 169
     Width = 449
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     Lines.Strings = (
@@ -5873,7 +5871,6 @@ object MakerMod: TMakerMod
     Top = 326
     Width = 449
     Caption = 'Cadastrar Módulo'
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     OnClick = cadModClick

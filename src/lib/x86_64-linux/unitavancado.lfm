@@ -5823,7 +5823,6 @@ object avancado: Tavancado
     Width = 464
     AutoSize = False
     BorderStyle = bsNone
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
@@ -5889,7 +5888,6 @@ object avancado: Tavancado
     Top = 120
     Width = 464
     BorderStyle = bsNone
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
@@ -6008,9 +6006,9 @@ object avancado: Tavancado
     end
     object PAGblt: TCheckBox
       Left = 8
-      Height = 24
+      Height = 23
       Top = 48
-      Width = 24
+      Width = 23
       Font.Color = clBlack
       ParentFont = False
       TabOrder = 0
@@ -6086,9 +6084,9 @@ object avancado: Tavancado
     end
     object PAGpp: TCheckBox
       Left = 104
-      Height = 24
+      Height = 23
       Top = 48
-      Width = 24
+      Width = 23
       Font.Color = clBlack
       ParentFont = False
       TabOrder = 1
@@ -6183,9 +6181,9 @@ object avancado: Tavancado
     end
     object PAGelo: TCheckBox
       Left = 200
-      Height = 24
+      Height = 23
       Top = 48
-      Width = 24
+      Width = 23
       Font.Color = clBlack
       ParentFont = False
       TabOrder = 2
@@ -6271,9 +6269,9 @@ object avancado: Tavancado
     end
     object PAGhpc: TCheckBox
       Left = 8
-      Height = 24
+      Height = 23
       Top = 96
-      Width = 24
+      Width = 23
       Font.Color = clBlack
       ParentFont = False
       TabOrder = 3
@@ -6373,9 +6371,9 @@ object avancado: Tavancado
     end
     object PAGhpr: TCheckBox
       Left = 104
-      Height = 24
+      Height = 23
       Top = 96
-      Width = 24
+      Width = 23
       Font.Color = clBlack
       ParentFont = False
       TabOrder = 4
@@ -6475,9 +6473,9 @@ object avancado: Tavancado
     end
     object PAGame: TCheckBox
       Left = 200
-      Height = 24
+      Height = 23
       Top = 96
-      Width = 24
+      Width = 23
       Font.Color = clBlack
       ParentFont = False
       TabOrder = 5
@@ -6562,9 +6560,9 @@ object avancado: Tavancado
     end
     object PAGvis: TCheckBox
       Left = 8
-      Height = 24
+      Height = 23
       Top = 144
-      Width = 24
+      Width = 23
       Font.Color = clBlack
       ParentFont = False
       TabOrder = 6
@@ -6653,9 +6651,9 @@ object avancado: Tavancado
     end
     object PAGmas: TCheckBox
       Left = 104
-      Height = 24
+      Height = 23
       Top = 144
-      Width = 24
+      Width = 23
       Font.Color = clBlack
       ParentFont = False
       TabOrder = 7
@@ -6728,9 +6726,9 @@ object avancado: Tavancado
     end
     object PAGhot: TCheckBox
       Left = 200
-      Height = 24
+      Height = 23
       Top = 144
-      Width = 24
+      Width = 23
       Font.Color = clBlack
       ParentFont = False
       TabOrder = 8
@@ -9890,9 +9888,9 @@ object avancado: Tavancado
     end
     object OPgarantia: TCheckBox
       Left = 8
-      Height = 24
+      Height = 23
       Top = 32
-      Width = 24
+      Width = 23
       Font.Color = clBlack
       ParentFont = False
       TabOrder = 0
@@ -11360,9 +11358,9 @@ object avancado: Tavancado
     end
     object OPcertificado: TCheckBox
       Left = 176
-      Height = 24
+      Height = 23
       Top = 32
-      Width = 24
+      Width = 23
       Font.Color = clBlack
       ParentFont = False
       TabOrder = 1
@@ -11779,9 +11777,9 @@ object avancado: Tavancado
     end
     object OPseguro: TCheckBox
       Left = 8
-      Height = 24
+      Height = 23
       Top = 144
-      Width = 24
+      Width = 23
       Font.Color = clBlack
       ParentFont = False
       TabOrder = 2

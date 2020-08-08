@@ -1,15 +1,17 @@
 object Maker: TMaker
-  Left = 133
+  Left = 260
   Height = 698
-  Top = 13
+  Top = 53
   Width = 1139
+  HorzScrollBar.Increment = 113
   HorzScrollBar.Page = 1139
   HorzScrollBar.Smooth = True
+  VertScrollBar.Increment = 61
   VertScrollBar.Page = 616
   VertScrollBar.Smooth = True
   AutoScroll = True
   Caption = 'MPM - Configure as propriedades da sua página'
-  ClientHeight = 658
+  ClientHeight = 661
   ClientWidth = 1139
   Color = 1966080
   Font.Color = 13553358
@@ -5835,7 +5837,7 @@ object Maker: TMaker
   object StatusBar1: TStatusBar
     Left = 0
     Height = 18
-    Top = 640
+    Top = 643
     Width = 1312
     Panels = <>
   end
@@ -5858,7 +5860,6 @@ object Maker: TMaker
     Width = 360
     AutoSize = False
     BorderStyle = bsNone
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
@@ -5897,7 +5898,6 @@ object Maker: TMaker
     Width = 206
     AutoSize = False
     BorderStyle = bsNone
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     NumbersOnly = True
@@ -5926,7 +5926,6 @@ object Maker: TMaker
     Width = 551
     AutoSize = False
     BorderStyle = bsNone
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
@@ -5953,7 +5952,6 @@ object Maker: TMaker
     Width = 215
     AutoSize = False
     BorderStyle = bsNone
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
@@ -5980,7 +5978,6 @@ object Maker: TMaker
     Top = 256
     Width = 360
     BorderStyle = bsNone
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     Lines.Strings = (
@@ -6010,7 +6007,6 @@ object Maker: TMaker
     Width = 189
     AutoSize = False
     BorderStyle = bsNone
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
@@ -6024,7 +6020,6 @@ object Maker: TMaker
     Top = 525
     Width = 238
     Caption = 'Configurar Módulos'
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     OnClick = OpenMMClick
@@ -6037,7 +6032,6 @@ object Maker: TMaker
     Top = 136
     Width = 250
     Caption = 'Visualizar no Navegador'
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     OnClick = viewnavClick
@@ -6050,7 +6044,6 @@ object Maker: TMaker
     Top = 264
     Width = 250
     Caption = 'Exportar Arquivo *htm'
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     OnClick = exportClick
@@ -6060,10 +6053,9 @@ object Maker: TMaker
   object zero: TButton
     Left = 1056
     Height = 30
-    Top = 176
+    Top = 200
     Width = 250
     Caption = 'Limpar Campos'
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     OnClick = zeroClick
@@ -6481,6 +6473,7 @@ object Maker: TMaker
       ''
       '#fpag{'
       'margin-top: 25;'
+      'margin-bottom: -35;'
       '}'
       ''
       ''
@@ -6544,7 +6537,6 @@ object Maker: TMaker
     Top = 432
     Width = 360
     Caption = 'Selecione um Fundo'
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     OnClick = selectWallClick
@@ -6553,7 +6545,7 @@ object Maker: TMaker
   end
   object PreIMG: TEdit
     Left = 500
-    Height = 49
+    Height = 42
     Top = 15
     Width = 52
     OnChange = PreIMGChange
@@ -6563,7 +6555,7 @@ object Maker: TMaker
   end
   object PosIMG: TEdit
     Left = 501
-    Height = 49
+    Height = 42
     Top = 68
     Width = 52
     OnChange = PosIMGChange
@@ -6590,7 +6582,6 @@ object Maker: TMaker
     Width = 551
     AutoSize = False
     BorderStyle = bsNone
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     OnChange = autoriaChange
@@ -6606,7 +6597,6 @@ object Maker: TMaker
     Width = 112
     AutoSize = False
     DecimalPlaces = 0
-    Font.Color = 13553358
     Font.Height = -21
     Font.Name = 'Roboto'
     Increment = 1
@@ -6621,7 +6611,7 @@ object Maker: TMaker
     Left = 440
     Height = 28
     Top = 588
-    Width = 354
+    Width = 351
     Caption = '"Criado com Marketing Page Maker"'
     Checked = True
     Font.Color = 13553358
@@ -6638,7 +6628,6 @@ object Maker: TMaker
     Top = 408
     Width = 80
     Caption = 'Cor '
-    Font.Color = 13553358
     Font.Height = -21
     Font.Name = 'Roboto'
     OnClick = corbotClick
@@ -6652,7 +6641,6 @@ object Maker: TMaker
     Width = 189
     AutoSize = False
     BorderStyle = bsNone
-    Font.Color = clWhite
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
@@ -6691,7 +6679,6 @@ object Maker: TMaker
     Top = 408
     Width = 80
     Caption = 'Cor '
-    Font.Color = 13553358
     Font.Height = -21
     Font.Name = 'Roboto'
     OnClick = cortxtClick
@@ -9317,7 +9304,7 @@ object Maker: TMaker
     Left = 30
     Height = 28
     Top = 588
-    Width = 202
+    Width = 199
     Caption = 'Módulos Animados'
     Checked = True
     Font.Color = 13553358
@@ -9397,7 +9384,6 @@ object Maker: TMaker
     Top = 564
     Width = 168
     Caption = 'Avançado...'
-    Font.Color = 13553358
     Font.Height = -21
     Font.Name = 'Roboto'
     OnClick = maisrClick

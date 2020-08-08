@@ -20,11 +20,11 @@ begin
   Application.Initialize;
   Application.CreateForm(TsMod, sMod);
   Application.CreateForm(TMaker, Maker);
-  Application.CreateForm(TMakerMod, MakerMod);
   Application.CreateForm(Twallpaper, wallpaper);
-  Application.CreateForm(Tcodfonte, codfonte);
+  Application.CreateForm(TMakerMod, MakerMod);
   Application.CreateForm(Tavancado, avancado);
   Application.CreateForm(TmakerDuvidas, makerDuvidas);
+  Application.CreateForm(Tcodfonte, codfonte);
   Application.Run;
 end.
 
