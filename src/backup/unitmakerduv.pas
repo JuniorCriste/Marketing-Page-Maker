@@ -48,8 +48,9 @@ begin
   countDuvs := countDuvs + 1;                              
   txt1.Caption:= 'Título da Dúvida ' + IntToStr(countDuvs);
   txt2.Caption:= 'Resposta da Dúvida ' + IntToStr(countDuvs);
-  duvida.Text:='Qual a dúvida';
-  resposta.Text:='Resposta da dúvida...';
+  duvida.Text:='';
+  resposta.Clear;
+  duvida.SetFocus;
   if countDuvs > avancado.Qmod.Value then
   begin
   avancado.Visible:= true;

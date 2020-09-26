@@ -1,7 +1,7 @@
 object MakerMod: TMakerMod
-  Left = 431
+  Left = 445
   Height = 388
-  Top = 181
+  Top = 162
   Width = 472
   BorderStyle = bsSingle
   Caption = 'Editor de Módulos...'
@@ -5824,40 +5824,34 @@ object MakerMod: TMakerMod
   end
   object modname: TEdit
     Left = 10
-    Height = 45
+    Height = 37
     Top = 72
     Width = 451
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
     TabOrder = 0
-    Text = 'Nome do Módulo'
     TextHint = 'Nome do Módulo'
   end
   object modau: TMemo
     Left = 11
     Height = 150
+    Hint = 'Aula 01'#10'Aula 02'#10'Aula 03'#10'...'
     Top = 169
     Width = 449
     Font.Height = -21
     Font.Name = 'Roboto'
-    Lines.Strings = (
-      'Aula 00'
-      'Aula 01'
-      'Aula 02'
-      'Aula 03'
-      'Aula ...'
-    )
     ParentFont = False
+    ParentShowHint = False
     ScrollBars = ssAutoVertical
+    ShowHint = True
     TabOrder = 1
-    WordWrap = False
   end
   object txt2: TLabel
     Left = 14
-    Height = 28
+    Height = 25
     Top = 136
-    Width = 172
+    Width = 191
     Caption = 'Aulas do Módulo *'
     Font.Color = clWhite
     Font.Height = -21
@@ -5889,9 +5883,9 @@ object MakerMod: TMakerMod
   end
   object txt1: TLabel
     Left = 16
-    Height = 28
+    Height = 25
     Top = 40
-    Width = 175
+    Width = 196
     Caption = 'Nome do Módulo *'
     Font.Color = clWhite
     Font.Height = -21

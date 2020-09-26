@@ -5818,9 +5818,9 @@ object makerDuvidas: TmakerDuvidas
   end
   object txt1: TLabel
     Left = 16
-    Height = 28
+    Height = 25
     Top = 40
-    Width = 165
+    Width = 190
     Caption = 'Título da Dúvida *'
     Font.Color = clWhite
     Font.Height = -21
@@ -5830,21 +5830,20 @@ object makerDuvidas: TmakerDuvidas
   end
   object duvida: TEdit
     Left = 10
-    Height = 45
+    Height = 37
     Top = 72
     Width = 451
     Font.Height = -21
     Font.Name = 'Roboto'
     ParentFont = False
     TabOrder = 0
-    Text = 'Qual a dúvida?'
-    TextHint = 'Dúvida'
+    TextHint = 'Qual a dúvida'
   end
   object txt2: TLabel
     Left = 14
-    Height = 28
+    Height = 25
     Top = 136
-    Width = 199
+    Width = 227
     Caption = 'Resposta da Dúvida *'
     Font.Color = clWhite
     Font.Height = -21
@@ -5855,17 +5854,15 @@ object makerDuvidas: TmakerDuvidas
   object resposta: TMemo
     Left = 11
     Height = 150
+    Hint = 'Resposta da dúvida...'
     Top = 169
     Width = 449
     Font.Height = -21
     Font.Name = 'Roboto'
-    Lines.Strings = (
-      'Resposta da dúvida...'
-    )
     ParentFont = False
-    ScrollBars = ssAutoVertical
+    ParentShowHint = False
+    ShowHint = True
     TabOrder = 1
-    WordWrap = False
   end
   object cadDuv: TButton
     Left = 10

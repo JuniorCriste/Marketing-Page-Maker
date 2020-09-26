@@ -3,12 +3,12 @@
   <ProjectSession>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="11">
+    <Units Count="12">
       <Unit0>
         <Filename Value="mpm.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="86"/>
+        <UsageCount Value="88"/>
       </Unit0>
       <Unit1>
         <Filename Value="unitsmod.pas"/>
@@ -19,7 +19,7 @@
         <UnitName Value="unitsMod"/>
         <TopLine Value="48"/>
         <CursorPos X="3" Y="56"/>
-        <UsageCount Value="86"/>
+        <UsageCount Value="88"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -29,11 +29,10 @@
         <ComponentName Value="Maker"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="490"/>
         <CursorPos X="46" Y="503"/>
-        <UsageCount Value="85"/>
+        <UsageCount Value="87"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
@@ -43,10 +42,11 @@
         <ComponentName Value="MakerMod"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="107"/>
-        <CursorPos X="65" Y="122"/>
-        <UsageCount Value="82"/>
+        <TopLine Value="63"/>
+        <CursorPos X="20" Y="79"/>
+        <UsageCount Value="84"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit3>
@@ -59,9 +59,8 @@
         <EditorIndex Value="4"/>
         <TopLine Value="115"/>
         <CursorPos X="24" Y="133"/>
-        <UsageCount Value="68"/>
+        <UsageCount Value="70"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="unitviewcode.pas"/>
@@ -72,7 +71,7 @@
         <EditorIndex Value="3"/>
         <TopLine Value="23"/>
         <CursorPos X="34" Y="38"/>
-        <UsageCount Value="63"/>
+        <UsageCount Value="65"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit5>
@@ -84,9 +83,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitAvancado"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="202"/>
-        <CursorPos X="29" Y="211"/>
-        <UsageCount Value="45"/>
+        <TopLine Value="166"/>
+        <CursorPos X="7" Y="180"/>
+        <UsageCount Value="47"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit6>
@@ -98,9 +97,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitmakerDuv"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="32"/>
-        <CursorPos X="3" Y="32"/>
-        <UsageCount Value="43"/>
+        <TopLine Value="43"/>
+        <CursorPos X="19" Y="53"/>
+        <UsageCount Value="45"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit7>
@@ -124,126 +123,133 @@
         <CursorPos X="15" Y="619"/>
         <UsageCount Value="10"/>
       </Unit10>
+      <Unit11>
+        <Filename Value="/usr/lib/lazarus/1.8.2/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2303"/>
+        <CursorPos Y="2313"/>
+        <UsageCount Value="10"/>
+      </Unit11>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="216" Column="61" TopLine="207"/>
+        <Filename Value="unitavancado.pas"/>
+        <Caret Line="206" Column="3" TopLine="204"/>
       </Position1>
       <Position2>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="420" Column="3" TopLine="418"/>
+        <Filename Value="unitviewcode.pas"/>
       </Position2>
       <Position3>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="339" Column="63" TopLine="337"/>
+        <Caret Line="180" Column="66" TopLine="173"/>
       </Position3>
       <Position4>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="173" Column="36" TopLine="161"/>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="455" Column="3" TopLine="453"/>
       </Position4>
       <Position5>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="207" Column="24" TopLine="195"/>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="463" Column="2" TopLine="461"/>
       </Position5>
       <Position6>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="193" Column="3" TopLine="191"/>
+        <Caret Line="179" Column="196" TopLine="171"/>
       </Position6>
       <Position7>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="195" Column="3" TopLine="193"/>
+        <Caret Line="216" Column="3" TopLine="214"/>
       </Position7>
       <Position8>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="216" Column="18" TopLine="202"/>
+        <Caret Line="196" Column="11" TopLine="196"/>
       </Position8>
       <Position9>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="205" Column="124" TopLine="198"/>
+        <Filename Value="unitavancado.pas"/>
+        <Caret Line="241" Column="16" TopLine="227"/>
       </Position9>
       <Position10>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="455" Column="3" TopLine="453"/>
+        <Filename Value="unitavancado.pas"/>
+        <Caret Line="230" Column="3" TopLine="227"/>
       </Position10>
       <Position11>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="195" Column="3" TopLine="193"/>
+        <Caret Line="68" Column="17" TopLine="55"/>
       </Position11>
       <Position12>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="175" Column="48" TopLine="170"/>
+        <Caret Line="211" Column="21" TopLine="202"/>
       </Position12>
       <Position13>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="206" Column="3" TopLine="204"/>
+        <Caret Line="210" Column="26" TopLine="202"/>
       </Position13>
       <Position14>
-        <Filename Value="unitviewcode.pas"/>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="503" Column="46" TopLine="490"/>
       </Position14>
       <Position15>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="180" Column="66" TopLine="173"/>
+        <Caret Line="504" Column="46" TopLine="491"/>
       </Position15>
       <Position16>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="455" Column="3" TopLine="453"/>
+        <Caret Line="503" Column="46" TopLine="490"/>
       </Position16>
       <Position17>
         <Filename Value="unitmaker.pas"/>
-        <Caret Line="463" Column="2" TopLine="461"/>
+        <Caret Line="504" Column="46" TopLine="491"/>
       </Position17>
       <Position18>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="179" Column="196" TopLine="171"/>
+        <Filename Value="unitmaker.pas"/>
+        <Caret Line="503" Column="46" TopLine="490"/>
       </Position18>
       <Position19>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="216" Column="3" TopLine="214"/>
+        <Filename Value="unitwallpaper.pas"/>
+        <Caret Line="133" Column="24" TopLine="115"/>
       </Position19>
       <Position20>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="196" Column="11" TopLine="196"/>
+        <Caret Line="211" Column="29" TopLine="202"/>
       </Position20>
       <Position21>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="241" Column="16" TopLine="227"/>
+        <Caret Line="210" Column="3" TopLine="208"/>
       </Position21>
       <Position22>
         <Filename Value="unitavancado.pas"/>
-        <Caret Line="230" Column="3" TopLine="227"/>
+        <Caret Line="227" Column="10" TopLine="208"/>
       </Position22>
       <Position23>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="68" Column="17" TopLine="55"/>
+        <Filename Value="unitmakerduv.pas"/>
+        <Caret Line="53" Column="41" TopLine="45"/>
       </Position23>
       <Position24>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="211" Column="21" TopLine="202"/>
+        <Filename Value="unitmakerduv.pas"/>
+        <Caret Line="63" Column="3" TopLine="61"/>
       </Position24>
       <Position25>
-        <Filename Value="unitavancado.pas"/>
-        <Caret Line="210" Column="26" TopLine="202"/>
+        <Filename Value="unitmakermod.pas"/>
+        <Caret Line="122" Column="66" TopLine="106"/>
       </Position25>
       <Position26>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="503" Column="46" TopLine="490"/>
+        <Filename Value="unitmakermod.pas"/>
+        <Caret Line="55" Column="74" TopLine="53"/>
       </Position26>
       <Position27>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="504" Column="46" TopLine="491"/>
+        <Filename Value="unitmakerduv.pas"/>
+        <Caret Line="78" Column="61" TopLine="64"/>
       </Position27>
       <Position28>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="503" Column="46" TopLine="490"/>
+        <Filename Value="unitmakermod.pas"/>
+        <Caret Line="77" Column="19" TopLine="73"/>
       </Position28>
       <Position29>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="504" Column="46" TopLine="491"/>
+        <Filename Value="unitmakerduv.pas"/>
+        <Caret Line="77" Column="17" TopLine="58"/>
       </Position29>
       <Position30>
-        <Filename Value="unitmaker.pas"/>
-        <Caret Line="503" Column="46" TopLine="490"/>
+        <Filename Value="unitmakerduv.pas"/>
+        <Caret Line="53" Column="27" TopLine="43"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>

@@ -74,14 +74,15 @@ begin
     MakerMod.Close;
   end;
 
-  modname.Text:= 'Nome do Módulo';
+  modname.Text:= '';
   modau.Lines.Clear;
-  modau.Lines.Add('Aula 00');
+  modname.SetFocus;
+  {  modau.Lines.Add('Aula 00');
   modau.Lines.Add('Aula 01');
   modau.Lines.Add('Aula 02');
   modau.Lines.Add('Aula 03');
   modau.Lines.Add('Aula ...');
-
+ }
 end;
 
 procedure TMakerMod.FormClose(Sender: TObject; var CloseAction: TCloseAction);

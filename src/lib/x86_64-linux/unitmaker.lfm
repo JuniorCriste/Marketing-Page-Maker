@@ -1,7 +1,7 @@
 object Maker: TMaker
-  Left = 260
+  Left = 227
   Height = 698
-  Top = 53
+  Top = 13
   Width = 1139
   HorzScrollBar.Increment = 113
   HorzScrollBar.Page = 1139
@@ -6032,8 +6032,8 @@ object Maker: TMaker
     Top = 136
     Width = 250
     Caption = 'Visualizar no Navegador'
-    Font.Height = -21
-    Font.Name = 'Roboto'
+    Font.Height = -13
+    Font.Name = 'Sans'
     OnClick = viewnavClick
     ParentFont = False
     TabOrder = 7
@@ -6044,8 +6044,8 @@ object Maker: TMaker
     Top = 264
     Width = 250
     Caption = 'Exportar Arquivo *htm'
-    Font.Height = -21
-    Font.Name = 'Roboto'
+    Font.Height = -13
+    Font.Name = 'Sans'
     OnClick = exportClick
     ParentFont = False
     TabOrder = 8
@@ -6056,8 +6056,8 @@ object Maker: TMaker
     Top = 200
     Width = 250
     Caption = 'Limpar Campos'
-    Font.Height = -21
-    Font.Name = 'Roboto'
+    Font.Height = -13
+    Font.Name = 'Sans'
     OnClick = zeroClick
     ParentFont = False
     TabOrder = 9
@@ -6545,7 +6545,7 @@ object Maker: TMaker
   end
   object PreIMG: TEdit
     Left = 500
-    Height = 42
+    Height = 37
     Top = 15
     Width = 52
     OnChange = PreIMGChange
@@ -6555,7 +6555,7 @@ object Maker: TMaker
   end
   object PosIMG: TEdit
     Left = 501
-    Height = 42
+    Height = 37
     Top = 68
     Width = 52
     OnChange = PosIMGChange
@@ -6587,8 +6587,8 @@ object Maker: TMaker
     OnChange = autoriaChange
     ParentFont = False
     TabOrder = 15
-    Text = 'Seu nome ou responsável'
-    TextHint = 'Link para a compra'
+    Text = 'Responsável'
+    TextHint = 'Seu nome ou responsável'
   end
   object Qmod: TFloatSpinEdit
     Left = 32

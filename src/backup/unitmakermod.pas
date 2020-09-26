@@ -67,6 +67,7 @@ begin
 
   txt1.Caption:= 'Nome do Módulo ' + IntToStr(countMod);
   txt2.Caption:= 'Aulas do Módulo ' + IntToStr(countMod);
+  modname.AutoSelect:= true;
 
   if countMod > StrToInt(Maker.Qmod.Text) then
   begin
@@ -74,14 +75,14 @@ begin
     MakerMod.Close;
   end;
 
-  modname.Text:= 'Nome do Módulo';
+  modname.Text:= '';
   modau.Lines.Clear;
-  modau.Lines.Add('Aula 00');
+  {  modau.Lines.Add('Aula 00');
   modau.Lines.Add('Aula 01');
   modau.Lines.Add('Aula 02');
   modau.Lines.Add('Aula 03');
   modau.Lines.Add('Aula ...');
-
+ }
 end;
 
 procedure TMakerMod.FormClose(Sender: TObject; var CloseAction: TCloseAction);
